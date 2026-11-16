@@ -18,9 +18,21 @@
   const activa = () => estado.vista === 'pregunta' && !estado.terminado;
   function detenerReloj(){ if (reloj !== null) clearInterval(reloj); reloj = null; }
   function aviso(mensaje){ toast.textContent = mensaje; toast.hidden = false; clearTimeout(aviso.id); aviso.id = setTimeout(()=>toast.hidden=true, 4200); }
-  function confirmarSalida(){ return !activa() || window.confirm('¿Salir del examen? Las respuestas de este intento se perderán.'); }
-  function navegar(vista, cambio = {}){
-    if (!confirmarSalida()) return;
+  function confirmarSalida(){
+    return !activa() || window.confirm('¿Quieres salir del examen?\n\nEl intento está en curso. Perderás las respuestas que hayas marcado y tendrás que empezar de nuevo.\n\nPulsa «Cancelar» para continuar respondiendo.');
+  }
+  // Mantiene una entrada de historial temporal: Atrás desde un examen pide confirmación.
+  function protegerAtras(){
+    window.history.pushState({momoGuardia:true}, '', '#examen');
+  }
+  function retirarGuardia(vista){
+    if(window.history.state?.momoGuardia){
+      window.history.replaceState({momoVista:vista}, '', `#${vista}`);
+    }
+  }
+  function navegar(vista, cambio = {}, salidaYaConfirmada = false){
+    if(!salidaYaConfirmada && !confirmarSalida()) return;
+    retirarGuardia(vista);
     detenerReloj();
     estado = { ...estado, ...cambio, vista, datos: null, respuestas: [], indice: 0, fin: null, terminado: false, inicio: null };
     render();
@@ -95,7 +107,7 @@
     const minutos=Number(datos.configuracion?.duracion_minutos)||0;
     const textoTiempo=(minutos>0 && datos.configuracion?.contador_permitido!==false)?`${minutos} minutos`:'Sin límite de tiempo';
     const a=anioActual(),m=materiaActual();
-    app.innerHTML=`${ruta([{titulo:a?.titulo||'Año',accion:'anio'},{titulo:m?.nombre||'Materia',accion:'materia'},{titulo:'Preparación'}])}<div class="panel"><div class="pre-examen"><span class="mini-titulo">Antes de empezar</span><h2>${escapar(datos.nombre||nombre||'Examen de práctica')}</h2><p>Lee con calma y elige una opción por pregunta. Podrás revisar tus respuestas cuando termines${datos.configuracion?.permitir_revision===false?' (revisión desactivada en este examen)':''}.</p><p><span class="pildora">✿ ${datos.preguntas.length} preguntas</span>&nbsp; <span class="pildora">${escapar(textoTiempo)}</span></p><div class="botones" style="margin-top:27px">${accion('empezar','Comenzar examen')}${accion('materia','Regresar','','boton secundario')}</div></div></div>`;
+    app.innerHTML=`${ruta([{titulo:a?.titulo||'Año',accion:'anio'},{titulo:m?.nombre||'Materia',accion:'materia'},{titulo:'Preparación'}])}<div class="panel"><div class="pre-examen"><span class="mini-titulo">Antes de empezar</span><h2>${escapar(datos.nombre||nombre||'Examen de práctica')}</h2><p>Lee con calma y elige una opción por pregunta. Podrás revisar tus respuestas cuando termines${datos.configuracion?.permitir_revision===false?' (revisión desactivada en este examen)':''}.</p><p><span class="pildora">✿ ${datos.preguntas.length} preguntas</span>&nbsp; <span class="pildora">${escapar(textoTiempo)}</span></p><div class="botones" style="margin-top:27px">${accion('empezar','Comenzar examen')}${accion('materia','← Volver a la materia','','boton secundario')}${accion('inicio','⌂ Inicio','','boton secundario')}</div></div></div>`;
   }
   function normalizarTexto(v){
     // Permite formato sencillo del JSON ELITE; elimina etiquetas no permitidas y atributos peligrosos.
@@ -124,19 +136,44 @@
     const total=estado.datos.preguntas.length,i=estado.indice,p=estado.datos.preguntas[i];
     const marcadas=estado.respuestas.filter(v=>v!==null).length;
     const lista=opciones(p).map((o,j)=>`<button type="button" class="opcion ${estado.respuestas[i]===j?'elegida':''}" data-accion="responder" data-indice="${j}" aria-pressed="${estado.respuestas[i]===j?'true':'false'}"><span class="letra">${escapar(o.inciso||String.fromCharCode(65+j))}</span><span class="contenido">${contenidoOpcion(o)}</span></button>`).join('');
-    const mapa=estado.datos.preguntas.map((_,k)=>`<button class="mini-pregunta ${estado.respuestas[k]!==null?'marcada':''} ${k===i?'actual':''}" type="button" data-accion="saltar" data-indice="${k}" aria-label="Ir a pregunta ${k+1}">${k+1}</button>`).join('');
-    app.innerHTML=`<div class="panel"><nav class="miga" aria-label="Ruta"><button type="button" data-accion="salir">Salir del examen</button><span class="separador">/</span><span>${escapar(estado.datos.nombre||'Examen')}</span></nav><div class="examen-top"><h1>${escapar(estado.datos.nombre||'Examen de práctica')}</h1>${estado.fin!==null?'<div id="tiempo-examen" class="tiempo" role="timer">⏱ --:--</div>':''}</div><div class="barra" aria-label="Avance"><div style="width:${Math.round(marcadas/total*100)}%"></div></div><div class="tarjeta-pregunta"><div class="numero-pregunta"><span>Pregunta ${i+1} de ${total}</span><span>${escapar(p.materia||materiaActual()?.nombre||'Medicina')}</span></div><div class="enunciado">${contenidoPregunta(p)}</div><div class="opciones">${lista}</div></div><div class="navegacion">${accion('anterior','← Anterior',i===0?'disabled':'','boton secundario')}${accion(i===total-1?'finalizar':'siguiente',i===total-1?'Terminar examen':'Siguiente →','','boton')}</div><div class="estado-avance">${marcadas} de ${total} preguntas respondidas · Selecciona un número para saltar a otra pregunta.</div><nav class="mapa-preguntas" aria-label="Navegación entre preguntas">${mapa}</nav></div>`;
+    const mapa=estado.datos.preguntas.map((_,k)=>`<button class="mini-pregunta ${estado.respuestas[k]!==null?'marcada':''} ${k===i?'actual':''}" type="button" data-accion="saltar" data-indice="${k}" aria-label="Ir a pregunta ${k+1}" ${k===i?'aria-current="step"':''}>${k+1}</button>`).join('');
+    app.innerHTML=`<div class="panel panel-examen">
+      <nav class="barra-examen" aria-label="Acciones del examen">
+        <div class="barra-enlaces">
+          ${accion('inicio','⌂ Inicio','','boton secundario boton-salir')}
+          ${accion('salir','← Volver a la materia','','boton secundario boton-salir')}
+        </div>
+        ${accion('finalizar','Terminar examen','','boton boton-terminar')}
+      </nav>
+      <div class="examen-top"><h1>${escapar(estado.datos.nombre||'Examen de práctica')}</h1>${estado.fin!==null?'<div id="tiempo-examen" class="tiempo" role="timer">⏱ --:--</div>':''}</div>
+      <div class="barra" aria-label="Avance del examen"><div style="width:${Math.round(marcadas/total*100)}%"></div></div>
+      <div class="tarjeta-pregunta"><div class="numero-pregunta"><span>Pregunta ${i+1} de ${total}</span><span>${escapar(p.materia||materiaActual()?.nombre||'Medicina')}</span></div><div class="enunciado">${contenidoPregunta(p)}</div><div class="opciones">${lista}</div></div>
+      <div class="navegacion" aria-label="Cambiar de pregunta">
+        ${accion('anterior','← Pregunta anterior',i===0?'disabled':'','boton secundario')}
+        ${accion('siguiente','Siguiente pregunta →',i===total-1?'disabled':'','boton')}
+      </div>
+      <div class="cierre-examen">${accion('finalizar','Terminar examen y ver resultados','','boton boton-terminar')}<p>Puedes terminar en cualquier pregunta. Se te pedirá confirmación antes de calificar.</p></div>
+      <div class="estado-avance">${marcadas} de ${total} preguntas respondidas · Selecciona un número para saltar a otra pregunta.</div>
+      <nav class="mapa-preguntas" aria-label="Navegación entre preguntas">${mapa}</nav>
+    </div>`;
     if(estado.fin!==null)actualizarTiempo();
   }
   function empezar(){
     if(!estado.datos)return;
-    estado.vista='pregunta';estado.respuestas=Array(estado.datos.preguntas.length).fill(null);estado.indice=0;estado.terminado=false;estado.inicio=Date.now();configurarFin();renderPregunta();
+    estado.vista='pregunta';estado.respuestas=Array(estado.datos.preguntas.length).fill(null);estado.indice=0;estado.terminado=false;estado.inicio=Date.now();
+    protegerAtras();
+    configurarFin();renderPregunta();
   }
   function finalizar(automatico=false){
     if(!activa())return;
     const pendientes=estado.respuestas.filter(v=>v===null).length;
-    if(!automatico && pendientes && !window.confirm(`Hay ${pendientes} preguntas sin contestar. ¿Quieres terminar y calificarlas como incorrectas?`))return;
-    if(!automatico && !window.confirm('¿Finalizar el examen y ver los resultados?'))return;
+    if(!automatico){
+      const mensaje=pendientes
+        ? `¿Terminar el examen ahora?\n\nTienes ${pendientes} ${pendientes===1?'pregunta sin contestar':'preguntas sin contestar'}; se calificarán como incorrectas.\n\nPulsa «Cancelar» si deseas continuar.`
+        : '¿Terminar el examen ahora y ver tus resultados?\n\nDespués de confirmar ya no podrás modificar las respuestas.';
+      if(!window.confirm(mensaje))return;
+    }
+    retirarGuardia('resultados');
     detenerReloj();estado.terminado=true;estado.vista='resultado';
     const total=estado.datos.preguntas.length;
     const aciertos=estado.datos.preguntas.filter((p,i)=>estado.respuestas[i]===indiceCorrecto(p)).length;
@@ -148,7 +185,7 @@
       const letra=j=>j===null?'Sin responder':`${ops[j]?.inciso||String.fromCharCode(65+j)}. ${typeof ops[j]==='string'?ops[j]:(ops[j]?.texto||'[Opción con imagen]')}`;
       return `<article class="revision"><small class="${bien?'bien':'mal'}">${bien?'✓ Correcta':'✕ Por repasar'} · Pregunta ${i+1}</small><h3>${contenidoPregunta(p)}</h3><p><b>Tu respuesta:</b> ${normalizarTexto(letra(elegida))}</p><p class="bien"><b>Respuesta correcta:</b> ${normalizarTexto(letra(correcta))}</p>${p.explicacion?`<div class="explicacion"><strong>Explicación</strong><div>${normalizarTexto(p.explicacion)}</div></div>`:''}</article>`;
     }).join('');
-    app.innerHTML=`<div class="panel"><div class="resultado-cabecera"><span class="nota">Examen terminado ${automatico?'· Se agotó el tiempo':''}</span><div class="calificacion">${porcentaje}%</div><h1>${escapar(estado.datos.nombre||'Tus resultados')}</h1><p>${aciertos} respuestas correctas de ${total} · Calificación equivalente: ${(10*aciertos/total).toFixed(1)} / 10</p><div class="botones" style="justify-content:center;margin-top:22px">${accion('repetir','Intentarlo de nuevo')}${accion('materia','Volver a la materia','','boton secundario')}</div></div>${revisar?`<div class="section-top"><h2>Repaso de respuestas</h2></div>${detalles}`:'<div class="alerta">La revisión de respuestas está desactivada en este examen.</div>'}</div>`;
+    app.innerHTML=`<div class="panel"><div class="resultado-cabecera"><span class="nota">Examen terminado ${automatico?'· Se agotó el tiempo':''}</span><div class="calificacion">${porcentaje}%</div><h1>${escapar(estado.datos.nombre||'Tus resultados')}</h1><p>${aciertos} respuestas correctas de ${total} · Calificación equivalente: ${(10*aciertos/total).toFixed(1)} / 10</p><div class="botones" style="justify-content:center;margin-top:22px">${accion('repetir','Intentarlo de nuevo')}${accion('materia','← Volver a la materia','','boton secundario')}${accion('inicio','⌂ Inicio','','boton secundario')}</div></div>${revisar?`<div class="section-top"><h2>Repaso de respuestas</h2></div>${detalles}`:'<div class="alerta">La revisión de respuestas está desactivada en este examen.</div>'}</div>`;
   }
   function render(){if(estado.vista==='inicio')inicio();else if(estado.vista==='anio')anio();else if(estado.vista==='materia')materia();else if(estado.vista==='pregunta')renderPregunta();}
   app.addEventListener('click',e=>{
@@ -165,9 +202,9 @@
       case 'archivo':inputArchivo.value='';inputArchivo.click();break;
       case 'empezar':empezar();break;
       case 'responder':estado.respuestas[estado.indice]=Number(b.dataset.indice);renderPregunta();break;
-      case 'anterior':estado.indice=Math.max(0,estado.indice-1);renderPregunta();break;
-      case 'siguiente':estado.indice=Math.min(estado.datos.preguntas.length-1,estado.indice+1);renderPregunta();break;
-      case 'saltar':estado.indice=Number(b.dataset.indice);renderPregunta();break;
+      case 'anterior':estado.indice=Math.max(0,estado.indice-1);renderPregunta();window.scrollTo({top:0,behavior:'instant'});break;
+      case 'siguiente':estado.indice=Math.min(estado.datos.preguntas.length-1,estado.indice+1);renderPregunta();window.scrollTo({top:0,behavior:'instant'});break;
+      case 'saltar':estado.indice=Number(b.dataset.indice);renderPregunta();window.scrollTo({top:0,behavior:'instant'});break;
       case 'finalizar':finalizar();break;
       case 'repetir':mostrarPreparacion(estado.datos,estado.datos.nombre);break;
       case 'salir':navegar('materia');break;
@@ -178,13 +215,19 @@
     try{mostrarPreparacion(validar(JSON.parse(await archivo.text())),archivo.name);}catch(error){aviso(`No se pudo cargar el archivo: ${error.message}`);}
   });
   document.getElementById('link-inicio').addEventListener('click',e=>{e.preventDefault();navegar('inicio',{ano:null,materia:null,examen:null});});
-  window.addEventListener('beforeunload',e=>{if(activa()){e.preventDefault();e.returnValue='';}});
-  // El botón Atrás del navegador debe respetar la advertencia de abandono.
-  history.replaceState({momo:true},'','#inicio');
-  history.pushState({momo:true},'','#momo');
+  // El navegador solo permite mostrar su advertencia estándar al recargar,
+  // cerrar la pestaña o abandonar el sitio; no permite personalizar ese texto.
+  window.addEventListener('beforeunload',e=>{
+    if(activa()){e.preventDefault();e.returnValue='';}
+  });
   window.addEventListener('popstate',()=>{
-    if(activa()&&!confirmarSalida()){history.pushState({momo:true},'','#momo');return;}
-    detenerReloj();estado={vista:'inicio',ano:null,materia:null,examen:null,datos:null,respuestas:[],indice:0,fin:null,terminado:false,inicio:null};render();history.pushState({momo:true},'','#momo');
+    if(!activa())return;
+    // Volver desde la entrada temporal #examen: preguntar antes de perder respuestas.
+    if(!confirmarSalida()){
+      protegerAtras();
+      return;
+    }
+    navegar('materia',{examen:null},true);
   });
   render();
 })();
