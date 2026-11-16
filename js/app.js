@@ -6,6 +6,21 @@
   const app = document.getElementById('app');
   const inputArchivo = document.getElementById('selector-json');
   const toast = document.getElementById('toast');
+  // Los botones de cada materia se obtienen de los JSON que existen en GitHub.
+  // GitHub Pages no puede listar carpetas directamente: usamos una sola consulta
+  // pública a la API de GitHub y conservamos catalogo.js como respaldo.
+  const githubConfiguracion = (() => {
+    const host = window.location.hostname;
+    const esPages = host.toLowerCase().endsWith('.github.io');
+    const propietario = esPages ? host.slice(0, -'.github.io'.length) : 'Misael-kross';
+    const repositorio = esPages
+      ? decodeURIComponent(window.location.pathname.split('/').filter(Boolean)[0] || 'Simulador_Momo')
+      : 'Simulador_Momo';
+    return { propietario, repositorio, rama: 'main' };
+  })();
+  let estadoCatalogo = 'cargando'; // cargando | listo | error
+  let actualizandoCatalogo = false;
+  let mensajeCatalogo = '';
   let reloj = null;
   let estado = { vista: 'inicio', ano: null, materia: null, examen: null, datos: null,
     respuestas: [], indice: 0, fin: null, terminado: false, inicio: null };
@@ -56,7 +71,88 @@
   function materia(){
     const a=anioActual(),m=materiaActual(); if(!a||!m){navegar('inicio');return;}
     const exs=m.examenes.map(e=>`<button type="button" class="examen" data-accion="cargar" data-examen="${escapar(e.id)}"><span><strong>${escapar(e.nombre)}</strong><small>${escapar(e.descripcion || 'Examen de práctica')}</small></span><span class="flecha" aria-hidden="true">→</span></button>`).join('');
-    app.innerHTML = `${ruta([{titulo:a.titulo,accion:'anio'},{titulo:m.nombre}])}${encabezado(m.nombre,'Selecciona un examen o abre un archivo JSON desde tu dispositivo.')}<div class="lista-examenes">${exs || '<div class="vacio"><strong>Aquí habrá exámenes muy pronto</strong>Esta materia ya tiene su espacio preparado. Solo falta agregar el primer archivo JSON.</div>'}</div><p class="nota-carga">¿Tienes un examen en formato JSON?</p><div class="botones" style="margin-top:10px">${accion('archivo','Abrir un JSON de mi dispositivo','','boton secundario')}</div>`;
+    const textoCatalogo = estadoCatalogo==='cargando'
+      ? 'Buscando exámenes publicados en GitHub…'
+      : estadoCatalogo==='error'
+        ? mensajeCatalogo
+        : `${m.examenes.length} ${m.examenes.length===1?'examen detectado':'exámenes detectados'} en esta materia.`;
+    app.innerHTML = `${ruta([{titulo:a.titulo,accion:'anio'},{titulo:m.nombre}])}${encabezado(m.nombre,'Selecciona un examen o abre un archivo JSON desde tu dispositivo.')}<p class="nota-carga" role="status">${escapar(textoCatalogo)}</p><div class="lista-examenes">${exs || '<div class="vacio"><strong>Aquí habrá exámenes muy pronto</strong>Esta materia ya tiene su espacio preparado. Solo falta agregar el primer archivo JSON.</div>'}</div><div class="botones" style="margin-top:18px">${accion('actualizar-catalogo','↻ Actualizar lista de exámenes','','boton secundario')}</div><p class="nota-carga">¿Tienes un examen en formato JSON?</p><div class="botones" style="margin-top:10px">${accion('archivo','Abrir un JSON de mi dispositivo','','boton secundario')}</div>`;
+  }
+  // A partir del árbol público de GitHub descubre TODOS los JSON bajo
+  // examenes/<año>/<materia>/... y añade también materias nuevas.
+  function nombreLegible(texto){
+    return String(texto).replace(/\.json$/i,'').replace(/[_-]+/g,' ').replace(/\s+/g,' ').trim()
+      .replace(/\b\p{L}/gu, letra => letra.toLocaleUpperCase('es'));
+  }
+  function entradaExamen(ruta,materia,anterior){
+    if(anterior) return {...anterior,archivo:ruta};
+    const archivo = ruta.split('/').pop().replace(/\.json$/i,'');
+    const numerado = archivo.match(/^(?:examen|simulador)[_-]?(\d+)(?:[_-]|$)/i);
+    const nombre = numerado
+      ? `Examen ${Number(numerado[1])} · ${materia.nombre}`
+      : /^(?:examen[_-]?)?demo/i.test(archivo)
+        ? 'Examen de demostración'
+        : nombreLegible(archivo);
+    const id = 'auto_' + ruta.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/gi,'_').toLowerCase();
+    return { id, nombre, descripcion:'Examen disponible · Ver preguntas y duración al abrirlo', archivo:ruta };
+  }
+  function incorporarArchivosDeGitHub(arbol){
+    if(!arbol || !Array.isArray(arbol.tree) || arbol.truncated) {
+      throw Error('GitHub no devolvió la lista completa de archivos.');
+    }
+    const anteriores = new Map();
+    for (const ano of catalogo){
+      for (const materia of ano.materias){
+        for(const examen of materia.examenes){
+          anteriores.set(examen.archivo.toLowerCase(), examen);
+        }
+      }
+    }
+    const rutas = new Map();
+    for (const item of arbol.tree) {
+      if(item.type !== 'blob' || typeof item.path !== 'string') continue;
+      const partes = item.path.match(/^examenes\/(primer_ano|segundo_ano|tercer_ano)\/([^/]+)\/(.+\.json)$/i);
+      if(!partes) continue;
+      const ano = catalogo.find(a => a.id === partes[1]);
+      if(!ano) continue;
+      let materia = ano.materias.find(m => m.id === partes[2]);
+      if(!materia){
+        materia = {id:partes[2], nombre:nombreLegible(partes[2]), examenes:[]};
+        ano.materias.push(materia);
+      }
+      const clave = `${ano.id}/${materia.id}`;
+      if(!rutas.has(clave)) rutas.set(clave, new Set());
+      rutas.get(clave).add(item.path);
+    }
+    // En una sincronización exitosa NO conservamos botones de JSON borrados.
+    for(const ano of catalogo){
+      for(const materia of ano.materias){
+        const archivos = [...(rutas.get(`${ano.id}/${materia.id}`) || [])];
+        archivos.sort((a,b)=>a.localeCompare(b,'es',{numeric:true,sensitivity:'base'}));
+        materia.examenes = archivos.map(ruta => entradaExamen(ruta,materia,anteriores.get(ruta.toLowerCase())));
+      }
+    }
+  }
+  async function sincronizarCatalogo(){
+    if(actualizandoCatalogo) return;
+    actualizandoCatalogo=true; estadoCatalogo='cargando'; mensajeCatalogo='';
+    if(['inicio','anio','materia'].includes(estado.vista)) render();
+    const {propietario,repositorio,rama}=githubConfiguracion;
+    const url=`https://api.github.com/repos/${encodeURIComponent(propietario)}/${encodeURIComponent(repositorio)}/git/trees/${encodeURIComponent(rama)}?recursive=1`;
+    try {
+      const respuesta=await fetch(url,{cache:'no-store',headers:{'Accept':'application/vnd.github+json'}});
+      if(!respuesta.ok)throw Error(`GitHub API respondió ${respuesta.status}`);
+      incorporarArchivosDeGitHub(await respuesta.json());
+      estadoCatalogo='listo';
+    }catch(error){
+      estadoCatalogo='error';
+      mensajeCatalogo='No fue posible consultar los archivos de GitHub. Se muestra el catálogo de respaldo.';
+      console.warn('Momo: consulta automática no disponible:',error);
+    }finally{
+      actualizandoCatalogo=false;
+      // No interrumpir a quien ya esté resolviendo o revisando un examen.
+      if(['inicio','anio','materia'].includes(estado.vista)) render();
+    }
   }
   function segundos(ms){return Math.max(0,Math.ceil(ms/1000));}
   function duracion(){const n=Number(estado.datos?.configuracion?.duracion_minutos);return Number.isFinite(n)&&n>0?n:0;}
@@ -200,6 +296,7 @@
         if(e){estado.examen=id;cargar(e.archivo,e.nombre)}break;
       }
       case 'archivo':inputArchivo.value='';inputArchivo.click();break;
+      case 'actualizar-catalogo':sincronizarCatalogo();break;
       case 'empezar':empezar();break;
       case 'responder':estado.respuestas[estado.indice]=Number(b.dataset.indice);renderPregunta();break;
       case 'anterior':estado.indice=Math.max(0,estado.indice-1);renderPregunta();window.scrollTo({top:0,behavior:'instant'});break;
@@ -230,4 +327,5 @@
     navegar('materia',{examen:null},true);
   });
   render();
+  sincronizarCatalogo();
 })();
