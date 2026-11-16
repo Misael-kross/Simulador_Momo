@@ -1,0 +1,2353 @@
+{
+  "nombre": "Epidemiología clínica y medicina basada en evidencias · Examen 3",
+  "nivel": "Medicina · Tercer año",
+  "institucion": "Simuladores para Momo",
+  "version": "1.0",
+  "descripcion": "Examen 3 de Epidemiología: 50 preguntas nuevas de dificultad moderada, variadas, con casos clínicos, cálculos, interpretación crítica y explicaciones. Sin repetir enunciados de los exámenes 1 y 2.",
+  "fuente_base": "Epidemiología unido .pdf (151 páginas) y ocho presentaciones complementarias (366 páginas).",
+  "configuracion": {
+    "duracion_minutos": 90,
+    "contador_permitido": true,
+    "contador_activo_por_defecto": true,
+    "cerrar_automaticamente": true,
+    "permitir_revision": true,
+    "mostrar_resultados_por_materia": true
+  },
+  "preguntas": [
+    {
+      "id": 1,
+      "materia": "Epidemiología",
+      "tema": "Cohorte ambispectiva",
+      "bloque": "Causalidad y diseños",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            22,
+            23
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un hospital estudia a pacientes sometidos a cirugía en 2023. En 2026 revisa expedientes para documentar complicaciones previas y continúa observando a los mismos pacientes hasta 2028 para registrar nuevas complicaciones. ¿Qué modalidad de cohorte describe mejor el diseño?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Estudio transversal que mide una sola vez las complicaciones.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Cohorte ambispectiva, con información retrospectiva y seguimiento prospectivo.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Ensayo clínico que asigna de forma aleatoria la cirugía.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Estudio ecológico que usa exclusivamente tasas regionales.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "En una cohorte ambispectiva se reconstruye parte del seguimiento que ya ocurrió y se continúa observando hacia el futuro. La exposición se define dentro de una cohorte; no hay asignación experimental."
+    },
+    {
+      "id": 2,
+      "materia": "Epidemiología",
+      "tema": "Casos y controles anidados",
+      "bloque": "Causalidad y diseños",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            29
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una cohorte de 8,000 trabajadores conserva muestras sanguíneas anuales. Al aparecer 60 casos de una enfermedad, se seleccionan controles de la misma cohorte para analizar un biomarcador costoso en las muestras almacenadas. ¿Qué diseño optimiza recursos sin perder la población fuente?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Estudio ecológico de promedios municipales.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Serie de casos sin grupo de comparación.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Ensayo clínico aleatorizado por conglomerados.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Estudio de casos y controles anidado en una cohorte.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "Los casos provienen de una cohorte previamente definida y los controles se eligen entre personas elegibles de esa población fuente. Es útil cuando la exposición se mide de forma costosa en muestras almacenadas."
+    },
+    {
+      "id": 3,
+      "materia": "Epidemiología",
+      "tema": "Sobreemparejamiento",
+      "bloque": "Causalidad y diseños",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            28,
+            29
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un estudio de casos y controles sobre consumo de bebidas azucaradas y obesidad, los investigadores eligen únicamente controles que comparten vivienda y todos los hábitos alimentarios con cada caso. ¿Qué problema metodológico puede aparecer?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Desaparición de cualquier sesgo de memoria.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Aumento inevitable de la incidencia de obesidad medida.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Sobreemparejamiento, que elimina parte de la variabilidad relevante de la exposición.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Aleatorización completa de la exposición dietética.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Emparejar variables relacionadas con la exposición, en lugar de únicamente confusores pertinentes, puede reducir el contraste de exposición entre casos y controles y dificultar detectar una asociación real."
+    },
+    {
+      "id": 4,
+      "materia": "Epidemiología",
+      "tema": "Sesgo de medición diferencial",
+      "bloque": "Causalidad y diseños",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            30,
+            32,
+            33
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Para investigar exposición a humo doméstico y asma, a los pacientes con asma se les aplica una entrevista detallada de 45 minutos; a los controles sin asma se les hace una sola pregunta general. ¿Qué amenaza a la validez es más directa?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Confusión eliminada por una entrevista más larga.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Heterogeneidad estadística propia de un metanálisis.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Error aleatorio reducido a cero en el grupo de casos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Sesgo de información por medir la exposición con métodos distintos en casos y controles.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "La exposición debe medirse con criterios comparables entre grupos. Diferencias en el instrumento y la profundidad de la entrevista pueden provocar clasificación diferencial, aun cuando todos respondan con buena disposición."
+    },
+    {
+      "id": 5,
+      "materia": "Epidemiología",
+      "tema": "Fracción atribuible poblacional",
+      "bloque": "Causalidad y diseños",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            39,
+            40
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una población se estima una incidencia total de enfermedad de 10 % y una incidencia de 4 % entre quienes no están expuestos a determinado factor. Suponiendo asociación causal y eliminación completa de la exposición, ¿cuál es la fracción atribuible poblacional estimada?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "150 % de la incidencia poblacional.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "6 % de la incidencia poblacional.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "60 % de la incidencia poblacional.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "40 % de la incidencia poblacional.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "FAP = (incidencia poblacional − incidencia en no expuestos)/incidencia poblacional = (0.10 − 0.04)/0.10 = 0.60. Representa la fracción potencialmente evitable bajo supuestos causales, sin confusión y con eliminación efectiva de la exposición."
+    },
+    {
+      "id": 6,
+      "materia": "Epidemiología",
+      "tema": "Especificidad de Bradford Hill",
+      "bloque": "Causalidad y diseños",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            34,
+            35
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una investigadora descarta como posible causa al tabaquismo porque se relaciona tanto con cáncer pulmonar como con enfermedad coronaria. ¿Cuál es el mejor argumento epidemiológico frente a esa conclusión?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Toda asociación con más de un desenlace es confusión estadística.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La falta de especificidad no descarta causalidad; una exposición puede contribuir a varias enfermedades.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Cada enfermedad necesita obligatoriamente una única causa exclusiva.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "La especificidad tiene que cumplirse antes de investigar la temporalidad.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La especificidad es uno de los criterios históricos de Bradford Hill, pero no es necesaria ni suficiente para probar causalidad. Los modelos multicausales admiten varias causas para un efecto y varios efectos para una exposición."
+    },
+    {
+      "id": 7,
+      "materia": "Epidemiología",
+      "tema": "Ocultamiento de la asignación",
+      "bloque": "Revisiones y ensayos clínicos",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "2 Revisiones metanalisis y ensayos clínicos.pdf",
+          "paginas_pdf": [
+            3,
+            4,
+            6
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un ensayo, el médico reclutador puede conocer qué tratamiento recibirá el siguiente participante y retrasa la inclusión de pacientes graves cuando toca el tratamiento nuevo. Aunque después ambos grupos serán evaluados a ciegas, ¿qué medida habría prevenido este problema?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Cambiar la prueba de normalidad después del reclutamiento.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Mantener al paciente informado de su grupo desde el inicio.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Publicar únicamente los resultados con significación estadística.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Ocultar la secuencia de asignación al personal que recluta participantes.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "El ocultamiento de la asignación evita que quien incorpora participantes anticipe el próximo tratamiento y manipule la selección. Es distinto del cegamiento posterior de pacientes o evaluadores de desenlaces."
+    },
+    {
+      "id": 8,
+      "materia": "Epidemiología",
+      "tema": "Aleatorización por bloques",
+      "bloque": "Revisiones y ensayos clínicos",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "2 Revisiones metanalisis y ensayos clínicos.pdf",
+          "paginas_pdf": [
+            4,
+            5
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un ensayo pequeño planea asignación 1:1 a tratamiento A o B. El equipo desea que después de cada ocho inclusiones haya cuatro personas en cada brazo, sin decidir clínicamente quién entra a cada grupo. ¿Qué método es más adecuado?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Asignación según la preferencia del especialista.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Aleatorización en bloques balanceados de ocho asignaciones.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Alternar siempre A y B con una secuencia pública conocida.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Asignación por orden alfabético del apellido.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La aleatorización por bloques utiliza secuencias aleatorias predefinidas con una proporción establecida, lo que favorece el balance numérico en momentos intermedios del reclutamiento."
+    },
+    {
+      "id": 9,
+      "materia": "Epidemiología",
+      "tema": "Restricción por idioma en una revisión",
+      "bloque": "Revisiones y ensayos clínicos",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "2 Revisiones metanalisis y ensayos clínicos.pdf",
+          "paginas_pdf": [
+            21,
+            22,
+            23
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una revisión de intervenciones comunitarias busca en varias bases de datos, pero excluye sin justificación todos los estudios publicados en idiomas distintos del inglés. ¿Qué limitación introduce principalmente?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Posible sesgo de idioma y pérdida de evidencia relevante.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Aumento automático de la validez de todos los ensayos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Eliminación de la necesidad de evaluar la heterogeneidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Garantía de que ningún estudio incluido tendrá sesgos.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "La búsqueda sistemática intenta localizar evidencia relevante independientemente del resultado. Restringir por idioma sin una razón metodológica puede excluir estudios pertinentes y modificar la estimación final del efecto."
+    },
+    {
+      "id": 10,
+      "materia": "Epidemiología",
+      "tema": "Interpretación de forest plot",
+      "bloque": "Revisiones y ensayos clínicos",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            7,
+            8
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un forest plot de eventos adversos, el efecto combinado es RR = 0.82, con IC95 % de 0.70 a 0.96. El valor sin efecto es 1. ¿Qué permite concluir el intervalo, sin atribuir causalidad automáticamente?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "El riesgo absoluto se redujo exactamente 18 puntos porcentuales.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "El 82 % de los pacientes necesariamente tendrá el evento adverso.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "El resultado no es estadísticamente compatible con ningún efecto porque incluye 1.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "La estimación combinada favorece menor riesgo relativo y el intervalo no incluye el valor nulo.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "Para medidas relativas como RR, el valor nulo es 1. Un IC95 % de 0.70 a 0.96 queda por debajo de 1; sugiere reducción relativa del evento. No informa directamente la reducción absoluta ni elimina posibles sesgos de los estudios."
+    },
+    {
+      "id": 11,
+      "materia": "Epidemiología",
+      "tema": "Modelo de efectos aleatorios",
+      "bloque": "Revisiones y ensayos clínicos",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            7,
+            8
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una síntesis de ensayos clínicos muestra variaciones verdaderas plausibles del efecto entre hospitales por diferencias de población y aplicación de la intervención. ¿Qué supuesto distingue al modelo de efectos aleatorios del de efecto fijo?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Admite que el efecto verdadero pueda variar entre estudios, además del error de muestreo.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Sustituye la evaluación crítica de los estudios primarios.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Elimina por construcción cualquier sesgo de publicación.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Supone exactamente un mismo efecto verdadero en todos los estudios.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "El modelo de efectos aleatorios incorpora la variabilidad entre efectos verdaderos de los estudios; el de efecto fijo presupone un único efecto común. Ningún modelo vuelve comparable evidencia clínicamente incompatible ni corrige sesgos de origen."
+    },
+    {
+      "id": 12,
+      "materia": "Epidemiología",
+      "tema": "Equivalencia terapéutica",
+      "bloque": "Revisiones y ensayos clínicos",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "2 Revisiones metanalisis y ensayos clínicos.pdf",
+          "paginas_pdf": [
+            9
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Se propone demostrar que dos formulaciones tienen eficacia equivalente. El protocolo define antes del estudio un margen clínico aceptable de −4 a +4 puntos porcentuales para la diferencia de respuesta. ¿Qué condición es coherente con una conclusión de equivalencia?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Que solamente el promedio puntual esté dentro de los márgenes.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Que el extremo inferior supere −4, aunque el superior rebase +4.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Que el intervalo de confianza apropiado de la diferencia quede completamente dentro de ambos márgenes.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Que el valor p para superioridad sea mayor que 0.05, sin otra prueba.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "La equivalencia requiere descartar diferencias clínicamente importantes en ambos sentidos, por lo que el intervalo debe quedar contenido dentro del rango preespecificado. No demostrar superioridad no equivale a demostrar equivalencia."
+    },
+    {
+      "id": 13,
+      "materia": "Epidemiología",
+      "tema": "Valor predictivo negativo",
+      "bloque": "Diagnóstico y tamizaje",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            60,
+            64,
+            65
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Se evalúa una prueba de infección frente a un estándar de referencia. De 250 personas con resultado negativo, 235 realmente no tienen la infección y 15 sí la tienen. ¿Cuál es el valor predictivo negativo?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "100 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "88 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "6 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "94 %.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "El valor predictivo negativo es la proporción de verdaderos negativos entre todas las pruebas negativas: VPN = 235/(235 + 15) = 235/250 = 0.94, es decir, 94 %. No se confunde con especificidad, que usa como denominador a todos los no enfermos."
+    },
+    {
+      "id": 14,
+      "materia": "Epidemiología",
+      "tema": "Punto de corte y sensibilidad",
+      "bloque": "Diagnóstico y tamizaje",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            67
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una prueba cuantitativa clasifica como positivo cualquier resultado por encima de un punto de corte. Se eleva dicho punto de corte para exigir valores más altos antes de considerar a alguien enfermo. Si los demás factores no cambian, ¿qué patrón es esperable?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Menor sensibilidad y mayor especificidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Sensibilidad y especificidad invariantes por definición.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Aumento simultáneo garantizado de sensibilidad y especificidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Mayor sensibilidad y menor especificidad.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Elevar el umbral hace más difícil obtener un resultado positivo: disminuyen algunos falsos positivos, pero aumentan algunos falsos negativos. En general mejora la especificidad y puede disminuir la sensibilidad."
+    },
+    {
+      "id": 15,
+      "materia": "Epidemiología",
+      "tema": "Probabilidad tras resultado negativo",
+      "bloque": "Diagnóstico y tamizaje",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            60,
+            61,
+            63,
+            64
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Antes de una prueba, un paciente tiene probabilidad de enfermedad del 50 %. El resultado es negativo y el cociente de probabilidad negativo (LR−) de la prueba es 0.20. ¿Cuál es su probabilidad posprueba aproximada?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "10 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "80 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "20 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "16.7 %.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "La probabilidad preprueba de 50 % equivale a momios de 1. Momios posprueba = 1 × 0.20 = 0.20; probabilidad = 0.20/(1 + 0.20) = 0.1667. Un resultado negativo reduce la probabilidad, pero no la convierte en cero."
+    },
+    {
+      "id": 16,
+      "materia": "Epidemiología",
+      "tema": "Estándar de referencia imperfecto",
+      "bloque": "Diagnóstico y tamizaje",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            64,
+            65,
+            66
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un hospital valida una técnica nueva comparándola con una prueba antigua que clasifica incorrectamente a una parte relevante de los pacientes, aunque la técnica nueva se aplique de manera uniforme. ¿Qué limitación principal tiene la evaluación?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Ausencia total de variabilidad biológica por usar dos pruebas.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Transformación automática del estudio en un ensayo de tratamiento.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Sesgo por estándar de referencia imperfecto, que distorsiona las estimaciones de exactitud.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Garantía de que la nueva técnica es menos sensible que la antigua.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "La exactitud aparente depende de cómo se define el estado verdadero de enfermedad. Si la referencia clasifica mal, sensibilidad y especificidad calculadas contra ella pueden resultar engañosas."
+    },
+    {
+      "id": 17,
+      "materia": "Epidemiología",
+      "tema": "Interpretación de un falso negativo",
+      "bloque": "Diagnóstico y tamizaje",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            60,
+            64,
+            65
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un paciente con enfermedad confirmada mediante el estándar de referencia obtiene resultado negativo en el test de detección que se está evaluando. ¿Cómo se clasifica este resultado al construir la tabla 2×2?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Falso positivo.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Verdadero positivo.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Verdadero negativo.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Falso negativo.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "El paciente sí tiene la enfermedad, pero la prueba la informa como ausente. El falso negativo es parte del denominador de la sensibilidad, junto con los verdaderos positivos."
+    },
+    {
+      "id": 18,
+      "materia": "Epidemiología",
+      "tema": "Tamizaje en enfermedad infrecuente",
+      "bloque": "Diagnóstico y tamizaje",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            60,
+            63,
+            64,
+            65,
+            75,
+            76
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En 10,000 personas asintomáticas, la prevalencia real es 1 %. Una prueba tiene sensibilidad de 90 % y especificidad de 95 %. ¿Aproximadamente cuántos resultados positivos serán falsos?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "495 positivos falsos.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "90 positivos falsos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "500 positivos falsos entre los enfermos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "9,405 positivos falsos.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Hay 100 enfermos y 9,900 no enfermos. Entre los no enfermos, el 5 % tendrá un resultado positivo falso: 0.05 × 9,900 = 495. Los verdaderos positivos serían 90; por ello, incluso una prueba razonable puede tener numerosos falsos positivos en baja prevalencia."
+    },
+    {
+      "id": 19,
+      "materia": "Epidemiología",
+      "tema": "Elección de pruebas secuenciales",
+      "bloque": "Diagnóstico y tamizaje",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "1 Causalidad y diagnóstico.pdf",
+          "paginas_pdf": [
+            31,
+            32,
+            33
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un programa de detección se dispone de una prueba inicial sencilla y económica, pero con falsos positivos frecuentes, y una segunda prueba confirmatoria cara y muy específica. Se desea ahorrar recursos y confirmar únicamente a quienes resulten positivos inicialmente. ¿Qué estrategia conviene?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Aplicar ambas pruebas simultáneamente a todos y exigir sólo una positiva.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Considerar definitivo cualquier resultado positivo de la primera prueba.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Aplicar la prueba confirmatoria costosa a toda la población antes del tamiz.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Aplicar pruebas en serie: tamiz inicial y confirmación de los positivos.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "Las pruebas en serie permiten utilizar primero una opción accesible y reservar la confirmación para resultados positivos. Esta estrategia suele aumentar la especificidad del criterio combinado, aunque puede sacrificar sensibilidad."
+    },
+    {
+      "id": 20,
+      "materia": "Epidemiología",
+      "tema": "Incidencia acumulada en una cohorte",
+      "bloque": "Pronóstico y tratamiento",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "3 Pronóstico y tratamiento.pdf",
+          "paginas_pdf": [
+            8,
+            9
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Al iniciar un seguimiento de un año, 250 personas con enfermedad renal no han sufrido un primer evento cardiovascular. Durante ese año, 20 lo presentan y el seguimiento es completo. ¿Cuál es la incidencia acumulada del evento en el periodo?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "0.8 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "20 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "12.5 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "8 %.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "Incidencia acumulada = casos nuevos / población susceptible al inicio = 20/250 = 0.08 = 8 % en un año. Con seguimiento completo y población definida, puede interpretarse como riesgo acumulado del evento en ese periodo."
+    },
+    {
+      "id": 21,
+      "materia": "Epidemiología",
+      "tema": "Mediana de supervivencia",
+      "bloque": "Pronóstico y tratamiento",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "3 Pronóstico y tratamiento.pdf",
+          "paginas_pdf": [
+            19,
+            23,
+            27,
+            28
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una curva de Kaplan–Meier para pacientes con una neoplasia desciende por primera vez hasta una supervivencia de 0.50 a los 18 meses. ¿Cuál es la mediana de supervivencia estimada?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "18 meses.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "No puede estimarse porque la curva llegó a 0.50.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "36 meses.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "9 meses.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "La mediana de supervivencia es el primer tiempo en que la función estimada S(t) alcanza 0.50 o menos. No equivale al promedio de tiempos, ni significa que todas las personas morirán a los 18 meses."
+    },
+    {
+      "id": 22,
+      "materia": "Epidemiología",
+      "tema": "Cohorte de inicio comparable",
+      "bloque": "Pronóstico y tratamiento",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "3 Pronóstico y tratamiento.pdf",
+          "paginas_pdf": [
+            2,
+            3,
+            4,
+            29
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Dos hospitales comparan supervivencia tras diagnosticar la misma enfermedad. El primero incluye casos recién diagnosticados, mientras el segundo incorpora muchos pacientes que ya llevan años sobreviviendo con ella. ¿Qué medida mejoraría la comparabilidad?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Eliminar la fecha de diagnóstico de los registros.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Definir un momento inicial común, por ejemplo el diagnóstico reciente y un estadio comparable.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Usar en ambos hospitales sólo a pacientes que hayan sobrevivido cinco años.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Tratar las diferencias de evolución previa como si fueran aleatorias.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La estimación pronóstica depende del punto de inicio de observación. Incluir pacientes en fases muy distintas puede introducir selección por supervivencia y dificultar comparar tiempos hasta el desenlace."
+    },
+    {
+      "id": 23,
+      "materia": "Epidemiología",
+      "tema": "Densidad de mortalidad",
+      "bloque": "Pronóstico y tratamiento",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "3 Pronóstico y tratamiento.pdf",
+          "paginas_pdf": [
+            5,
+            10,
+            12
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Durante un seguimiento se registran 6 muertes atribuibles al desenlace en 300 años-persona de observación pertinente. ¿Cuál es la densidad de mortalidad expresada por 100 años-persona?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "20 muertes por 100 años-persona.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "2 muertes por 100 años-persona.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "0.02 muertes por 100 personas iniciales.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "50 muertes por 100 años-persona.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La densidad de mortalidad se calcula como muertes divididas entre tiempo-persona: 6/300 = 0.02 por año-persona; por 100 años-persona equivale a 2 muertes. Es una tasa, no una proporción de individuos."
+    },
+    {
+      "id": 24,
+      "materia": "Epidemiología",
+      "tema": "Tiempos de falla y curva de supervivencia",
+      "bloque": "Pronóstico y tratamiento",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "3 Pronóstico y tratamiento.pdf",
+          "paginas_pdf": [
+            19,
+            21,
+            23,
+            27
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una curva escalonada de Kaplan–Meier, se censura a un participante en el mes 12, sin eventos en ese momento, y después aparece una caída en el mes 15. ¿Cuál afirmación es correcta?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "El valor de supervivencia aumenta cada vez que alguien se censura.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La censura del mes 12 equivale a una muerte y necesariamente provoca la caída.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La caída corresponde a un evento en el mes 15; la censura a los 12 meses modifica el conjunto en riesgo.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Kaplan–Meier sólo es válido cuando no existe censura.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "La función estimada cambia en los tiempos de ocurrencia del evento de interés. Una censura sin evento no produce por sí sola un descenso, pero reduce el número de personas en riesgo para eventos posteriores."
+    },
+    {
+      "id": 25,
+      "materia": "Epidemiología",
+      "tema": "Costo de oportunidad",
+      "bloque": "Análisis de decisiones y economía",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            144
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un hospital sólo dispone de recursos para financiar un programa de tamizaje o comprar ventiladores adicionales. Tras elegir el tamizaje, deja de recibir los beneficios que habría generado la compra de ventiladores. ¿Cómo se denomina ese beneficio sacrificado?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Variación aleatoria del resultado del programa.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Costo directo sanitario del tamizaje ya financiado.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Valor predictivo negativo de la nueva prueba.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Costo de oportunidad de la alternativa no elegida.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "El costo de oportunidad corresponde al beneficio al que se renuncia por elegir una alternativa en lugar de otra. No tiene que ser un desembolso monetario directo; expresa el valor de la mejor opción sacrificada."
+    },
+    {
+      "id": 26,
+      "materia": "Epidemiología",
+      "tema": "Dominancia económica",
+      "bloque": "Análisis de decisiones y economía",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En la misma población y horizonte, el tratamiento A cuesta $40,000 y evita 12 hospitalizaciones por cada 100 pacientes; B cuesta $35,000 y evita 16. Si las medidas son comparables, ¿cuál interpretación es correcta?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "B domina a A porque cuesta menos y evita más hospitalizaciones.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "El costo por sí solo obliga a considerar ambos tratamientos equivalentes.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Hay que preferir A porque evita cuatro hospitalizaciones menos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "A domina a B porque es más caro.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Una alternativa domina estrictamente a otra si es menos costosa y más efectiva en la misma comparación. Aquí B ahorra $5,000 y evita cuatro hospitalizaciones adicionales bajo los datos planteados."
+    },
+    {
+      "id": 27,
+      "materia": "Epidemiología",
+      "tema": "Costos y beneficios monetizados",
+      "bloque": "Análisis de decisiones y economía",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una intervención sanitaria se expresan en pesos tanto los costos del programa como el valor monetario asignado a sus consecuencias, con el objetivo de compararlos. ¿Qué tipo de evaluación económica se está utilizando?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Análisis de riesgo relativo de una cohorte.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Análisis costo-beneficio.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Análisis de sensibilidad diagnóstica.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Análisis costo-utilidad basado exclusivamente en AVAC.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "El análisis costo-beneficio convierte costos y consecuencias en unidades monetarias. En costo-efectividad los resultados se expresan en unidades naturales, y en costo-utilidad en métricas como AVAC."
+    },
+    {
+      "id": 28,
+      "materia": "Epidemiología",
+      "tema": "Incertidumbre estructural en un modelo",
+      "bloque": "Análisis de decisiones y economía",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "4 Analisis de decisiones.pdf",
+          "paginas_pdf": [
+            28,
+            35
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Dos modelos de decisión usan las mismas probabilidades de complicaciones, pero uno permite recaídas repetidas durante cinco años y el otro las ignora por completo. ¿Qué fuente de incertidumbre explica principalmente esta diferencia?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Incertidumbre estructural por los estados y trayectorias que admite el modelo.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Incertidumbre debida sólo al redondeo de una cifra decimal.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Error de transcripción exclusivo de una tabla de sensibilidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Variación del nivel de significación estadística α entre estudios.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "La incertidumbre estructural se refiere a qué supuestos, estados y relaciones forman parte del modelo. Dos estructuras distintas pueden producir resultados divergentes aun con parámetros numéricos idénticos."
+    },
+    {
+      "id": 29,
+      "materia": "Epidemiología",
+      "tema": "Preferencias y momento de los resultados",
+      "bloque": "Análisis de decisiones y economía",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "4 Analisis de decisiones.pdf",
+          "paginas_pdf": [
+            15,
+            19,
+            41
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una paciente compara dos alternativas con el mismo número estimado de años de vida, pero una retrasa una discapacidad importante hasta una edad mucho mayor. ¿Qué aspecto debe examinar un análisis de decisión centrado en la paciente?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "El momento de los desenlaces y la utilidad que la paciente asigna a cada estado de salud.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Sólo el número de ramas dibujadas en el árbol de decisión.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Únicamente la edad del médico que propone la intervención.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Que ambas alternativas tengan siempre idéntico valor por igualar años de vida.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Las consecuencias no dependen sólo de cuántos años se viven, sino también de su calidad, oportunidad temporal y preferencias. En análisis de decisiones, las utilidades y el ajuste por tiempo pueden cambiar la alternativa preferida."
+    },
+    {
+      "id": 30,
+      "materia": "Epidemiología",
+      "tema": "Variable cualitativa nominal",
+      "bloque": "Estadística descriptiva",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "5 Estadística descriptiva y parametros.pdf",
+          "paginas_pdf": [
+            4,
+            5,
+            15,
+            19,
+            20
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una base de donadores se registra el grupo sanguíneo ABO como A, B, AB u O, sin un orden cuantitativo entre las categorías. ¿Qué escala de variable representa?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Cualitativa nominal.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Cuantitativa continua.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Cualitativa ordinal.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Cuantitativa discreta expresada en mililitros.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Las categorías ABO son mutuamente excluyentes y no tienen un orden intrínseco. Se describen mediante frecuencias o proporciones, no mediante una media aritmética de sus etiquetas."
+    },
+    {
+      "id": 31,
+      "materia": "Epidemiología",
+      "tema": "Gráfico para categorías nominales",
+      "bloque": "Estadística descriptiva",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "5 Estadística descriptiva y parametros.pdf",
+          "paginas_pdf": [
+            11,
+            13,
+            15,
+            16
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un servicio desea comparar visualmente el número de consultas por especialidad (pediatría, cirugía, medicina interna y neurología). ¿Qué gráfico muestra con claridad estas frecuencias categóricas?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Gráfico de barras con una barra por especialidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Histograma de intervalos continuos sin etiquetas de especialidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Curva de Kaplan–Meier para tiempos hasta el evento.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Gráfico de dispersión con edades en ambos ejes.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Los gráficos de barras sirven para variables categóricas. Sus barras representan categorías separadas; un histograma describe una variable numérica agrupada en intervalos y responde a una pregunta distinta."
+    },
+    {
+      "id": 32,
+      "materia": "Epidemiología",
+      "tema": "Media ponderada por tamaños de muestra",
+      "bloque": "Estadística descriptiva",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "5 Estadística descriptiva y parametros.pdf",
+          "paginas_pdf": [
+            19,
+            21,
+            22
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un curso de medicina, 10 alumnos obtienen un promedio de 70 puntos y otros 30 un promedio de 90. ¿Cuál es el promedio general de los 40 estudiantes?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "75 puntos.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "85 puntos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "80 puntos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "90 puntos.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La media total pondera los promedios por número de personas: (10×70 + 30×90)/(10+30) = (700+2700)/40 = 85. Una media simple de 70 y 90 ignoraría la diferente cantidad de alumnos."
+    },
+    {
+      "id": 33,
+      "materia": "Epidemiología",
+      "tema": "Dispersión y desviación estándar",
+      "bloque": "Estadística descriptiva",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "5 Estadística descriptiva y parametros.pdf",
+          "paginas_pdf": [
+            21,
+            22
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Dos grupos de pacientes tienen glucosa media de 100 mg/dL. En A casi todos los valores se encuentran entre 95 y 105; en B se extienden entre 60 y 140. ¿Qué grupo tiene, en general, mayor desviación estándar?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "El grupo B, porque sus valores están más dispersos alrededor de la media.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Ambos, porque compartir media obliga a tener idéntica dispersión.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "No puede existir dispersión para variables cuantitativas.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El grupo A, porque sus datos están más concentrados.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "La desviación estándar cuantifica la dispersión alrededor de la media. Compartir el mismo promedio no obliga a compartir varianza ni desviación estándar; una mayor separación de los datos implica generalmente mayor desviación."
+    },
+    {
+      "id": 34,
+      "materia": "Epidemiología",
+      "tema": "Regla aproximada de la distribución normal",
+      "bloque": "Estadística descriptiva",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "5 Estadística descriptiva y parametros.pdf",
+          "paginas_pdf": [
+            40,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "La concentración de una sustancia se aproxima a una distribución normal con media 50 unidades y desviación estándar 10. ¿Qué proporción aproximada se espera entre 40 y 60 unidades?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Cerca de 2.5 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Cerca de 99.7 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Cerca de 68 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Cerca de 95 %.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "El intervalo 40 a 60 corresponde a media ± 1 desviación estándar. En una distribución normal, aproximadamente 68 % de los valores cae en ese rango; alrededor de 95 % queda entre ± 2 desviaciones."
+    },
+    {
+      "id": 35,
+      "materia": "Epidemiología",
+      "tema": "Interpretación del percentil 90",
+      "bloque": "Estadística descriptiva",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "5 Estadística descriptiva y parametros.pdf",
+          "paginas_pdf": [
+            19,
+            21,
+            22,
+            37,
+            38
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un estudio de recuperación, el percentil 90 del tiempo para volver a caminar sin ayuda es de 12 días. ¿Cuál es la interpretación correcta?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Aproximadamente 90 % de los tiempos observados son iguales o menores de 12 días.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "El promedio de recuperación es forzosamente de 12 días.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Exactamente 90 % de las personas tardó 12 días.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Un 90 % de las personas tardó más de 12 días.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Un percentil indica un punto de corte de la distribución ordenada. P90 divide aproximadamente al 90 % de observaciones situadas por debajo o en el valor y al 10 % restante por encima."
+    },
+    {
+      "id": 36,
+      "materia": "Epidemiología",
+      "tema": "Error tipo II clínico",
+      "bloque": "Inferencia estadística",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "6 Estadística paramétrica.pdf",
+          "paginas_pdf": [
+            22,
+            23,
+            27,
+            28
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un medicamento realmente reduce las crisis, pero un ensayo pequeño no logra rechazar la hipótesis nula de ausencia de efecto. ¿Cómo se clasificaría esta decisión si la hipótesis nula es falsa?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Error tipo I (α).",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Error tipo II (β).",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Prueba suficiente de equivalencia clínica.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Confirmación de que el fármaco carece de efecto.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "El error tipo II consiste en no rechazar una hipótesis nula que en realidad es falsa. Es más probable cuando el estudio tiene baja potencia para detectar el efecto de interés; p no significativo no demuestra ausencia de efecto."
+    },
+    {
+      "id": 37,
+      "materia": "Epidemiología",
+      "tema": "Tamaño de muestra y precisión",
+      "bloque": "Inferencia estadística",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "6 Estadística paramétrica.pdf",
+          "paginas_pdf": [
+            10,
+            11,
+            12,
+            13
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Dos estudios de prevalencia usan el mismo método de muestreo y obtienen estimaciones cercanas. Uno incluye 120 participantes y el otro 1,200. Si lo demás es comparable, ¿qué efecto se espera en el intervalo de confianza del estudio mayor?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Un intervalo igual, porque el tamaño muestral nunca influye.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Un intervalo necesariamente más ancho por tener más datos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La eliminación automática de sesgos de selección.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Un intervalo generalmente más estrecho, por menor error estándar.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "En condiciones semejantes, aumentar n reduce el error de muestreo y suele mejorar la precisión de una estimación, estrechando su intervalo de confianza. No corrige por sí mismo sesgos sistemáticos."
+    },
+    {
+      "id": 38,
+      "materia": "Epidemiología",
+      "tema": "Parámetro versus estadístico",
+      "bloque": "Inferencia estadística",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "6 Estadística paramétrica.pdf",
+          "paginas_pdf": [
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una facultad, la media verdadera de la presión arterial de todos los estudiantes es desconocida. Una muestra aleatoria de 200 estudiantes arroja una media de 116 mmHg. ¿Qué representa 116 mmHg?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Una probabilidad condicional de enfermedad.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La hipótesis nula convertida en porcentaje.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Un estadístico muestral que estima la media poblacional.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El parámetro poblacional conocido con absoluta certeza.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Un estadístico se calcula a partir de observaciones de una muestra, mientras un parámetro caracteriza a la población. La media muestral 116 es un estimador puntual de la media poblacional desconocida."
+    },
+    {
+      "id": 39,
+      "materia": "Epidemiología",
+      "tema": "Hipótesis bilateral",
+      "bloque": "Inferencia estadística",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "6 Estadística paramétrica.pdf",
+          "paginas_pdf": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una investigadora desea saber si el promedio poblacional de colesterol de sus pacientes es diferente de 190 mg/dL, sin anticipar si será mayor o menor. ¿Cuál es la hipótesis alternativa apropiada?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Hₐ: μ > 190 mg/dL exclusivamente.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Hₐ: μ = 190 mg/dL.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Hₐ: μ < 190 mg/dL exclusivamente.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Hₐ: μ ≠ 190 mg/dL.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "La expresión «diferente» sin dirección implica un contraste bilateral: H₀ establece la igualdad μ = 190 y Hₐ propone μ ≠ 190. Los contrastes unilaterales se reservan para hipótesis direccionales especificadas antes del análisis."
+    },
+    {
+      "id": 40,
+      "materia": "Epidemiología",
+      "tema": "Confianza del intervalo y amplitud",
+      "bloque": "Inferencia estadística",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "6 Estadística paramétrica.pdf",
+          "paginas_pdf": [
+            10,
+            11,
+            12,
+            13
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Con los mismos datos y el mismo método de estimación, un equipo compara un IC del 90 % con uno del 99 % para la misma media. ¿Cuál suele ser más amplio?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "No cambia ninguno, porque el nivel de confianza es irrelevante.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "El IC del 99 %, porque requiere mayor cobertura de confianza.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "El IC del 90 %, porque siempre contiene más valores.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Ambos deben tener anchura cero.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Para la misma muestra y estimador, exigir una mayor cobertura de confianza implica utilizar un valor crítico mayor, lo que habitualmente ensancha el intervalo. Es el intercambio entre cobertura y precisión."
+    },
+    {
+      "id": 41,
+      "materia": "Epidemiología",
+      "tema": "Muestreo por conveniencia",
+      "bloque": "Inferencia estadística",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "6 Estadística paramétrica.pdf",
+          "paginas_pdf": [
+            7,
+            8
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Se quiere estimar la frecuencia de sedentarismo en toda una universidad, pero sólo se encuesta a quienes acuden voluntariamente al gimnasio. ¿Cuál es el problema más evidente para generalizar?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La frecuencia observada equivale necesariamente a la prevalencia de toda la universidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "El mayor tamaño posible siempre elimina cualquier selección.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La muestra por conveniencia probablemente no representa al alumnado completo.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El método garantiza que cada estudiante tuvo igual probabilidad de inclusión.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "La inferencia poblacional exige atender cómo se selecciona la muestra. Reclutar únicamente personas presentes en un gimnasio puede favorecer perfiles de actividad diferentes a los del resto de estudiantes y limitar la representatividad."
+    },
+    {
+      "id": 42,
+      "materia": "Epidemiología",
+      "tema": "Chi cuadrada de bondad de ajuste",
+      "bloque": "Regresión y pruebas estadísticas",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "7 Regresion t y anova.pdf",
+          "paginas_pdf": [
+            20,
+            21,
+            22,
+            24,
+            25
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una maternidad se conoce la distribución histórica esperada de cuatro grupos sanguíneos. Se quiere contrastar si la distribución observada en 400 recién nacidos se aparta de esa distribución teórica. ¿Qué prueba corresponde?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Prueba t pareada entre dos medias.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Chi cuadrada de independencia entre dos variables categóricas.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Chi cuadrada de bondad de ajuste.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Regresión lineal con dos variables continuas.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "La bondad de ajuste compara frecuencias observadas con frecuencias esperadas para una sola variable categórica. La prueba de independencia, en cambio, evalúa la relación entre dos variables categóricas."
+    },
+    {
+      "id": 43,
+      "materia": "Epidemiología",
+      "tema": "Prueba t para grupos independientes",
+      "bloque": "Regresión y pruebas estadísticas",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "7 Regresion t y anova.pdf",
+          "paginas_pdf": [
+            10,
+            11,
+            12,
+            13
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un estudio compara el cambio medio de frecuencia cardiaca entre 22 pacientes que recibieron la intervención A y otros 25 distintos que recibieron B. Las observaciones de cada persona son independientes y las distribuciones son aproximadamente normales, con varianzas semejantes. ¿Qué contraste es adecuado?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Prueba t de Student para dos grupos independientes.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Chi cuadrada de bondad de ajuste para una variable nominal.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Análisis de Kaplan–Meier sin información de tiempos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Prueba t pareada que usa la diferencia de cada paciente consigo mismo.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Como se trata de dos grupos de personas distintas, las mediciones no están pareadas. Con un desenlace cuantitativo y supuestos compatibles, una t para muestras independientes compara las medias."
+    },
+    {
+      "id": 44,
+      "materia": "Epidemiología",
+      "tema": "d de Cohen",
+      "bloque": "Regresión y pruebas estadísticas",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "7 Regresion t y anova.pdf",
+          "paginas_pdf": [
+            28,
+            29,
+            30,
+            31
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Dos grupos difieren en 6 puntos en una escala clínica y la desviación estándar de referencia apropiada para estandarizar la diferencia es de 12 puntos. ¿Cuál es el tamaño del efecto d de Cohen?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "2.0, magnitud grande.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "0.05, magnitud despreciable.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "0.50, magnitud aproximadamente moderada.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "6.0, diferencia porcentual de riesgo.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "d = diferencia de medias/desviación estándar de referencia = 6/12 = 0.50. Es una diferencia estandarizada, no un valor p ni una medida directa de cambio absoluto en riesgo."
+    },
+    {
+      "id": 45,
+      "materia": "Epidemiología",
+      "tema": "Cálculo de razón F en ANOVA",
+      "bloque": "Regresión y pruebas estadísticas",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "7 Regresion t y anova.pdf",
+          "paginas_pdf": [
+            34,
+            35
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un ANOVA, el cuadrado medio entre grupos es 72 y el cuadrado medio dentro de los grupos es 24. ¿Cuál es el estadístico F?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "0.33.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "48.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "3.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "96.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "El estadístico F es la razón entre la variación estimada entre grupos y la variación residual dentro de grupos: 72/24 = 3. Para decidir significación debe compararse con una distribución F y grados de libertad adecuados."
+    },
+    {
+      "id": 46,
+      "materia": "Epidemiología",
+      "tema": "Predicción de un modelo lineal",
+      "bloque": "Regresión y pruebas estadísticas",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "7 Regresion t y anova.pdf",
+          "paginas_pdf": [
+            15,
+            16,
+            17,
+            18
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un modelo didáctico predice días de recuperación mediante ŷ = 8 + 0.5x, donde x representa una puntuación clínica. ¿Cuál es la predicción si el paciente obtiene x = 20?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "20 días.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "28 días.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "18 días.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "10 días.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Al sustituir x = 20, ŷ = 8 + 0.5×20 = 8 + 10 = 18 días. La predicción depende del modelo y no garantiza que el paciente individual se recupere exactamente ese día."
+    },
+    {
+      "id": 47,
+      "materia": "Epidemiología",
+      "tema": "Dato pivote en sesión clinicopatológica",
+      "bloque": "Práctica clínica y guías",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "8 Sesión clínico patológica y práctica clínica estándar.pdf",
+          "paginas_pdf": [
+            5,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Durante una sesión clinicopatológica se presenta a una paciente con fiebre, anemia y una lesión cardíaca. El comentarista destaca un hemocultivo positivo y un hallazgo ecocardiográfico específico para acotar el diagnóstico diferencial. ¿Qué función cumplen esos datos?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Obligan a omitir cualquier diagnóstico alternativo.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Actúan como datos pivote que orientan el razonamiento diagnóstico y priorizan hipótesis.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Sustituyen de manera automática la presentación de la historia clínica.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Convierten el caso en un ensayo clínico aleatorizado.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "El propósito docente de la sesión es relacionar de manera lógica hallazgos clínicos y pruebas, reconocer los datos más discriminativos y recorrer diagnósticos diferenciales antes de discutir el diagnóstico final."
+    },
+    {
+      "id": 48,
+      "materia": "Epidemiología",
+      "tema": "Guía de práctica clínica y adaptación",
+      "bloque": "Práctica clínica y guías",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "8 Sesión clínico patológica y práctica clínica estándar.pdf",
+          "paginas_pdf": [
+            20,
+            21,
+            22,
+            24,
+            30
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un centro de salud quiere estandarizar el abordaje de hipertensión en atención primaria. Dispone de una guía sustentada en evidencia, pero su población y recursos difieren de los estudios de origen. ¿Cuál es la mejor actuación?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Descartar cualquier recomendación basada en investigación científica.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Sustituir la evaluación individual únicamente por tradición del servicio.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Aplicar cada recomendación de forma automática sin revisar el contexto.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Usar la guía como apoyo y valorar su aplicabilidad, recursos disponibles y circunstancias de los pacientes.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "Las guías de práctica clínica contienen recomendaciones apoyadas en evidencia y experiencia, pero su aplicación exige revisar condiciones locales, preferencias del paciente y pertinencia clínica; no sustituyen el juicio profesional."
+    },
+    {
+      "id": 49,
+      "materia": "Epidemiología",
+      "tema": "Imprecisión en GRADE",
+      "bloque": "Práctica clínica y guías",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "8 Sesión clínico patológica y práctica clínica estándar.pdf",
+          "paginas_pdf": [
+            32,
+            33,
+            35,
+            36
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una síntesis para una guía, el beneficio estimado parece favorable, pero el IC95 % es muy amplio e incluye tanto un beneficio clínicamente importante como la posibilidad de daño. ¿Qué dominio reduce la certeza de la evidencia?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Certeza alta garantizada por usar un metanálisis.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Ausencia de necesidad de considerar el desenlace.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Exceso de adherencia al tratamiento.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Imprecisión de la estimación del efecto.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "GRADE considera la imprecisión cuando los intervalos son suficientemente amplios para abarcar conclusiones clínicas distintas. La estimación puntual favorable no compensa la incertidumbre sobre la verdadera magnitud del efecto."
+    },
+    {
+      "id": 50,
+      "materia": "Epidemiología",
+      "tema": "Decisión compartida y medicina basada en evidencia",
+      "bloque": "Práctica clínica y guías",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "8 Sesión clínico patológica y práctica clínica estándar.pdf",
+          "paginas_pdf": [
+            43,
+            44
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una revisión rigurosa favorece una intervención, pero una paciente rechaza su principal efecto adverso y prefiere una alternativa razonable tras entender beneficios y riesgos. ¿Cuál respuesta concuerda mejor con la medicina basada en evidencia?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Decidir únicamente por la opinión personal del médico, sin estudios.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Considerar que las decisiones clínicas basadas en evidencia nunca incluyen valores individuales.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Ignorar las preferencias de la paciente porque la revisión tiene metanálisis.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Integrar la evidencia científica con la experiencia clínica y los valores de la paciente.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "La medicina basada en evidencia no se reduce a seguir publicaciones: aplica críticamente la mejor investigación disponible junto con la experiencia clínica y las preferencias y circunstancias del paciente."
+    }
+  ]
+}
