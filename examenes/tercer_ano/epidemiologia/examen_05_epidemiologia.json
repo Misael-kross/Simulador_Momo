@@ -1,0 +1,2432 @@
+{
+  "nombre": "Epidemiología clínica y medicina basada en evidencias · Examen 5",
+  "nivel": "Medicina · Tercer año",
+  "institucion": "Simuladores para Momo",
+  "version": "1.0",
+  "descripcion": "Examen 5 de Epidemiología: 50 preguntas nuevas de dificultad moderada con casos clínicos, análisis de investigaciones, interpretación de resultados y cálculos; explicaciones y referencias al material de estudio.",
+  "fuente_base": "Epidemiología unido .pdf (151 páginas) y ocho presentaciones complementarias (366 páginas).",
+  "configuracion": {
+    "duracion_minutos": 90,
+    "contador_permitido": true,
+    "contador_activo_por_defecto": true,
+    "cerrar_automaticamente": true,
+    "permitir_revision": true,
+    "mostrar_resultados_por_materia": true
+  },
+  "preguntas": [
+    {
+      "id": 1,
+      "materia": "Epidemiología",
+      "tema": "Comparador interno de cohorte",
+      "bloque": "Causalidad y diseños epidemiológicos",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            24,
+            25
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una fábrica quiere evaluar la aparición de asma entre trabajadores expuestos a un aerosol. Puede compararlos con empleados no expuestos de la misma fábrica o con la población nacional. ¿Qué ventaja principal ofrece el primer grupo si ambos comparten criterios de selección y seguimiento?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Minimiza automáticamente todo error de medición.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Permite asegurar causalidad sin controlar confusores.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Suele facilitar la comparabilidad del contexto laboral y del acceso a vigilancia médica.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Convierte la cohorte en un ensayo aleatorizado.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Una cohorte de comparación interna se origina en la misma población fuente, por lo que es más factible que los grupos compartan condiciones de trabajo, acceso al sistema y criterios de medición. Todavía deben evaluarse edad, tabaquismo y otros confusores; la comparabilidad no elimina todos los sesgos."
+    },
+    {
+      "id": 2,
+      "materia": "Epidemiología",
+      "tema": "Población fuente de casos y controles",
+      "bloque": "Causalidad y diseños epidemiológicos",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            27,
+            28
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un estudio de casos y controles de una complicación posquirúrgica se reclutan casos de un hospital. ¿Qué criterio es fundamental al elegir controles?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Que nunca hayan podido exponerse a los factores estudiados.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Que provengan de la población que habría originado los casos si presentaran la complicación.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Que tengan enfermedades obligatoriamente relacionadas con la exposición.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Que sean, sin excepción, familiares directos de los casos.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Los controles deben representar la distribución de exposición de la población fuente que produjo los casos y tener oportunidad de exposición. Elegir personas con enfermedades ligadas al factor o sin posibilidad de exposición distorsiona la razón de momios. Ser familiar no garantiza una selección válida."
+    },
+    {
+      "id": 3,
+      "materia": "Epidemiología",
+      "tema": "Ética en investigación de riesgos",
+      "bloque": "Causalidad y diseños epidemiológicos",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            20,
+            21
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una investigadora propone asignar aleatoriamente a personas sanas a fumar diariamente durante 10 años para demostrar si aparece enfermedad pulmonar. ¿Qué alternativa es más apropiada?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Realizar un estudio observacional de cohortes con medición cuidadosa del tabaquismo y posibles confusores.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Solicitar únicamente consentimiento y mantener la exposición impuesta.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Asignar el tabaquismo al azar, pero sin informar a las personas.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Excluir todas las personas fumadoras y estudiar sólo controles sanos.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Imponer deliberadamente una exposición nociva como fumar no es ético. La asociación causal puede investigarse con cohortes observacionales, respetando autonomía, sin asignar el hábito y controlando confusores y sesgos. El consentimiento no vuelve aceptable una intervención injustificadamente dañina."
+    },
+    {
+      "id": 4,
+      "materia": "Epidemiología",
+      "tema": "Criterio de analogía de Bradford Hill",
+      "bloque": "Causalidad y diseños epidemiológicos",
+      "tipo_reactivo": "concepto_aplicado",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            34,
+            35
+          ]
+        },
+        {
+          "documento": "1 Causalidad y diagnóstico.pdf",
+          "paginas_pdf": [
+            14
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una sustancia nueva posee estructura química semejante a otra que ya ha demostrado provocar daño hepático. Antes de contar con evidencia directa abundante, esta semejanza respalda la hipótesis causal mediante ¿qué criterio de Bradford Hill?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Especificidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Temporalidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Analogía.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Consistencia.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "La analogía considera relaciones causales conocidas para exposiciones o enfermedades similares como apoyo de una hipótesis nueva. No demuestra por sí misma que la sustancia nueva sea causal. Temporalidad exige precedencia de exposición y consistencia requiere repetición de hallazgos en diferentes estudios."
+    },
+    {
+      "id": 5,
+      "materia": "Epidemiología",
+      "tema": "Causa componente en una red causal",
+      "bloque": "Causalidad y diseños epidemiológicos",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            14,
+            15,
+            16
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una enfermedad multifactorial aparece cuando coinciden susceptibilidad, exposición ambiental y falta de protección. Un programa elimina uno de esos componentes y evita casos, aunque no elimina la susceptibilidad. ¿Qué demuestra principalmente?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Que todos los factores componentes deben ser causas necesarias para toda persona.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Que retirar un componente puede impedir que se complete una combinación causal suficiente.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Que la exposición ambiental nunca participó en el desenlace.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Que sólo existe un mecanismo de producción de la enfermedad.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "En los modelos multicausales pueden existir varias combinaciones suficientes de componentes causales. Intervenir sobre uno de ellos puede interrumpir una vía de aparición de enfermedad aun cuando persistan otros factores. Esto no vuelve universalmente necesario cada componente en todos los pacientes."
+    },
+    {
+      "id": 6,
+      "materia": "Epidemiología",
+      "tema": "OR como asociación protectora",
+      "bloque": "Causalidad y diseños epidemiológicos",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            36,
+            38,
+            40
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un estudio hipotético de casos y controles, 18 casos y 42 controles recibieron una medida preventiva; 54 casos y 36 controles no la recibieron. ¿Cuál es aproximadamente la OR de enfermedad asociada a la medida?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "0.29; sugiere asociación inversa.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "0.67; sugiere asociación inversa.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "1.50; sugiere mayor asociación con enfermedad.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "3.50; sugiere mayor asociación con enfermedad.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Con a=18 casos expuestos, b=42 controles expuestos, c=54 casos no expuestos y d=36 controles no expuestos: OR=(a×d)/(b×c)=(18×36)/(42×54)=648/2268≈0.286. Una OR menor que 1 indica asociación inversa; el diseño no permite afirmar por sí solo causalidad."
+    },
+    {
+      "id": 7,
+      "materia": "Epidemiología",
+      "tema": "PECO en preguntas de etiología",
+      "bloque": "Revisiones sistemáticas y ensayos clínicos",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            3,
+            4
+          ]
+        },
+        {
+          "documento": "2 Revisiones metanalisis y ensayos clínicos.pdf",
+          "paginas_pdf": [
+            18,
+            19
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un equipo desea determinar si la exposición laboral a solventes, comparada con no exposición, se asocia con neuropatía en adultos. ¿Cuál elemento de PECO corresponde a la E?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "El grupo de adultos al que se dirige el estudio.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La exposición laboral a solventes.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La ausencia de neuropatía durante el seguimiento.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "La neuropatía como desenlace.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "En una pregunta PECO, P es población, E es exposición, C es comparación y O es desenlace. Aquí los solventes constituyen la E, la no exposición es C y la neuropatía es O. PECO es especialmente útil para preguntas etiológicas observacionales."
+    },
+    {
+      "id": 8,
+      "materia": "Epidemiología",
+      "tema": "RoB 2: medición del desenlace",
+      "bloque": "Revisiones sistemáticas y ensayos clínicos",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            6
+          ]
+        },
+        {
+          "documento": "2 Revisiones metanalisis y ensayos clínicos.pdf",
+          "paginas_pdf": [
+            14
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un ensayo aleatorizado de fisioterapia, el evaluador conoce qué terapia recibió cada participante y asigna una escala subjetiva de recuperación. ¿Qué dominio de RoB 2 merece especial atención?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Sesgos en la selección de resultados reportados exclusivamente.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Sesgos derivados del proceso de aleatorización exclusivamente.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Sesgos en la medición de los resultados.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Sesgos por ausencia de una revisión sistemática.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "La medición de un desenlace subjetivo puede verse influida por el conocimiento de la intervención. RoB 2 tiene un dominio específico para el sesgo en la medición de resultados. La aleatorización adecuada no impide que aparezca sesgo de evaluación si quien mide conoce la asignación."
+    },
+    {
+      "id": 9,
+      "materia": "Epidemiología",
+      "tema": "Forest plot con diferencia de medias",
+      "bloque": "Revisiones sistemáticas y ensayos clínicos",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            7,
+            8
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un metanálisis presenta diferencia media combinada de −2.0 días de estancia hospitalaria, con IC95 % de −4.5 a +0.5 días (nuevo tratamiento menos control). ¿Qué interpretación corresponde al resultado?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Se ha demostrado una disminución estadísticamente concluyente de dos días.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La estimación favorece una estancia menor, pero el intervalo incluye ausencia de diferencia.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Se demuestra que el nuevo tratamiento prolonga la estancia.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El valor nulo de una diferencia de medias es 1 y queda excluido.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "En diferencias de medias el valor de ausencia de efecto es 0, no 1. El intervalo −4.5 a +0.5 cruza 0, por lo que, al nivel del 95 %, los datos son compatibles tanto con cierta reducción como con ausencia de beneficio. La relevancia clínica también exige considerar la magnitud posible."
+    },
+    {
+      "id": 10,
+      "materia": "Epidemiología",
+      "tema": "Heterogeneidad estadística",
+      "bloque": "Revisiones sistemáticas y ensayos clínicos",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            7,
+            8
+          ]
+        },
+        {
+          "documento": "2 Revisiones metanalisis y ensayos clínicos.pdf",
+          "paginas_pdf": [
+            25,
+            26
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una revisión agrupa seis ensayos que evalúan el mismo desenlace. Las estimaciones varían ampliamente entre sí pese a que cada estudio tiene un intervalo relativamente estrecho. ¿Cuál es la actuación más razonable?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Ignorar las diferencias porque ya se obtuvo una media combinada.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Eliminar todos los estudios pequeños sin evaluar su calidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Explorar heterogeneidad y posibles diferencias clínicas o metodológicas antes de aceptar el resumen.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Interpretar la dispersión como prueba inequívoca de fraude.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Las estimaciones discordantes pueden reflejar heterogeneidad real entre poblaciones, intervenciones o métodos, además del azar. Antes de confiar en un efecto agrupado deben explorarse esas diferencias y valorarse si es justificable la síntesis. La heterogeneidad no implica automáticamente fraude ni se resuelve eliminando estudios arbitrariamente."
+    },
+    {
+      "id": 11,
+      "materia": "Epidemiología",
+      "tema": "Flujo PRISMA: selección",
+      "bloque": "Revisiones sistemáticas y ensayos clínicos",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            5
+          ]
+        },
+        {
+          "documento": "2 Revisiones metanalisis y ensayos clínicos.pdf",
+          "paginas_pdf": [
+            33,
+            34
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un ejercicio hipotético de revisión se identifican 180 registros, se eliminan 30 duplicados y se descartan 90 tras evaluar título y resumen. Se revisan a texto completo todos los restantes y se excluyen 24 por no cumplir criterios. ¿Cuántos estudios quedan incluidos, suponiendo un registro por estudio?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "24 estudios.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "36 estudios.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "60 estudios.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "66 estudios.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Tras eliminar duplicados quedan 180−30=150 registros. La selección inicial deja 150−90=60 textos completos. Al excluir 24, se incluyen 60−24=36 estudios. La suposición de un registro por estudio evita confundir publicaciones con investigaciones distintas."
+    },
+    {
+      "id": 12,
+      "materia": "Epidemiología",
+      "tema": "Calidad de los estudios primarios",
+      "bloque": "Revisiones sistemáticas y ensayos clínicos",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            2,
+            9
+          ]
+        },
+        {
+          "documento": "2 Revisiones metanalisis y ensayos clínicos.pdf",
+          "paginas_pdf": [
+            24
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una revisión sistemática tuvo búsqueda exhaustiva y protocolo impecable, pero todos los ensayos incluidos tienen asignación predecible y pérdidas muy altas. ¿Qué debe concluirse sobre la certeza de sus resultados?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La metodología de la revisión compensa completamente los sesgos de los ensayos.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La certeza puede ser baja porque la revisión no corrige la mala calidad de los estudios incluidos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Todo metanálisis publicado transforma los estudios en evidencia de certeza alta.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "No es necesario informar limitaciones si el resultado agrupado es preciso.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Una revisión bien realizada no puede reparar sesgos de origen de sus estudios primarios: la síntesis de estudios deficientes conserva esas limitaciones, incluso si produce un intervalo estrecho. La metodología GRADE incorpora riesgo de sesgo y otras dimensiones para valorar la certeza."
+    },
+    {
+      "id": 13,
+      "materia": "Epidemiología",
+      "tema": "Especificidad de pruebas en serie",
+      "bloque": "Diagnóstico y tamizaje",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            75,
+            76,
+            77
+          ]
+        },
+        {
+          "documento": "1 Causalidad y diagnóstico.pdf",
+          "paginas_pdf": [
+            29,
+            30
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un ejercicio hipotético se aplican dos pruebas condicionalmente independientes en personas sin enfermedad. Sus especificidades son 90 % y 80 %. Sólo se considera positivo cuando ambas pruebas son positivas. ¿Cuál es la especificidad combinada?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "72 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "82 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "98 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "99 %.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Entre personas sanas las tasas de falsos positivos son 10 % y 20 %. Si los errores fueran independientes condicionalmente al estado de enfermedad, ambas darían falso positivo con probabilidad 0.10×0.20=0.02. La especificidad combinada es 1−0.02=0.98, o 98 %. El cálculo no sería válido sin la suposición de independencia."
+    },
+    {
+      "id": 14,
+      "materia": "Epidemiología",
+      "tema": "VPN frente a confirmación",
+      "bloque": "Diagnóstico y tamizaje",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            60,
+            61
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una muestra hipotética, una prueba es negativa en 200 pacientes; el estándar encuentra que 184 están sanos y 16 sí tenían la enfermedad. ¿Cuál es el valor predictivo negativo?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "8 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "84 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "92 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "96 %.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "El VPN se calcula como verdaderos negativos entre todos los negativos: 184/(184+16)=184/200=0.92, es decir, 92 %. Los 16 pacientes con enfermedad y resultado negativo son falsos negativos; no deben contarse como verdaderos negativos."
+    },
+    {
+      "id": 15,
+      "materia": "Epidemiología",
+      "tema": "Cálculo de cociente de probabilidad negativo",
+      "bloque": "Diagnóstico y tamizaje",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            60,
+            61
+          ]
+        },
+        {
+          "documento": "1 Causalidad y diagnóstico.pdf",
+          "paginas_pdf": [
+            27,
+            28
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un estudio hipotético de una prueba para lesión renal, se detectan 92 de cada 100 enfermos y se clasifica correctamente como negativos a 80 de cada 100 sanos. ¿Por qué factor se multiplican los momios preprueba cuando el resultado es negativo?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "0.10.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "0.20.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "0.72.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "1.15.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "LR−=(1−sensibilidad)/especificidad=(1−0.92)/0.80=0.08/0.80=0.10. Una LR− de 0.10 indica que un resultado negativo multiplica los momios preprueba por 0.10. Es una propiedad de exactitud que debe interpretarse junto con la sospecha clínica."
+    },
+    {
+      "id": 16,
+      "materia": "Epidemiología",
+      "tema": "Aumento del punto de corte",
+      "bloque": "Diagnóstico y tamizaje",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            66,
+            67
+          ]
+        },
+        {
+          "documento": "1 Causalidad y diagnóstico.pdf",
+          "paginas_pdf": [
+            26,
+            27
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una prueba cuyo resultado es mayor cuanto más probable es la enfermedad, el umbral positivo se eleva de 8 a 12 unidades. ¿Cuál cambio suele producirse si lo demás permanece constante?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Aumenta sensibilidad y disminuye especificidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Disminuyen sensibilidad y especificidad necesariamente.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Disminuye sensibilidad y aumenta especificidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Sensibilidad y especificidad permanecen idénticas.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Con un umbral más alto se clasifican menos resultados como positivos. Esto suele reducir falsos positivos y elevar especificidad, pero también puede dejar sin detectar enfermos y disminuir sensibilidad. El efecto exacto depende de la distribución de resultados en ambos grupos."
+    },
+    {
+      "id": 17,
+      "materia": "Epidemiología",
+      "tema": "Número esperado de falsos positivos",
+      "bloque": "Diagnóstico y tamizaje",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            60,
+            61
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un programa hipotético se examinan 2,000 personas sin la enfermedad. La especificidad de la prueba es 97 %. ¿Cuántos falsos positivos se esperarían aproximadamente entre esas personas?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "6.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "30.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "60.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "1,940.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Especificidad de 97 % significa que 3 % de quienes no tienen la enfermedad obtendrán un positivo falso. Por tanto, 2,000×(1−0.97)=2,000×0.03=60 falsos positivos. El cálculo se limita a las 2,000 personas no enfermas del enunciado."
+    },
+    {
+      "id": 18,
+      "materia": "Epidemiología",
+      "tema": "Interpretación de una prueba muy sensible",
+      "bloque": "Diagnóstico y tamizaje",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            60,
+            61,
+            62,
+            63
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una persona con fuerte sospecha clínica de una enfermedad grave obtiene un resultado negativo en una prueba cuya sensibilidad es alta, pero cuya LR− sigue siendo 0.40. ¿Cuál sería la mejor interpretación general?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Un resultado negativo garantiza que no tiene la enfermedad.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "El resultado reduce las probabilidades, pero puede no ser suficiente para descartar con alta sospecha previa.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Una prueba negativa confirma la enfermedad.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "La LR− no aporta información acerca de la probabilidad posprueba.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Una LR− de 0.40 reduce los momios de enfermedad a 40 % de los previos, pero no los lleva a cero. Si la probabilidad preprueba era alta, puede permanecer un riesgo clínicamente relevante y requerirse otra evaluación. El valor de un resultado depende del contexto clínico."
+    },
+    {
+      "id": 19,
+      "materia": "Epidemiología",
+      "tema": "Aplicabilidad de estudios de diagnóstico",
+      "bloque": "Diagnóstico y tamizaje",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            66,
+            80,
+            81
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una unidad de primer nivel considera adoptar una prueba evaluada exclusivamente en pacientes hospitalizados con enfermedad avanzada. Allí se obtuvo excelente exactitud. ¿Qué pregunta de lectura crítica debe formular antes de aplicarla a personas con síntomas incipientes?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "¿Fue la prueba inventada en el mismo país?",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "¿Se utilizó un espectro de pacientes comparable al de la población donde se pretende usarla?",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "¿El artículo fue publicado en una revista con fotografías?",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "¿El intervalo del estudio coincide con el año actual?",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La exactitud puede variar según el espectro de gravedad y los diagnósticos alternativos. Los estudios de diagnóstico deben incluir pacientes similares a quienes recibirán la prueba. CASPe recomienda valorar la selección y el espectro de participantes antes de extrapolar sensibilidad o especificidad."
+    },
+    {
+      "id": 20,
+      "materia": "Epidemiología",
+      "tema": "Desenlace de tiempo hasta evento",
+      "bloque": "Pronóstico, supervivencia y tratamiento",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            95,
+            96
+          ]
+        },
+        {
+          "documento": "3 Pronóstico y tratamiento.pdf",
+          "paginas_pdf": [
+            19,
+            22
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un equipo de reumatología quiere saber cuánto tiempo tardan en recaer personas con enfermedad autoinmune después de una remisión. Algunas terminan el estudio sin recaída. ¿Qué enfoque es más informativo que reportar sólo la proporción global de recaídas?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Análisis de supervivencia con tiempo hasta recaída y censura.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Un promedio simple del número de recaídas por hospital.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Una tabla de grupos sanguíneos sin fechas.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Una encuesta única sobre preferencias de médicos.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "El análisis de supervivencia no se limita a mortalidad: también permite estimar el tiempo hasta recaída u otro evento. Considera el momento en que aparece y la información parcial aportada por sujetos que concluyen sin el desenlace o son censurados."
+    },
+    {
+      "id": 21,
+      "materia": "Epidemiología",
+      "tema": "Tasa de incidencia vs riesgo",
+      "bloque": "Pronóstico, supervivencia y tratamiento",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "3 Pronóstico y tratamiento.pdf",
+          "paginas_pdf": [
+            5,
+            8,
+            11
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una cohorte dinámica se registran 9 infecciones nuevas durante 300 años-persona de observación. ¿Cuál expresión conserva correctamente las unidades de la medida?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "3 % de riesgo acumulado a cinco años.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "30 casos por 100 años-persona.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "3 casos por 100 años-persona.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "9 % de probabilidad individual de enfermar.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "La densidad de incidencia es 9/300=0.03 casos por año-persona, equivalente a 3 casos por 100 años-persona. Es una tasa que usa tiempo-persona, no una probabilidad acumulada calculada a partir de un grupo fijo inicial."
+    },
+    {
+      "id": 22,
+      "materia": "Epidemiología",
+      "tema": "Probabilidad condicional de supervivencia",
+      "bloque": "Pronóstico, supervivencia y tratamiento",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            95,
+            96
+          ]
+        },
+        {
+          "documento": "3 Pronóstico y tratamiento.pdf",
+          "paginas_pdf": [
+            19,
+            24,
+            25
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una curva Kaplan–Meier hipotética, la supervivencia acumulada a los 12 meses es 0.80 y a los 24 meses es 0.60. Para alguien que ya llegó vivo a 12 meses, ¿cuál es la probabilidad estimada de seguir vivo a 24 meses, según esas cifras?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "20 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "48 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "60 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "75 %.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "La supervivencia de 12 a 24 meses condicionada a estar vivo al mes 12 es S(24)/S(12)=0.60/0.80=0.75, es decir, 75 %. No debe confundirse con la supervivencia acumulada desde el tiempo cero, que a 24 meses es 60 %."
+    },
+    {
+      "id": 23,
+      "materia": "Epidemiología",
+      "tema": "Censura y riesgo al siguiente evento",
+      "bloque": "Pronóstico, supervivencia y tratamiento",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "3 Pronóstico y tratamiento.pdf",
+          "paginas_pdf": [
+            19,
+            22,
+            24,
+            25
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una cohorte hipotética de 30 pacientes sin eventos iniciales, 4 se pierden antes de que ocurra la primera muerte. Justo antes de esa muerte, ¿cuántas personas quedan en el conjunto en riesgo, si no hubo otros eventos ni ingresos?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "25.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "26.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "29.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "30.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Los cuatro participantes censurados dejan de contribuir al conjunto en riesgo desde la fecha de su censura. Justo antes de la primera muerte quedan 30−4=26 personas. La muerte todavía no se resta porque se pregunta por el denominador inmediatamente previo al evento."
+    },
+    {
+      "id": 24,
+      "materia": "Epidemiología",
+      "tema": "Tratamiento paliativo frente a curativo",
+      "bloque": "Pronóstico, supervivencia y tratamiento",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "3 Pronóstico y tratamiento.pdf",
+          "paginas_pdf": [
+            34,
+            35
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una persona con enfermedad avanzada sin posibilidad razonable de curación recibe tratamiento destinado a reducir dolor, disnea y sufrimiento, sin intención de revertir la enfermedad. ¿Cómo se clasifica principalmente la finalidad del tratamiento?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Profiláctica.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Etiológica curativa.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Paliativa.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Diagnóstica.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "El tratamiento paliativo busca aliviar síntomas y mejorar el bienestar cuando la curación no es el objetivo alcanzable. No equivale a abandono terapéutico. Un tratamiento curativo persigue revertir la enfermedad; el profiláctico intenta prevenirla."
+    },
+    {
+      "id": 25,
+      "materia": "Epidemiología",
+      "tema": "Pronóstico y centro de referencia",
+      "bloque": "Pronóstico, supervivencia y tratamiento",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            91,
+            92,
+            93
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un estudio de pronóstico sobre neumonía utiliza sólo pacientes de un hospital terciario que recibe los casos más graves. Publica una mortalidad muy alta y pretende aplicarla a todas las neumonías atendidas en consultorios. ¿Cuál es la principal limitación?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La muestra puede no representar el espectro de gravedad de los pacientes de primer nivel.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Toda cohorte hospitalaria obliga a un resultado falso.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Una mortalidad alta significa que necesariamente hay error tipo I.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "La selección de pacientes no influye en los estudios pronósticos.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "La selección de un centro de referencia puede sobrerrepresentar estadios avanzados, comorbilidades o complicaciones. La mortalidad estimada puede ser válida para esa población pero no trasladarse automáticamente a todos los casos de la comunidad; debe considerarse la validez externa."
+    },
+    {
+      "id": 26,
+      "materia": "Epidemiología",
+      "tema": "Minimización de costos",
+      "bloque": "Análisis de decisiones y evaluación económica",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            143,
+            145,
+            146
+          ]
+        },
+        {
+          "documento": "4 Analisis de decisiones.pdf",
+          "paginas_pdf": [
+            42,
+            43
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Dos intervenciones demostraron resultados clínicos equivalentes en la población pertinente, con seguridad y horizonte temporal comparables. Una cuesta menos que la otra. ¿Qué evaluación ayuda a escoger la opción menos costosa bajo ese supuesto?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Análisis de minimización de costos.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Únicamente un análisis de supervivencia.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Prueba de chi cuadrada de independencia.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Regresión logística sin costos.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Cuando la equivalencia de desenlaces está bien sustentada, puede compararse el costo total de las alternativas para elegir la menos costosa. La equivalencia no debe asumirse sólo porque un ensayo no encontró significación estadística; si los efectos son distintos, corresponde un análisis económico que incorpore dichos efectos."
+    },
+    {
+      "id": 27,
+      "materia": "Epidemiología",
+      "tema": "Dominancia económica",
+      "bloque": "Análisis de decisiones y evaluación económica",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            143,
+            146,
+            147
+          ]
+        },
+        {
+          "documento": "4 Analisis de decisiones.pdf",
+          "paginas_pdf": [
+            42,
+            43
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un ejercicio hipotético de evaluación económica, una estrategia de seguimiento cuesta $8,000 y consigue 4 años de vida ajustados por calidad, mientras que la alternativa cuesta $10,000 y consigue 3.5 años. ¿Cuál afirmación es correcta?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La segunda alternativa domina porque cuesta más.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La primera domina: es menos costosa y más efectiva en AVAC.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "No se pueden comparar alternativas con costos y AVAC.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Es obligatorio calcular un ICER positivo antes de elegir la primera.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La primera estrategia produce 0.5 AVAC adicionales y cuesta $2,000 menos por paciente: es dominante frente a la alternativa. El análisis incremental puede describir ese resultado, pero no se necesita un ICER positivo para identificar la dominancia."
+    },
+    {
+      "id": 28,
+      "materia": "Epidemiología",
+      "tema": "Utilidad esperada con desenlaces asimétricos",
+      "bloque": "Análisis de decisiones y evaluación económica",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "4 Analisis de decisiones.pdf",
+          "paginas_pdf": [
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un modelo simplificado, el tratamiento A tiene 60 % de probabilidad de utilidad 0.9 y 40 % de utilidad 0.2. El B garantiza utilidad 0.65. ¿Cuál estrategia presenta mayor utilidad esperada?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "A, con 0.74.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "A, con 0.62.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "B, con 0.65, frente a 0.62 de A.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Ambas son iguales porque 0.9 es mayor que 0.65.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "La utilidad esperada de A es 0.60×0.9+0.40×0.2=0.54+0.08=0.62. Para B la utilidad es 0.65, por lo que B tiene mayor utilidad esperada, suponiendo que las preferencias y probabilidades son las descritas. No basta comparar el mejor desenlace posible."
+    },
+    {
+      "id": 29,
+      "materia": "Epidemiología",
+      "tema": "Ciclos y transiciones en Markov",
+      "bloque": "Análisis de decisiones y evaluación económica",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "4 Analisis de decisiones.pdf",
+          "paginas_pdf": [
+            24,
+            25,
+            26
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un modelo de Markov hipotético, cada año una persona en estado «estable» tiene probabilidades 0.70 de seguir estable, 0.20 de pasar a complicación y el resto de fallecer. ¿Qué probabilidad corresponde a fallecimiento en ese ciclo?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "0.05.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "0.10.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "0.20.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "0.30.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Para transiciones exhaustivas y mutuamente excluyentes desde un mismo estado, las probabilidades del ciclo deben sumar uno. La probabilidad restante es 1−0.70−0.20=0.10, o 10 %. El modelo de Markov permite representar transiciones repetidas entre estados clínicos."
+    },
+    {
+      "id": 30,
+      "materia": "Epidemiología",
+      "tema": "Umbral en análisis de sensibilidad",
+      "bloque": "Análisis de decisiones y evaluación económica",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "4 Analisis de decisiones.pdf",
+          "paginas_pdf": [
+            34,
+            35,
+            37,
+            38
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una estrategia es preferida en el modelo sólo si el riesgo basal supera 12 %. En poblaciones con riesgo estimado de 7 % o 18 %, respectivamente, ¿cómo puede cambiar la decisión según el propio modelo?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La estrategia es preferible en ambas porque el umbral no importa.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La estrategia es preferible con 7 % y no con 18 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "El modelo prefiere la estrategia con 18 %, pero no con 7 %, si todo lo demás permanece igual.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El porcentaje basal define obligatoriamente certeza de evidencia alta.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Un análisis de umbral identifica el valor del parámetro a partir del cual cambia la alternativa óptima. Si el criterio es superar 12 %, el grupo de 18 % cumple esa condición y el de 7 % no. Debe recordarse que la conclusión depende de los supuestos y utilidades asignadas."
+    },
+    {
+      "id": 31,
+      "materia": "Epidemiología",
+      "tema": "Razón frente a proporción",
+      "bloque": "Estadística descriptiva y probabilidad",
+      "tipo_reactivo": "concepto_aplicado",
+      "fuentes": [
+        {
+          "documento": "5 Estadística descriptiva y parámetros.pdf",
+          "paginas_pdf": [
+            19,
+            20
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un servicio se atendieron 75 mujeres y 50 hombres. El indicador 75/50 = 1.5 mujeres por cada hombre, ¿qué clase de medida es?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Una proporción porque el numerador forma parte del denominador.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Una tasa de incidencia por persona-tiempo.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Una razón entre categorías diferentes.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Una probabilidad de mortalidad.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Una razón compara magnitudes de dos conjuntos distintos: mujeres/hombres=75/50=1.5. Una proporción usa un subconjunto sobre el total que lo contiene, por ejemplo 75/125=60 % de mujeres. Las tasas epidemiológicas suelen incorporar tiempo o una referencia poblacional definida."
+    },
+    {
+      "id": 32,
+      "materia": "Epidemiología",
+      "tema": "Mediana en conjunto par",
+      "bloque": "Estadística descriptiva y probabilidad",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "5 Estadística descriptiva y parámetros.pdf",
+          "paginas_pdf": [
+            21,
+            22
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Los tiempos de atención en minutos de seis pacientes fueron 5, 7, 8, 12, 14 y 38. ¿Cuál es la mediana?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "8 minutos.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "10 minutos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "12 minutos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "14 minutos.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Los datos están ordenados y hay seis observaciones. La mediana es el promedio del tercer y cuarto valores: (8+12)/2=10 minutos. El valor extremo de 38 influye más sobre la media que sobre la mediana."
+    },
+    {
+      "id": 33,
+      "materia": "Epidemiología",
+      "tema": "Desviación estándar muestral",
+      "bloque": "Estadística descriptiva y probabilidad",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "5 Estadística descriptiva y parámetros.pdf",
+          "paginas_pdf": [
+            22,
+            23
+          ]
+        },
+        {
+          "documento": "6 Estadística paramétrica.pdf",
+          "paginas_pdf": [
+            3,
+            6
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un ejemplo de tres mediciones de concentración se obtienen 2, 4 y 6 unidades. Si se usa la fórmula muestral con denominador n−1, ¿cuál es la desviación estándar?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "2 unidades.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "4 unidades.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "2.67 unidades.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "8 unidades.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "La media es 4. Las desviaciones al cuadrado suman (2−4)²+(4−4)²+(6−4)²=8. La varianza muestral es 8/(3−1)=4 y su raíz cuadrada es s=2 unidades. La distinción respecto de la varianza poblacional depende del denominador."
+    },
+    {
+      "id": 34,
+      "materia": "Epidemiología",
+      "tema": "Eje vertical y percepción del efecto",
+      "bloque": "Estadística descriptiva y probabilidad",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "5 Estadística descriptiva y parámetros.pdf",
+          "paginas_pdf": [
+            11,
+            13,
+            14
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un reporte compara tasas de complicaciones de 49 % y 51 % entre dos servicios, pero presenta barras cuyo eje vertical inicia en 48 %. La diferencia visual aparenta ser enorme. ¿Qué problema metodológico debe señalarse?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Se necesita eliminar el título de la gráfica.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La escala truncada puede exagerar visualmente una diferencia absoluta de sólo 2 puntos porcentuales.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "El orden de los servicios siempre debe ser alfabético.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "No es válido representar porcentajes mediante barras.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La diferencia absoluta es 51 %−49 %=2 puntos porcentuales. Un eje de barras que inicia muy cerca de las cifras puede magnificar la diferencia aparente. Al presentar resultados debe evitarse distorsión visual y comunicarse claramente la escala y la magnitud clínica."
+    },
+    {
+      "id": 35,
+      "materia": "Epidemiología",
+      "tema": "Media de una variable aleatoria discreta",
+      "bloque": "Estadística descriptiva y probabilidad",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "5 Estadística descriptiva y parámetros.pdf",
+          "paginas_pdf": [
+            40,
+            41,
+            42,
+            43
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un modelo hipotético, el número X de visitas no programadas en un mes puede ser 0, 1 o 2 con probabilidades 0.2, 0.5 y 0.3. ¿Cuál es el valor esperado de X?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "0.8 visitas.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "1.0 visitas.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "1.1 visitas.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "1.5 visitas.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "El valor esperado de la variable discreta es ΣxP(X=x): 0×0.2+1×0.5+2×0.3=0+0.5+0.6=1.1 visitas. Es un promedio teórico a largo plazo, no implica que una persona tenga 1.1 visitas en un mes concreto."
+    },
+    {
+      "id": 36,
+      "materia": "Epidemiología",
+      "tema": "Porcentaje dentro de una categoría",
+      "bloque": "Estadística descriptiva y probabilidad",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "5 Estadística descriptiva y parámetros.pdf",
+          "paginas_pdf": [
+            7,
+            8,
+            19,
+            20
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "De 320 expedientes revisados, 80 tienen registrada vacunación completa. ¿Qué porcentaje de expedientes corresponde a esa categoría?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "20 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "25 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "40 %.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "80 %.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La frecuencia relativa es la frecuencia de la categoría sobre el total: 80/320=0.25=25 %. El denominador es el conjunto de expedientes evaluados. La cifra describe la muestra revisada; no implica representatividad de toda la población."
+    },
+    {
+      "id": 37,
+      "materia": "Epidemiología",
+      "tema": "Contraste unilateral",
+      "bloque": "Inferencia y contraste de hipótesis",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "6 Estadística paramétrica.pdf",
+          "paginas_pdf": [
+            17,
+            18
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un equipo quiere evaluar si la media poblacional de una medida clínica es MAYOR que 120 unidades, no simplemente distinta. ¿Qué par de hipótesis es coherente con esa pregunta?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "H₀: μ ≤ 120; H₁: μ > 120.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "H₀: μ > 120; H₁: μ ≤ 120.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "H₀: μ = 120; H₁: μ ≠ 120 como única formulación posible.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "H₀: μ < 120; H₁: μ = 120.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "La alternativa unilateral «mayor que» se formula H₁: μ>120. La hipótesis nula comprende valores μ≤120. Un contraste bilateral con ≠ responde otra pregunta y distribuye su región de rechazo en ambas colas."
+    },
+    {
+      "id": 38,
+      "materia": "Epidemiología",
+      "tema": "Intervalo de confianza calculado a partir de error estándar",
+      "bloque": "Inferencia y contraste de hipótesis",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "6 Estadística paramétrica.pdf",
+          "paginas_pdf": [
+            10,
+            11,
+            12,
+            13
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Para la media de un desenlace continuo, un ejercicio supone aproximación normal, estimación puntual 45 y error estándar 2. ¿Cuál es el IC95 % aproximado usando 1.96 errores estándar?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "De 43 a 47.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "De 41.08 a 48.92.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "De 45 a 48.92.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "De 37.16 a 52.84.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "El IC95 % bajo la aproximación normal es 45±1.96×2=45±3.92, es decir, de 41.08 a 48.92. Se trata de una construcción aproximada cuyo uso debe estar justificado por el modelo y el tamaño muestral."
+    },
+    {
+      "id": 39,
+      "materia": "Epidemiología",
+      "tema": "Tamaño muestral y error estándar",
+      "bloque": "Inferencia y contraste de hipótesis",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "6 Estadística paramétrica.pdf",
+          "paginas_pdf": [
+            7,
+            8,
+            10,
+            11
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En dos muestras independientes de una misma población, con dispersión semejante, el tamaño muestral pasa de n=25 a n=100. ¿Qué ocurre aproximadamente con el error estándar de la media?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Se cuadruplica.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Permanece idéntico.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Se reduce a la mitad.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Se reduce a la cuarta parte.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "El error estándar de la media es σ/√n, o s/√n como estimación. Al multiplicar n por 4, √n se multiplica por 2 y el error estándar disminuye aproximadamente a la mitad. Esto mejora precisión sin corregir por sí mismo posibles sesgos de selección."
+    },
+    {
+      "id": 40,
+      "materia": "Epidemiología",
+      "tema": "Multiplicidad de contrastes",
+      "bloque": "Inferencia y contraste de hipótesis",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "6 Estadística paramétrica.pdf",
+          "paginas_pdf": [
+            21,
+            22,
+            23
+          ]
+        },
+        {
+          "documento": "7 Regresion t y anova.pdf",
+          "paginas_pdf": [
+            33,
+            34
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un estudio explora 20 desenlaces secundarios y considera «positivo» cualquier p menor que 0.05, sin ajuste ni hipótesis previas. ¿Cuál es el principal riesgo de esa estrategia?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Eliminar totalmente el error tipo II.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Aumentar la posibilidad de hallar algún falso positivo al realizar muchos contrastes.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Convertir variables cualitativas en continuas.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Garantizar que todos los resultados sean clínicamente importantes.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Cada contraste tiene una tasa de error tipo I asociada al umbral α cuando su nula es verdadera. Repetir muchas pruebas sin planificación ni corrección aumenta la probabilidad global de uno o más falsos positivos. La significación estadística tampoco equivale a relevancia clínica."
+    },
+    {
+      "id": 41,
+      "materia": "Epidemiología",
+      "tema": "Significación estadística frente a importancia clínica",
+      "bloque": "Inferencia y contraste de hipótesis",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "7 Regresion t y anova.pdf",
+          "paginas_pdf": [
+            28,
+            29,
+            30
+          ]
+        },
+        {
+          "documento": "6 Estadística paramétrica.pdf",
+          "paginas_pdf": [
+            21,
+            22
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un estudio de 20,000 participantes informa una diferencia media de 0.3 mmHg de presión arterial entre grupos, con p<0.001 e intervalo muy estrecho. ¿Qué juicio es más adecuado?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "El valor p demuestra por sí mismo una gran mejoría clínica.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "El resultado es estadísticamente significativo, pero debe evaluarse si una diferencia de 0.3 mmHg es clínicamente relevante.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La significación estadística significa que no existen factores de confusión.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Todo resultado con p<0.001 obliga a cambiar las guías terapéuticas.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Con un tamaño muestral muy grande puede detectarse estadísticamente una diferencia pequeña. El valor p no mide la magnitud ni la importancia clínica del efecto; deben considerarse tamaño del efecto, certeza, desenlaces, beneficios, riesgos y preferencias de pacientes."
+    },
+    {
+      "id": 42,
+      "materia": "Epidemiología",
+      "tema": "Estimador insesgado",
+      "bloque": "Inferencia y contraste de hipótesis",
+      "tipo_reactivo": "concepto_aplicado",
+      "fuentes": [
+        {
+          "documento": "6 Estadística paramétrica.pdf",
+          "paginas_pdf": [
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un procedimiento de muestreo repetido, el promedio de las estimaciones obtenidas coincide con el parámetro poblacional verdadero, aunque cada muestra individual produzca un valor algo diferente. ¿Cómo se describe el estimador?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Insesgado en esperanza.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Siempre exacto en cada muestra.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "No aleatorio y sin variabilidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Inválido porque las estimaciones no coinciden entre sí.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Un estimador es insesgado si su esperanza matemática coincide con el parámetro de interés: E(θ̂)=θ. Esto no exige que cada muestra produzca el valor verdadero; los errores aleatorios persisten y deben describirse mediante la variabilidad y precisión del estimador."
+    },
+    {
+      "id": 43,
+      "materia": "Epidemiología",
+      "tema": "Prueba de normalidad",
+      "bloque": "Regresión y selección de pruebas estadísticas",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "7 Regresion t y anova.pdf",
+          "paginas_pdf": [
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Para una muestra pequeña de una variable continua se aplica Shapiro–Wilk y se obtiene p=0.003 al contrastar normalidad. ¿Qué lectura corresponde?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Hay evidencia contra el supuesto de normalidad al nivel de 0.05.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Se demuestra que los datos son perfectamente normales.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La prueba calcula directamente la razón de momios.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El resultado garantiza que debe aplicarse ANOVA sin más revisión.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "En una prueba de normalidad, la hipótesis nula usual es que los datos proceden de una distribución normal. Como p=0.003<0.05, se rechaza ese supuesto al umbral fijado. Conviene examinar también gráficos, tamaño muestral y qué análisis se desea realizar."
+    },
+    {
+      "id": 44,
+      "materia": "Epidemiología",
+      "tema": "Residuo en una regresión lineal",
+      "bloque": "Regresión y selección de pruebas estadísticas",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "7 Regresion t y anova.pdf",
+          "paginas_pdf": [
+            15,
+            16,
+            17,
+            18
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un modelo de regresión predice una presión sistólica de 126 mmHg para cierto paciente, pero la medición observada es 134 mmHg. Si el residuo se define como observado menos predicho, ¿cuál es su valor?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "−8 mmHg.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "+8 mmHg.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "+126 mmHg.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "+260 mmHg.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "El residuo es y observado−ŷ estimado=134−126=+8 mmHg. El modelo subestimó el valor del paciente en ocho unidades. Analizar residuos permite revisar el ajuste de una regresión; una predicción individual no equivale a causalidad."
+    },
+    {
+      "id": 45,
+      "materia": "Epidemiología",
+      "tema": "Chi cuadrada: cálculo de contribuciones",
+      "bloque": "Regresión y selección de pruebas estadísticas",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "7 Regresion t y anova.pdf",
+          "paginas_pdf": [
+            20,
+            21,
+            22,
+            25,
+            26
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un ejercicio de chi cuadrada de bondad de ajuste hay dos categorías: se observan 30 y 20 casos, mientras que la hipótesis nula espera 25 y 25. ¿Cuál es el estadístico χ² de Pearson?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "1.0.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "2.0.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "5.0.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "10.0.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "χ²=Σ(O−E)²/E. Para cada categoría la contribución es (30−25)²/25=1 y (20−25)²/25=1. La suma es χ²=2.0. La interpretación de significación requiere además los grados de libertad y el nivel α."
+    },
+    {
+      "id": 46,
+      "materia": "Epidemiología",
+      "tema": "Grados de libertad de ANOVA",
+      "bloque": "Regresión y selección de pruebas estadísticas",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "7 Regresion t y anova.pdf",
+          "paginas_pdf": [
+            34,
+            35
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un ANOVA de una vía se comparan cuatro grupos independientes con 80 participantes en total. ¿Cuáles son los grados de libertad entre grupos y dentro de los grupos, respectivamente?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "4 y 80.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "3 y 79.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "3 y 76.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "76 y 3.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "En ANOVA de una vía, los grados de libertad entre grupos son k−1=4−1=3; los residuales o dentro de grupos son N−k=80−4=76. Estos valores se utilizan para la distribución F y el contraste de igualdad de medias bajo los supuestos del modelo."
+    },
+    {
+      "id": 47,
+      "materia": "Epidemiología",
+      "tema": "Regresión logística ajustada",
+      "bloque": "Regresión y selección de pruebas estadísticas",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "7 Regresion t y anova.pdf",
+          "paginas_pdf": [
+            16,
+            19
+          ]
+        },
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            36,
+            37,
+            38
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una regresión logística estima OR ajustada de 0.60 (IC95 % 0.42 a 0.86) para exposición a una intervención preventiva, manteniendo constantes los otros predictores del modelo. ¿Qué lectura es correcta?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Las probabilidades individuales disminuyen necesariamente 60 puntos porcentuales.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La intervención se asocia con momios menores del desenlace, tras el ajuste, aunque no demuestra causalidad por sí sola.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La intervención hace cero el riesgo de enfermedad.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El valor nulo de una OR es 0, por lo que el IC indica ausencia de asociación.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Una OR ajustada de 0.60 compara los momios de desenlace entre expuestos y no expuestos con covariables constantes; equivale a 40 % menores momios, no 40 puntos porcentuales menos de probabilidad. El IC excluye 1, pero la interpretación causal requiere evaluar diseño y sesgos."
+    },
+    {
+      "id": 48,
+      "materia": "Epidemiología",
+      "tema": "PCE y evidencia formal",
+      "bloque": "Práctica clínica, GPC y GRADE",
+      "tipo_reactivo": "analisis",
+      "fuentes": [
+        {
+          "documento": "8 Sesión clínico patológica y práctica clínica estándar.pdf",
+          "paginas_pdf": [
+            20,
+            21,
+            22,
+            23,
+            24
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un servicio se sostiene que una conducta es «práctica clínica estándar» porque la mayoría del personal aprendió a usarla en sesiones, aunque no se ha revisado críticamente su beneficio. ¿Cuál afirmación es más cuidadosa?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La difusión habitual de una práctica no garantiza por sí sola que sea la mejor opción basada en evidencia.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Toda conducta frecuente es obligatoria por ley.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La práctica clínica estándar excluye opiniones de expertos y experiencias informales.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Las guías de práctica clínica nunca pueden modificar la práctica habitual.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "La práctica clínica estándar puede surgir de publicaciones, experiencias, consensos y fuentes informales. Que una conducta sea común no sustituye una valoración crítica de beneficios, riesgos y certeza. Las guías intentan formular recomendaciones con métodos explícitos que pueden actualizar prácticas tradicionales."
+    },
+    {
+      "id": 49,
+      "materia": "Epidemiología",
+      "tema": "Objetivo de sesión clinicopatológica",
+      "bloque": "Práctica clínica, GPC y GRADE",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "8 Sesión clínico patológica y práctica clínica estándar.pdf",
+          "paginas_pdf": [
+            5,
+            7,
+            8,
+            9,
+            13
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una sesión clinicopatológica, la discusión se limita a adivinar el diagnóstico definitivo y omite explicar qué hallazgos permitieron descartar otras hipótesis. ¿Qué mejora se ajusta al propósito educativo de esta actividad?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Revelar el diagnóstico desde el primer minuto para evitar debates.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Ordenar los datos clave, justificar el diagnóstico diferencial y relacionarlo con los hallazgos patológicos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Excluir todos los datos de exploración física.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Enfatizar sólo el prestigio de quien expone.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La sesión clinicopatológica es un ejercicio de razonamiento: presentación del caso, interpretación de datos pivote, discusión de diagnósticos diferenciales y posterior correlación con el diagnóstico patológico final. El valor educativo reside en mostrar el proceso lógico y sus límites, no en acertar por intuición."
+    },
+    {
+      "id": 50,
+      "materia": "Epidemiología",
+      "tema": "GRADE: importancia de desenlaces",
+      "bloque": "Práctica clínica, GPC y GRADE",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "8 Sesión clínico patológica y práctica clínica estándar.pdf",
+          "paginas_pdf": [
+            32,
+            33
+          ]
+        },
+        {
+          "documento": "Epidemiología unido .pdf",
+          "paginas_pdf": [
+            3,
+            4
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una mesa de elaboración de recomendaciones mediante GRADE, los pacientes asignan 8 puntos (escala de 1 a 9) al riesgo de diálisis permanente. ¿Cómo debe clasificarse ese desenlace?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "No importante, se excluye de la decisión.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Importante pero no clave, porque 8 es menor que 9.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Crítico o clave para la toma de decisiones.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Una medida de sesgo de selección en lugar de desenlace.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "En la clasificación de importancia de desenlaces de GRADE, los valores 7–9 se consideran críticos o clave, 4–6 importantes y 1–3 de importancia limitada para la recomendación. El valor 8 indica que el riesgo de diálisis debe recibir especial prioridad al evaluar beneficios y daños."
+    }
+  ]
+}
