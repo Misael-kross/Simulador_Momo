@@ -1,0 +1,2321 @@
+{
+  "nombre": "Epidemiología clínica y medicina basada en evidencias · Examen 7",
+  "nivel": "Medicina · Tercer año",
+  "institucion": "Simuladores para Momo",
+  "version": "1.0",
+  "descripcion": "Examen 7 de Epidemiología: 50 preguntas originales de dificultad moderada sobre medicina basada en evidencias, metodología de investigación, protocolos, medición clínica, diseños y estadística. Incluye casos clínicos, interpretación de resultados y cálculos, con justificación y referencias por página.",
+  "fuente_base": "Unidad 1 2.pdf (318 páginas) y Examen 1 .pdf (166 páginas), proporcionados por el usuario.",
+  "configuracion": {
+    "duracion_minutos": 90,
+    "contador_permitido": true,
+    "contador_activo_por_defecto": true,
+    "cerrar_automaticamente": true,
+    "permitir_revision": true,
+    "mostrar_resultados_por_materia": true
+  },
+  "preguntas": [
+    {
+      "id": 1,
+      "materia": "Epidemiología",
+      "tema": "Prioridad de preguntas clínicas",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            111,
+            113
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una guardia hay tres dudas clínicas. Una afecta una decisión inmediata que puede evitar un daño grave, otra es de interés académico y la tercera sólo responde curiosidad. ¿Qué criterio justifica atender primero la primera duda?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La pregunta más sencilla de escribir siempre debe resolverse primero.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Toda duda clínica debe tener idéntica prioridad, independientemente del paciente.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La relevancia para el bienestar del paciente, junto con la posibilidad de responder a tiempo.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Se prioriza la pregunta cuyo tema tenga más artículos publicados.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Para priorizar preguntas clínicas conviene ponderar importancia para el paciente, necesidades de conocimiento, factibilidad temporal y posibilidad de obtener respuesta. La urgencia de una decisión con repercusiones importantes en salud pesa más que la mera facilidad de búsqueda."
+    },
+    {
+      "id": 2,
+      "materia": "Epidemiología",
+      "tema": "Selección de desenlace PICO",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            29,
+            30,
+            36
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una investigación pregunta si una nueva intervención reduce complicaciones en adultos con enfermedad renal, frente al manejo habitual. ¿Cuál de los siguientes desenlaces corresponde mejor a un resultado clínicamente relevante (O de PICO)?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Porcentaje de personas que reciben un folleto educativo.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Necesidad de diálisis durante un año de seguimiento.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Nombre comercial del medicamento.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Número de autores que firman el artículo.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "El elemento O representa el desenlace de interés para el paciente. La necesidad de diálisis mide una consecuencia clínica importante. Entregar folletos es una actividad del proceso y el nombre del producto o la autoría no constituyen desenlaces clínicos."
+    },
+    {
+      "id": 3,
+      "materia": "Epidemiología",
+      "tema": "Validez frente a precisión del estudio",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            36,
+            37
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un artículo presenta una estimación muy precisa por su gran muestra, pero el grupo de comparación recibió una vigilancia mucho menos intensa que el tratado. Antes de trasladar el resultado a consulta, ¿qué debe cuestionarse prioritariamente?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La validez interna por posible sesgo de detección, aunque el intervalo sea estrecho.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La precisión no tiene importancia en ningún estudio.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "El tamaño de letra con que aparecen las tablas.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "La aplicabilidad queda garantizada por un intervalo de confianza pequeño.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "La lectura crítica examina validez, magnitud y aplicabilidad. Un intervalo estrecho indica precisión, no ausencia de sesgo. Vigilar de forma desigual a los grupos puede producir diferencias artificiales en la detección de los resultados."
+    },
+    {
+      "id": 4,
+      "materia": "Epidemiología",
+      "tema": "Decisión basada en evidencia y disponibilidad",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            121,
+            122,
+            123
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una revisión rigurosa apoya un procedimiento, pero en un hospital rural no existe personal capacitado para realizarlo con seguridad. ¿Qué conducta es más coherente con una aplicación crítica de la evidencia?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Obligar a practicarlo aun sin capacidad técnica disponible.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Descartar definitivamente todo beneficio demostrado por la revisión.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Ignorar las alternativas disponibles porque no son idénticas al ensayo.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Valorar la factibilidad y seguridad local, explicar opciones y decidir de forma contextualizada.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "La medicina basada en evidencias no ofrece recetas automáticas. La aplicación requiere integrar los datos del estudio con la situación clínica, experiencia del equipo, recursos y preferencias del paciente. La falta de condiciones seguras modifica la decisión concreta, no la validez intrínseca del ensayo."
+    },
+    {
+      "id": 5,
+      "materia": "Epidemiología",
+      "tema": "Pregunta de experiencias y herramienta de búsqueda",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            34,
+            35
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una revisión cualitativa busca cómo experimentan los pacientes el aislamiento por tuberculosis. ¿Por qué podría ser útil una estrategia SPIDER además de la formulación clásica PICO?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Porque transforma automáticamente entrevistas en ensayos clínicos.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Porque elimina la necesidad de definir la población de interés.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Porque permite estructurar preguntas centradas en experiencias, diseño y evaluación cualitativa.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Porque calcula la sensibilidad de una prueba diagnóstica.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Las diapositivas comparan PICO, PICOS y SPIDER como herramientas para formular búsquedas. SPIDER incluye muestra, fenómeno de interés, diseño, evaluación y tipo de investigación, lo que resulta pertinente cuando se buscan experiencias y resultados cualitativos, no únicamente efectos terapéuticos."
+    },
+    {
+      "id": 6,
+      "materia": "Epidemiología",
+      "tema": "Uso responsable de citas",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            106,
+            107,
+            109,
+            114
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un estudiante reescribe casi literalmente un párrafo ajeno, cambia dos palabras y lo presenta sin referencia como conclusión propia. ¿Cuál es el problema metodológico y ético principal?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Al citar únicamente artículos en español no se admite el método científico.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Apropiación de una idea o redacción ajena sin atribución suficiente (plagio).",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Un hallazgo nuevo, porque dos palabras distintas crean conocimiento original.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Un error de muestreo que se resuelve aumentando participantes.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La referencia identifica el origen de los conceptos y permite verificar lo publicado. Cambios cosméticos no vuelven propia una obra ajena. Parafrasear exige reformular realmente y reconocer la fuente; copiar literalmente requiere además la forma de cita correspondiente."
+    },
+    {
+      "id": 7,
+      "materia": "Epidemiología",
+      "tema": "Práctica deliberada y mejora clínica",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            25,
+            26,
+            27
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un residente interpreta electrocardiogramas todos los días, pero repite los mismos errores desde hace meses. ¿Qué cambio responde mejor al concepto de práctica deliberada presentado en el material?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Mantener sólo el volumen habitual de estudios, sin revisar resultados.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Evitar la retroalimentación para no introducir sesgo del profesor.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Sustituir el entrenamiento con una lista de definiciones aprendidas de memoria.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Practicar patrones difíciles específicos, recibir correcciones y repetir con atención concentrada.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "La práctica deliberada no equivale a hacer una tarea muchas veces. Implica elegir un componente concreto del desempeño, trabajar activamente sobre errores, recibir retroalimentación y repetir con concentración para mejorar la habilidad, no limitarse a automatizarla."
+    },
+    {
+      "id": 8,
+      "materia": "Epidemiología",
+      "tema": "Apertura de categorías en estudio cualitativo",
+      "bloque": "Metodología y protocolo de investigación",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            83,
+            86,
+            87,
+            88
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Durante entrevistas sobre vivir con insuficiencia renal, aparecen temas que los investigadores no habían previsto; deciden explorar esas nuevas categorías en entrevistas posteriores. ¿Qué caracteriza mejor esa decisión?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Flexibilidad e inducción propias de un proceso cualitativo iterativo.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Violación inevitable de una hipótesis cuantitativa ya contrastada.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Aleatorización por bloques del contenido de las entrevistas.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Cambio automático del estudio a un ensayo clínico.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "En la investigación cualitativa, preguntas, categorías e interpretaciones pueden afinarse mientras se recoge y analiza información. El proceso es inductivo y dinámico; no requiere congelar todas las categorías antes de conocer las experiencias de los participantes."
+    },
+    {
+      "id": 9,
+      "materia": "Epidemiología",
+      "tema": "Hipótesis en investigación cualitativa",
+      "bloque": "Metodología y protocolo de investigación",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            87,
+            144
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una tesista plantea que las hipótesis cualitativas deben formularse obligatoriamente antes de las entrevistas y demostrarse con una prueba t al finalizar. ¿Qué corrección es adecuada?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Toda investigación cualitativa debe usar una prueba de chi cuadrada.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Las hipótesis cualitativas sólo son válidas si se convierten en razones de momios.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Pueden surgir y perfeccionarse durante el estudio y no se prueban necesariamente de forma estadística.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Ninguna investigación puede modificar su marco interpretativo durante la recolección.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "El material distingue la lógica cualitativa de la comprobación estadística de hipótesis. En muchos proyectos cualitativos, los supuestos se construyen o cambian durante el contacto con el campo y la interpretación, por lo que no deben tratarse como contrastes paramétricos preconcebidos."
+    },
+    {
+      "id": 10,
+      "materia": "Epidemiología",
+      "tema": "Integración real de métodos mixtos",
+      "bloque": "Metodología y protocolo de investigación",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            89,
+            90,
+            93
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una clínica encuentra 35 % de abandono de tratamiento en su base de datos y entrevista a pacientes para explicar motivos de abandono; después compara sistemáticamente ambos hallazgos. ¿Qué elemento hace que el estudio sea genuinamente mixto?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Que la encuesta tenga más de 100 participantes.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Que se integren e interpreten conjuntamente datos cuantitativos y cualitativos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Que se elija una única forma numérica de analizar entrevistas.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Que los mismos participantes reciban un tratamiento aleatorizado.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "No basta con reunir números y testimonios por separado. Un enfoque mixto integra y discute los resultados de ambos tipos de datos para comprender mejor el fenómeno. Debe justificarse por el valor agregado frente a usar sólo uno de los enfoques."
+    },
+    {
+      "id": 11,
+      "materia": "Epidemiología",
+      "tema": "Función del marco teórico",
+      "bloque": "Metodología y protocolo de investigación",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            96,
+            97,
+            98,
+            103
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un grupo revisa estudios previos sobre adherencia al tratamiento, identifica instrumentos ya validados y reconoce problemas de selección de pacientes encontrados por otros equipos. ¿Qué función de la perspectiva teórica se aprecia?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Sustituir la recolección de datos del nuevo estudio.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Confirmar causalidad sin observar población alguna.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Volver irrelevante la viabilidad del proyecto.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Orientar el diseño y ayudar a evitar errores cometidos en investigaciones anteriores.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "El desarrollo de la perspectiva teórica informa qué diseños, participantes, instrumentos y contextos se han usado, además de reconocer vacíos y fallas de estudios previos. Un marco teórico bien construido conecta antecedentes pertinentes; no es una acumulación indiscriminada de páginas."
+    },
+    {
+      "id": 12,
+      "materia": "Epidemiología",
+      "tema": "Alcance correlacional versus causal",
+      "bloque": "Metodología y protocolo de investigación",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            116,
+            128
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Se propone medir simultáneamente horas de sueño y puntuación de estrés en estudiantes. El equipo afirma que podrá demostrar que dormir poco causa estrés. ¿Qué cambio en la conclusión planeada corresponde al alcance real?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Interpretar la relación como asociación y evitar atribuir causalidad sólo por correlación transversal.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Afirmar causalidad si la muestra excede 30 estudiantes.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Usar el coeficiente de correlación como prueba de aleatorización.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Suponer que toda variable cuantitativa es una intervención.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Un planteamiento correlacional busca relacionar variables, mientras que atribuir un efecto causal requiere razones y un diseño que sustenten direccionalidad temporal y control de explicaciones alternativas. Medir dos variables una vez no demuestra por sí mismo causa y efecto."
+    },
+    {
+      "id": 13,
+      "materia": "Epidemiología",
+      "tema": "Viabilidad de investigación",
+      "bloque": "Metodología y protocolo de investigación",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            124,
+            125,
+            126
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un proyecto pretende seguir a 8,000 personas durante diez años, pero el equipo sólo dispone de seis meses de financiamiento y no tiene acceso a los expedientes. ¿Qué aspecto del planteamiento falla principalmente?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La concordancia interobservador del resultado.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La validez aparente de una escala ya construida.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La viabilidad por insuficiencia de recursos, tiempo y acceso al campo.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "La definición de ensayo de no inferioridad.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "La viabilidad analiza si la pregunta puede investigarse realmente con el tiempo, los recursos humanos y materiales, el presupuesto y el acceso disponibles. Un tema importante puede exigir redimensionar el diseño antes de intentar su ejecución."
+    },
+    {
+      "id": 14,
+      "materia": "Epidemiología",
+      "tema": "Utilidad metodológica de un proyecto",
+      "bloque": "Metodología y protocolo de investigación",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            124,
+            125
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una investigación propone crear y validar un cuestionario breve que otros centros puedan utilizar para evaluar barreras de acceso a consultas. Dentro de la justificación, ¿qué aportación destaca?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Conveniencia definida exclusivamente por el costo del cuestionario.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Utilidad metodológica al desarrollar una herramienta de medición aplicable a otros estudios.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Ausencia de necesidad de un marco conceptual.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Demostración automática de una intervención terapéutica.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Entre los criterios de justificación están la relevancia social, implicaciones prácticas, valor teórico y utilidad metodológica. Crear un instrumento útil para obtener o analizar datos destaca principalmente en esta última dimensión, aunque también podría tener otros beneficios."
+    },
+    {
+      "id": 15,
+      "materia": "Epidemiología",
+      "tema": "Objetivo general y específico",
+      "bloque": "Metodología y protocolo de investigación",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            21,
+            22,
+            23
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "El objetivo general es «Evaluar la relación entre calidad del sueño y rendimiento académico». ¿Cuál opción representa un objetivo específico congruente con él, sin cambiar el problema principal?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Explicar todos los motivos de estrés de los estudiantes del país.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Demostrar que todo mal rendimiento se debe a falta de sueño.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Evaluar la eficacia de un nuevo antibiótico.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Medir la duración habitual del sueño de los estudiantes incluidos mediante un instrumento definido.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "Los objetivos específicos son acciones precisas y evaluables que contribuyen a cumplir el objetivo general. Cuantificar la duración del sueño aporta una medida necesaria; los otros objetivos cambian la pregunta, anticipan resultados o introducen temas ajenos."
+    },
+    {
+      "id": 16,
+      "materia": "Epidemiología",
+      "tema": "Estandarización multicéntrica",
+      "bloque": "Metodología y protocolo de investigación",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            2,
+            9,
+            10,
+            29
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En tres hospitales, «reingreso» significa volver a urgencias, reingresar a piso o acudir a cualquier consulta, respectivamente. Para combinar los datos válidamente, ¿qué acción previa resulta esencial?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Fijar en el protocolo una misma definición, ventana temporal y fuente de captura para todos los centros.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Reunir los resultados y promediarlos sin revisar definiciones.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Aumentar el número de centros manteniendo las diferencias.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Registrar únicamente los resultados del centro con más pacientes.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "El protocolo funciona como guía común para el equipo y permite estandarizar procedimientos y definiciones. Sin una definición operacional homogénea, una cifra llamada igual puede representar fenómenos diferentes, y la comparabilidad queda comprometida."
+    },
+    {
+      "id": 17,
+      "materia": "Epidemiología",
+      "tema": "Exclusión anterior al ingreso",
+      "bloque": "Metodología y protocolo de investigación",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            26,
+            27
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una cohorte incluirá adultos con hipertensión. El protocolo excluye, antes de enrolarlos, a quienes tengan una enfermedad renal específica que alteraría el desenlace. ¿Cómo se clasifica esa condición?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Criterio de eliminación ocurrido durante el seguimiento.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Criterio de inclusión porque todos tienen hipertensión.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Criterio de exclusión aplicado a elegibles antes de ingresarlos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Abandono voluntario que ocurre después de obtener resultados.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Los criterios de inclusión identifican características requeridas para entrar. Los de exclusión impiden el ingreso de ciertas personas que sí podrían cumplir la inclusión, por razones clínicas o metodológicas. Los de eliminación aparecen después de que el sujeto ya fue incluido."
+    },
+    {
+      "id": 18,
+      "materia": "Epidemiología",
+      "tema": "Muestreo estratificado proporcional",
+      "bloque": "Metodología y protocolo de investigación",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            159,
+            160,
+            161
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una facultad tiene 600 alumnos de primer año y 400 de segundo. Se desea una muestra estratificada proporcional de 100 alumnos. ¿Cuántos deben seleccionarse al azar de cada estrato?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "50 de primero y 50 de segundo.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "60 de primero y 40 de segundo.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "100 de primero y ninguno de segundo.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "40 de primero y 60 de segundo.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "El muestreo estratificado permite representar subgrupos definidos. El primer año constituye 600/1,000=60 % de la población y el segundo 40 %. Por asignación proporcional corresponden 60 y 40 participantes; dentro de cada estrato deben seleccionarse conforme al procedimiento previsto."
+    },
+    {
+      "id": 19,
+      "materia": "Epidemiología",
+      "tema": "Población objetivo y población accesible",
+      "bloque": "Metodología y protocolo de investigación",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            24,
+            25
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un grupo quiere inferir sobre todos los adultos mexicanos con asma, pero recluta exclusivamente a quienes acuden a una clínica de alta especialidad. ¿Qué preocupación metodológica es la más importante?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Que no existen variables cuantitativas en las clínicas.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Que el cálculo de proporciones deja de ser posible.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Que el objetivo ya no necesita una hipótesis.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Que la muestra accesible podría no representar a la población objetivo para generalizar resultados.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "La generalización depende de características comparables entre la población estudiada y aquella a la que se desea aplicar el resultado. Un hospital de referencia puede concentrar casos más graves y no reflejar las características de todos los adultos con asma del país."
+    },
+    {
+      "id": 20,
+      "materia": "Epidemiología",
+      "tema": "Muestra para estimación versus contraste",
+      "bloque": "Metodología y protocolo de investigación",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            25,
+            26
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Antes de calcular el tamaño de muestra, un investigador debe precisar si quiere estimar la prevalencia de anemia con determinada precisión o comparar dos tratamientos. ¿Por qué importa distinguir esos objetivos?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Porque la fórmula y los parámetros del cálculo muestral cambian según se estime un parámetro o se contraste una diferencia.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Porque toda estimación requiere aleatorizar un fármaco.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Porque la comparación elimina la necesidad de calcular tamaño de muestra.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Porque el tamaño se determina únicamente por el número de hospitales disponibles.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Para estimar una proporción se necesita especificar precisión, nivel de confianza y prevalencia esperada; para comparar grupos importan, además, diferencias relevantes, variabilidad y potencia, entre otros supuestos. La pregunta guía el diseño y el cálculo."
+    },
+    {
+      "id": 21,
+      "materia": "Epidemiología",
+      "tema": "Manejo previsto de datos faltantes",
+      "bloque": "Metodología y protocolo de investigación",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            13,
+            14,
+            29,
+            30
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un estudio longitudinal planea medir calidad de vida cada mes, pero no define qué se hará si faltan respuestas o si se pierden sujetos. ¿Qué debe añadirse antes del reclutamiento?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La instrucción de borrar toda referencia a las pérdidas.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Una garantía de que nunca habrá datos faltantes.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Un plan de seguimiento, registro de pérdidas y estrategia de análisis de datos incompletos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El uso obligatorio de una prueba t para cualquier desenlace.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "El protocolo debe detallar recolección y procesamiento de datos, seguimiento y limitaciones. Las pérdidas pueden introducir sesgos, por lo que es necesario anticipar cómo se registrarán, evaluarán y tratarán en el análisis, en vez de improvisar al final."
+    },
+    {
+      "id": 22,
+      "materia": "Epidemiología",
+      "tema": "Incentivos, riesgos y comité de ética",
+      "bloque": "Metodología y protocolo de investigación",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            11,
+            31,
+            32
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un protocolo propone un pago elevado para reclutar pacientes económicamente vulnerables en un procedimiento que implica riesgos y no describe atención por lesiones relacionadas con el estudio. ¿Qué debería exigirse en la revisión ética?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Aceptar el pago como sustituto del consentimiento informado.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Evaluar incentivos, posible influencia indebida, balance riesgo-beneficio y compensación por daños.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Omitir los riesgos mientras no ocurran eventos adversos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Evitar que el comité conozca el presupuesto para acelerar el registro.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La revisión ética debe analizar riesgos, beneficios, consentimiento, incentivos y mecanismos de atención ante daños. Un pago no elimina la responsabilidad de proteger la decisión libre de los sujetos ni puede sustituir un protocolo de seguridad adecuado."
+    },
+    {
+      "id": 23,
+      "materia": "Epidemiología",
+      "tema": "Coherencia de la pregunta y el método",
+      "bloque": "Metodología y protocolo de investigación",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            20,
+            23,
+            27,
+            28
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un protocolo pregunta «¿cómo interpretan los cuidadores la carga emocional?» pero propone medir únicamente presión arterial y calcular una media, sin recoger relatos. ¿Cuál es la principal inconsistencia?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La investigación debe excluir obligatoriamente a todos los cuidadores.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "El análisis cuantitativo invalida cualquier estudio de salud.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La pregunta de experiencias se responde mejor sólo con análisis de supervivencia.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Los métodos elegidos no captan directamente el significado subjetivo que se pretende comprender.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "La elección del enfoque, variables e instrumentos debe estar alineada con los objetivos y la pregunta. Para explorar significados o experiencias, la información cualitativa suele ser pertinente; una medición fisiológica aislada no describe lo que los cuidadores expresan o sienten."
+    },
+    {
+      "id": 24,
+      "materia": "Epidemiología",
+      "tema": "Escala ordinal de medición",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            58,
+            59,
+            60
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un equipo registra intensidad de dolor como «ausente, leve, moderado o intenso». Las categorías tienen jerarquía, pero no se garantiza que el cambio entre ellas sea igual. ¿Qué tipo de variable registra?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Cualitativa nominal.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Cuantitativa de razón con cero absoluto.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Cuantitativa continua normalmente distribuida.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Cualitativa ordinal.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "Las categorías ordinales tienen un orden natural, pero no implican distancias numéricas equivalentes. Una variable nominal no posee jerarquía, mientras que las cuantitativas tienen valores y propiedades métricas que deben justificarse antes de calcular promedios."
+    },
+    {
+      "id": 25,
+      "materia": "Epidemiología",
+      "tema": "Influencia del observador sobre la medición",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            61,
+            62
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Dos estudiantes valoran la intensidad de ictericia con la inspección visual. Uno utiliza iluminación adecuada y el otro observa en una habitación oscura. ¿Qué componente del acto de medir explica mejor la discrepancia?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La influencia del observador y de las condiciones de observación sobre la medición.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La incidencia acumulada del padecimiento.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La variación del azar propia de una asignación de tratamiento.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "La probabilidad preprueba de hepatitis, que debe ser idéntica al valor observado.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "La medición clínica implica sujeto, observador, instrumento y condiciones en que se observa. La luz disponible y el entrenamiento pueden alterar la apreciación visual; por eso conviene estandarizar el entorno y el procedimiento antes de comparar evaluadores."
+    },
+    {
+      "id": 26,
+      "materia": "Epidemiología",
+      "tema": "Autocumplimentación y entrevista",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            62,
+            63
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un cuestionario sobre prácticas privadas se administra unas veces por entrevista presencial y otras veces de forma autoadministrada. ¿Cuál es el riesgo metodológico que conviene valorar antes de combinar los datos?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Que ninguna respuesta puede considerarse una variable.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Que ambos modos son matemáticamente idénticos por utilizar el mismo texto.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Que el modo de aplicación influya en la comodidad y sinceridad, generando diferencias de medición.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Que los cuestionarios autoadministrados siempre sean inválidos.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Los instrumentos pueden aplicarse por un entrevistador o mediante autocumplimentación. La presencia del entrevistador y la privacidad pueden modificar las respuestas, especialmente en temas sensibles. Si se usan ambos modos, deben justificarse y evaluarse sus posibles efectos."
+    },
+    {
+      "id": 27,
+      "materia": "Epidemiología",
+      "tema": "Variación circadiana y comparabilidad",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            64,
+            65,
+            66,
+            67
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un estudio toma cortisol a algunos participantes al despertar y a otros a las 20:00, sin registrar el horario. ¿Qué medida mejoraría la interpretación de las diferencias entre personas?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Aumentar el número de decimales del laboratorio.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Estandarizar o registrar la hora de toma, porque existe variación biológica circadiana.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Convertir todos los resultados en categorías nominales sin punto de corte.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Eliminar las muestras con valores elevados sin investigar su origen.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Las variaciones del sujeto, entre ellas el ritmo circadiano, pueden modificar una medición aun cuando el instrumento funcione bien. Estandarizar el horario, o al menos medirlo y considerarlo, disminuye la variación no atribuible a la exposición de interés."
+    },
+    {
+      "id": 28,
+      "materia": "Epidemiología",
+      "tema": "Control de mediciones por manual operativo",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            68,
+            69
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un estudio multicéntrico, las enfermeras miden perímetro abdominal en puntos anatómicos diferentes. ¿Qué intervención ofrece la mejora más directa de la confiabilidad entre centros?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Analizar sólo la cifra máxima de cada enfermera.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Sustituir todo el personal al azar cada semana.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Omitir las instrucciones para no influir en el resultado.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Definir un manual operativo, entrenar al personal y comprobar la técnica.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "Las estrategias de confiabilidad incluyen definiciones operacionales, entrenamiento y certificación de observadores, así como mantenimiento de instrumentos. Medir en puntos distintos significa que no se aplica el mismo procedimiento, por lo que los resultados no son directamente comparables."
+    },
+    {
+      "id": 29,
+      "materia": "Epidemiología",
+      "tema": "Concordancia entre tres observadores",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            70,
+            71,
+            72
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Tres radiólogos clasifican las mismas imágenes como normales o patológicas. Se desea medir su concordancia categórica más allá del azar de manera conjunta. ¿Cuál herramienta es más apropiada entre las siguientes?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Correlación de Pearson de una sola variable continua.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Prueba t de dos medias independientes.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Una extensión de kappa para múltiples evaluadores, como kappa de Fleiss.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Razón de riesgos entre dos cohortes no existentes.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "El coeficiente kappa de Cohen se usa habitualmente para dos observadores con categorías. Cuando se compara simultáneamente el acuerdo de tres o más evaluadores, puede emplearse una extensión como kappa de Fleiss, considerando los supuestos del tipo de datos."
+    },
+    {
+      "id": 30,
+      "materia": "Epidemiología",
+      "tema": "Cálculo de kappa con acuerdo esperado",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            50,
+            51,
+            52,
+            53
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Dos observadores clasifican 100 estudios. Su tabla es: ambos positivos=30; primero positivo/segundo negativo=10; primero negativo/segundo positivo=20; ambos negativos=40. ¿Cuál es el kappa aproximado?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "0.20.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "0.40.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "0.70.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "0.90.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La concordancia observada es Po=(30+40)/100=0.70. Marginales: el primer observador tiene 40 % positivos y el segundo 50 %; los negativos son 60 % y 50 %. El acuerdo esperado es Pe=(0.4×0.5)+(0.6×0.5)=0.50. Por tanto, kappa=(0.70−0.50)/(1−0.50)=0.40."
+    },
+    {
+      "id": 31,
+      "materia": "Epidemiología",
+      "tema": "Concordancia global y concordancia corregida",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            50,
+            51,
+            52
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una revisión de imágenes informa 92 % de coincidencia entre lectores. Sin embargo, casi todos los estudios son negativos. ¿Por qué no basta ese porcentaje para valorar completamente la concordancia?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Porque el porcentaje no descuenta la coincidencia esperable por azar y por las frecuencias marginales.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Porque la concordancia no puede calcularse con datos categóricos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Porque es obligatorio obtener una sensibilidad del 100 % en ambos lectores.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Porque cualquier porcentaje superior a 90 % demuestra concordancia perfecta.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "El acuerdo bruto cuenta observaciones iguales, pero no considera cuántas coincidencias serían esperables por azar dada la distribución de categorías. El coeficiente kappa incorpora esa expectativa y puede aportar una interpretación diferente cuando una categoría predomina."
+    },
+    {
+      "id": 32,
+      "materia": "Epidemiología",
+      "tema": "Cambio real frente a estabilidad en una escala",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            55,
+            59,
+            63
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una escala de movilidad se aplica antes y después de rehabilitación. Los investigadores quieren que detecte mejorías clínicamente reales, no sólo que arroje resultados idénticos cuando el paciente está estable. ¿Qué propiedad están priorizando?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Validez aparente del color del formulario.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Prevalencia basal de la enfermedad.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Concordancia por azar de evaluadores distintos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Sensibilidad al cambio o capacidad de respuesta del instrumento.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "Un índice evaluativo debe detectar cambios a lo largo del tiempo. La sensibilidad al cambio se relaciona con diferencias de puntuación y tamaños del efecto; es distinta de la reproducibilidad, que busca resultados semejantes cuando el estado del paciente no ha cambiado."
+    },
+    {
+      "id": 33,
+      "materia": "Epidemiología",
+      "tema": "Calibración y sesgo instrumental",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            73,
+            74
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una báscula sigue entregando mediciones prácticamente iguales al pesar repetidamente el mismo objeto, pero tras compararla con una pesa patrón se descubre que siempre agrega 1.5 kg. ¿Cuál medida corrige mejor el problema?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Aplicar kappa de Fleiss a los pesos registrados.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Solicitar una muestra mayor sin modificar la báscula.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Calibrar periódicamente el instrumento frente a un estándar para corregir el sesgo sistemático.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Promediar exclusivamente los valores más altos.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "La repetición consistente refleja precisión, pero no asegura validez o exactitud. Un desplazamiento sostenido frente al patrón indica sesgo sistemático del instrumento. La calibración adecuada puede corregirlo; tomar más observaciones no elimina el desplazamiento."
+    },
+    {
+      "id": 34,
+      "materia": "Epidemiología",
+      "tema": "Diseño descriptivo o analítico",
+      "bloque": "Diseño y validez de estudios",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            78,
+            80,
+            81
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un informe se limita a describir la distribución de casos de varicela según edad y colonia, sin comparar hipótesis de asociación con un factor de exposición. Según su finalidad, ¿cómo se clasifica?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Ensayo clínico pragmático.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Estudio observacional descriptivo.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Estudio de casos y controles analítico.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Estudio experimental con asignación por azar.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La finalidad descriptiva es caracterizar frecuencias y distribución de un fenómeno. Una investigación analítica compara grupos o variables para evaluar asociaciones. La presencia de tablas por edad o zona no convierte por sí sola el informe en un ensayo ni demuestra una causa."
+    },
+    {
+      "id": 35,
+      "materia": "Epidemiología",
+      "tema": "Exposición pasada mal estimada en encuesta",
+      "bloque": "Diseño y validez de estudios",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            87,
+            88,
+            89
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una encuesta mide hoy el consumo de alcohol y pregunta si la persona tuvo una enfermedad hace cinco años. El equipo interpreta el consumo actual como exposición previa al evento. ¿Cuál es la principal limitación?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La exposición presente puede ser distinta de la que existía antes de la enfermedad, y la temporalidad queda incierta.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "El diseño necesariamente genera incidencia acumulada exacta.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Siempre es posible demostrar que la exposición precedió a la enfermedad.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "La investigación se vuelve experimental por preguntar por eventos pasados.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "En diseños transversales o encuestas con mediciones actuales, una exposición modificable puede haber cambiado desde el evento. Sin información temporal adecuada no puede asegurarse precedencia causal; incluso una enfermedad podría haber modificado el hábito actual."
+    },
+    {
+      "id": 36,
+      "materia": "Epidemiología",
+      "tema": "Cohorte histórica en registros existentes",
+      "bloque": "Diseño y validez de estudios",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            97,
+            98,
+            99,
+            103
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En 2026 se recuperan expedientes de trabajadores contratados en 2016, se reconstruye su exposición ocupacional al ingreso y se documenta si presentaron hipoacusia hasta 2024. ¿Qué diseño representa mejor esta investigación?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Estudio transversal que mide todo exclusivamente en 2026.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Serie de casos sin comparar niveles de exposición.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Ensayo prospectivo donde el investigador asignó el ruido.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Cohorte retrospectiva o histórica basada en exposición y seguimiento ya registrados.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "Una cohorte histórica define personas y exposiciones en un tiempo pasado y examina eventos posteriores utilizando registros ya existentes. Conserva la lógica temporal exposición→desenlace, aunque el análisis se inicie después de que ocurrieron ambos."
+    },
+    {
+      "id": 37,
+      "materia": "Epidemiología",
+      "tema": "Casos incidentes frente a prevalentes",
+      "bloque": "Diseño y validez de estudios",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            91,
+            93,
+            94,
+            95
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un estudio de casos y controles de una enfermedad de rápida evolución, se propone incluir únicamente casos que sobreviven cinco años después del diagnóstico. ¿Qué alternativa mejora la representatividad de los casos respecto del inicio de enfermedad?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Seleccionar sólo quienes siguen hospitalizados más de un año.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Seleccionar exclusivamente pacientes con el mejor pronóstico.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Reclutar casos recién diagnosticados o incidentes conforme al protocolo.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Cambiar los controles por familiares de los casos sin evaluar su exposición.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Usar únicamente sobrevivientes prolongados puede seleccionar un subgrupo particular y distorsionar la asociación estudiada. El material recomienda incluir, cuando sea posible, casos incidentes; de utilizar prevalentes deben considerarse su antigüedad y posibles sesgos de supervivencia."
+    },
+    {
+      "id": 38,
+      "materia": "Epidemiología",
+      "tema": "Población fuente de los controles",
+      "bloque": "Diseño y validez de estudios",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            91,
+            92,
+            95
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Para estudiar una enfermedad infrecuente, los casos provienen de cuatro municipios. Los investigadores seleccionan controles exclusivamente de una ciudad distante con hábitos distintos. ¿Qué condición debería verificarse para que los controles sean adecuados?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Que todas las personas control tengan exposición positiva.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Que representen la población fuente de la que surgieron los casos, salvo por no presentar el desenlace.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Que sean exactamente de la misma edad, aunque procedan de otro universo sin relación.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Que se seleccione a quienes tienen la enfermedad en fase leve.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "En casos y controles, la selección de controles debe reflejar la exposición de la población que pudo producir los casos. Una fuente geográfica o social diferente puede alterar artificialmente la frecuencia de exposición y sesgar la razón de momios."
+    },
+    {
+      "id": 39,
+      "materia": "Epidemiología",
+      "tema": "Vigilancia equivalente de desenlaces",
+      "bloque": "Diseño y validez de estudios",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            98,
+            99,
+            100
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una cohorte expuesta recibe audiometrías trimestrales y la no expuesta solamente responde una encuesta telefónica anual. Si se encuentran más casos de hipoacusia en la primera, ¿qué problema debe descartarse?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Que la cohorte tenga que calcular un valor de p sin datos.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Que una audiometría sea siempre menos válida que la encuesta.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Que todos los participantes presenten la misma duración de seguimiento.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Sesgo de detección por diferencias en la búsqueda y medición de desenlaces.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "La cohorte expuesta y la no expuesta deben recibir procedimientos de seguimiento y criterios diagnósticos comparables. Si un grupo se examina más intensamente, se identificarán más eventos aun cuando el riesgo real fuera similar."
+    },
+    {
+      "id": 40,
+      "materia": "Epidemiología",
+      "tema": "Cegamiento y asignación aleatoria",
+      "bloque": "Diseño y validez de estudios",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            190,
+            191,
+            193
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un ensayo usa una secuencia aleatoria adecuada para asignar tratamientos, pero el médico que evalúa los resultados conoce la intervención recibida y el desenlace es una valoración subjetiva del dolor. ¿Qué conclusión es correcta?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La aleatorización no sustituye el cegamiento de la valoración y puede persistir sesgo de medición.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La asignación aleatoria garantiza que toda valoración será imparcial.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Conocer la asignación convierte al estudio en una cohorte histórica.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Sólo existe sesgo cuando el tratamiento resulta ineficaz.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "La aleatorización reduce diferencias sistemáticas de base entre grupos, mientras que el cegamiento busca impedir que el conocimiento de la asignación influya en conductas, mediciones o interpretación. Son mecanismos diferentes y complementarios."
+    },
+    {
+      "id": 41,
+      "materia": "Epidemiología",
+      "tema": "Criterio de anormalidad por riesgo",
+      "bloque": "Normalidad y anormalidad",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            171,
+            172,
+            173
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un paciente asintomático tiene un marcador asociado a alto riesgo de una complicación prevenible. La cifra todavía cae en un intervalo poblacional frecuente. ¿Por qué podría requerir evaluación clínica adicional?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Porque cualquier cifra dentro de un intervalo de referencia representa enfermedad.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Porque la distribución normal demuestra por sí sola un diagnóstico definitivo.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Porque un criterio clínico de anormalidad puede basarse en riesgo futuro, no sólo en rareza estadística.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Porque los marcadores preclínicos nunca permiten decisiones anticipadas.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "El material distingue criterios de normalidad: presencia de síntomas o signos, exposición a factores de riesgo y disponibilidad de intervenciones útiles. Una cifra frecuente no excluye un riesgo clínicamente importante cuando hay evidencia de desenlaces asociados."
+    },
+    {
+      "id": 42,
+      "materia": "Epidemiología",
+      "tema": "Límite unilateral frente a bilateral",
+      "bloque": "Normalidad y anormalidad",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            167,
+            168
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Para cierta concentración, solamente los valores excesivamente altos se relacionan con toxicidad; los bajos no se consideran patológicos. ¿Cómo sería más coherente definir la región anormal de referencia?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Como dos colas simétricas obligatorias con idéntico riesgo.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Como la cola superior de la distribución, de acuerdo con el riesgo clínico.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Como la zona que rodea exactamente a la media.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Como el 50 % central, independientemente de su significado clínico.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Una regla unilateral define como extremas las mediciones de una sola dirección cuando únicamente ese extremo implica riesgo. Los límites bilaterales se usan cuando ambos extremos pueden ser anormales. La elección debe sustentarse en el significado clínico de la variable."
+    },
+    {
+      "id": 43,
+      "materia": "Epidemiología",
+      "tema": "Intervalo central por percentiles",
+      "bloque": "Normalidad y anormalidad",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            169,
+            170
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Para construir un intervalo de referencia central que contenga aproximadamente 95 % de las mediciones observadas, sin suponer distribución normal, ¿qué límites percentilares se eligen?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Percentiles 5 y 95.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Percentiles 25 y 75.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Percentiles 10 y 90.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Percentiles 2.5 y 97.5.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "Un intervalo central de 95 % deja 5 % de observaciones fuera: 2.5 % en la cola inferior y 2.5 % en la superior. Por ello se emplean los percentiles 2.5 y 97.5 como límites descriptivos de la distribución de referencia."
+    },
+    {
+      "id": 44,
+      "materia": "Epidemiología",
+      "tema": "Comparación de resultados estandarizados",
+      "bloque": "Normalidad y anormalidad",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            162,
+            164,
+            166,
+            167
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un analito A tiene media 100 y desviación estándar 15; un paciente presenta A=130. El analito B tiene media 60 y desviación estándar 5; en el mismo paciente B=50. ¿Cuál resultado está más alejado de su media en unidades de desviación estándar?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "A está más alejado porque 130 es numéricamente mayor.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "B está más alejado porque su desviación estándar es más pequeña.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "A y B están igualmente alejados: ambos tienen |z|=2.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "No pueden compararse porque sus unidades originales difieren.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "La comparación requiere tipificar cada variable: zA=(130−100)/15=+2 y zB=(50−60)/5=−2. Sus magnitudes estandarizadas son iguales, aunque la dirección difiere. Las puntuaciones z permiten comparar desviaciones relativas en variables con unidades o escalas distintas."
+    },
+    {
+      "id": 45,
+      "materia": "Epidemiología",
+      "tema": "Mediana ante datos muy asimétricos",
+      "bloque": "Normalidad y anormalidad",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            169,
+            170,
+            247,
+            248
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En cinco consultas, los tiempos de espera en minutos son 4, 5, 6, 7 y 88. ¿Qué medida resume mejor el tiempo típico ante ese valor extremo y cuál es su valor?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Media de 22 minutos como única medida válida.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Moda de 6 minutos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Mediana de 6 minutos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Mediana de 22 minutos.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Ordenados los datos, la observación central es 6 minutos. El valor extremo 88 incrementa la media a 22, pero no cambia la mediana, que suele describir mejor el centro de distribuciones muy asimétricas. En este conjunto no hay moda única."
+    },
+    {
+      "id": 46,
+      "materia": "Epidemiología",
+      "tema": "Límite terapéutico frente a límite estadístico",
+      "bloque": "Normalidad y anormalidad",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            127,
+            128,
+            129,
+            130
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una medición está apenas por encima del intervalo de referencia de laboratorio, pero la intervención disponible tendría riesgos importantes y beneficio incierto. ¿Qué evita mejor una decisión automática de tratar?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Considerar que cualquier cifra infrecuente obliga al mismo tratamiento.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Distinguir la anormalidad estadística del umbral terapéutico basado en beneficios y daños.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Ignorar la situación clínica porque el laboratorio ya clasificó el dato.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Usar siempre la mediana como punto de inicio de tratamiento.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La rareza respecto a una población de referencia es sólo un criterio posible de anormalidad. El umbral terapéutico depende de que, para una situación concreta, los beneficios previstos de intervenir superen sus riesgos y costos para esa persona."
+    },
+    {
+      "id": 47,
+      "materia": "Epidemiología",
+      "tema": "Error tipo II en una comparación",
+      "bloque": "Estadística y síntesis de evidencia",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            153,
+            154
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un ensayo pequeño no encuentra diferencia estadísticamente significativa entre tratamientos. Más tarde, uno realmente resultó eficaz y la muestra original no tenía potencia suficiente. ¿Qué error estadístico puede explicar el primer resultado?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Error tipo I: rechazo de una hipótesis nula verdadera.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Ausencia total de sesgo de medición.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Un coeficiente de correlación de +1.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Error tipo II: no rechazar una hipótesis nula falsa.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "El error tipo II ocurre cuando no se rechaza la hipótesis nula a pesar de existir una diferencia real. Puede relacionarse con una muestra insuficiente, variabilidad o un efecto pequeño. Un valor p no significativo no demuestra igualdad terapéutica."
+    },
+    {
+      "id": 48,
+      "materia": "Epidemiología",
+      "tema": "Intervalo de referencia frente a intervalo de confianza",
+      "bloque": "Estadística y síntesis de evidencia",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            169,
+            170,
+            298,
+            299
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un laboratorio describe un intervalo de referencia central de 70–110 unidades para pacientes sanos. Otro informe ofrece IC95 % de 92–98 unidades para la media poblacional estimada. ¿Qué interpreta correctamente la diferencia?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "El intervalo de referencia describe valores de individuos; el IC95 % expresa incertidumbre sobre la media estimada.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Ambos intervalos expresan exactamente lo mismo y siempre deben coincidir.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "El IC95 % obliga a que el 95 % de las mediciones individuales quede entre 92 y 98.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El intervalo de referencia es una prueba definitiva de enfermedad fuera de sus límites.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Un intervalo de referencia central suele abarcar una proporción de resultados individuales en una población de referencia. Un intervalo de confianza cuantifica incertidumbre de un parámetro, como la media, bajo un procedimiento de muestreo. No son intercambiables ni sus límites implican por sí solos enfermedad."
+    },
+    {
+      "id": 49,
+      "materia": "Epidemiología",
+      "tema": "Selección de la prueba por tipo de desenlace",
+      "bloque": "Estadística y síntesis de evidencia",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            303,
+            304,
+            305,
+            306
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Se compara una medida continua aproximadamente normal en tres grupos independientes de tratamiento, sin mediciones repetidas y con supuestos razonablemente satisfechos. ¿Qué prueba global es la más apropiada?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Prueba exacta de Fisher diseñada para conteos categóricos.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Prueba t pareada aplicada a los tres grupos a la vez.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "ANOVA de una vía para comparar las medias de los tres grupos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Coeficiente kappa para dos observadores.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Para comparar medias de tres grupos independientes con supuestos paramétricos razonables, el ANOVA de una vía permite contrastar una hipótesis global sin hacer múltiples pruebas t aisladas. La elección depende de tipo de variable, número de grupos, dependencia y distribución."
+    },
+    {
+      "id": 50,
+      "materia": "Epidemiología",
+      "tema": "Transparencia en la revisión sistemática",
+      "bloque": "Estadística y síntesis de evidencia",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            207,
+            208,
+            209,
+            210,
+            211,
+            220,
+            221
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una revisión afirma haber incluido 20 estudios, pero no explica cómo se encontraron, qué criterios se aplicaron ni por qué se excluyeron otros. ¿Qué mejoraría más la transparencia y reproducibilidad de su informe?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Limitar la publicación a un resumen narrativo de conclusiones.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Presentar estrategias de búsqueda, criterios previos, proceso de selección y diagrama de flujo acorde con PRISMA.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Incluir únicamente resultados estadísticamente significativos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Eliminar la evaluación del riesgo de sesgo por considerarla subjetiva.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Las revisiones sistemáticas requieren métodos explícitos y reproducibles de búsqueda y selección, con evaluación crítica de estudios. PRISMA orienta la transparencia del reporte. Sin documentar criterios y exclusiones, no puede conocerse el riesgo de selección arbitraria de evidencia."
+    }
+  ]
+}
