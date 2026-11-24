@@ -1,0 +1,2688 @@
+{
+  "nombre": "Epidemiología clínica y medicina basada en evidencias · Examen 10",
+  "nivel": "Medicina · Tercer año",
+  "institucion": "Simuladores para Momo",
+  "version": "1.0",
+  "descripcion": "Examen 10 de dificultad alta: 50 reactivos originales con casos complejos, interpretación crítica, inferencia, investigación clínica y cálculos de varios pasos. Respuestas y explicaciones fundamentadas en los apuntes proporcionados.",
+  "fuente_base": "Unidad 1 2.pdf (318 páginas) y Examen 1 .pdf (166 páginas), complementados cuando se indica con 2 Revisiones metanalisis y ensayos clínicos.pdf y 7 Regresion t y anova.pdf.",
+  "configuracion": {
+    "duracion_minutos": 90,
+    "contador_permitido": true,
+    "contador_activo_por_defecto": true,
+    "cerrar_automaticamente": true,
+    "permitir_revision": true,
+    "mostrar_resultados_por_materia": true
+  },
+  "preguntas": [
+    {
+      "id": 1,
+      "materia": "Epidemiología",
+      "tema": "PICO, diseño y desenlace centrado en el paciente",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            29,
+            30,
+            36,
+            189,
+            190
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            112,
+            121
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una clínica quiere saber si un programa digital, frente al seguimiento habitual, evita reingresos durante 12 meses en adultos con insuficiencia cardiaca. El equipo propone usar el promedio de mensajes enviados como resultado principal y comparar únicamente a quienes utilizaron voluntariamente la aplicación. ¿Cuál rediseño responde mejor a la pregunta terapéutica y reduce sesgos?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Mantener la comparación de usuarios voluntarios y definir éxito por el número de mensajes leídos.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Asignar aleatoriamente programa versus atención habitual y usar reingreso a 12 meses como desenlace principal, con seguimiento de ambos grupos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Seleccionar solo pacientes que ya reingresaron y comparar sus mensajes previos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Comparar dos meses de uso de la aplicación sin grupo control ni medición de reingresos.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "PICO distingue intervención, comparación y resultado clínicamente importante. El número de mensajes mide ejecución del proceso, no beneficio sanitario. Un ensayo aleatorizado con desenlace de reingreso y seguimiento comparable reduce confusión por motivación, gravedad o acceso digital, aunque todavía requiere evaluación de pérdidas y aplicabilidad."
+    },
+    {
+      "id": 2,
+      "materia": "Epidemiología",
+      "tema": "Evidencia, aplicabilidad y decisión compartida",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "analisis_critico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            15,
+            16,
+            22,
+            36
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            121,
+            122
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una revisión con buena metodología muestra una reducción moderada de exacerbaciones con un fármaco, pero excluyó a personas con insuficiencia renal avanzada. Tu paciente tiene esa comorbilidad y considera prioritario evitar efectos adversos, aunque aumente ligeramente su riesgo de exacerbación. ¿Qué inferencia resulta más defendible?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La validez interna de la revisión no garantiza aplicabilidad; hay que examinar seguridad, población estudiada, preferencias y alternativas antes de decidir.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La revisión obliga a indicar el tratamiento porque reúne más pacientes que un estudio individual.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Las preferencias del paciente solo cuentan cuando la evidencia estadística no es significativa.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "La exclusión de pacientes renales demuestra que el fármaco es inocuo en esa población.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "La práctica basada en evidencias combina investigación, experiencia clínica y valores del paciente. Una estimación precisa en participantes seleccionados puede carecer de validez externa para enfermedad renal avanzada. La decisión requiere valoración crítica de daños y beneficios, incertidumbre y preferencias; no equivale a ignorar la evidencia."
+    },
+    {
+      "id": 3,
+      "materia": "Epidemiología",
+      "tema": "Subgrupos exploratorios y multiplicidad",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "analisis_critico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            205,
+            206,
+            207,
+            211,
+            218
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            121,
+            122
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una revisión analiza 12 subgrupos de pacientes, ninguno preespecificado. El efecto global no muestra reducción convincente de mortalidad, pero uno de los subgrupos obtiene p=0.03 y el autor lo declara la población que debe recibir el fármaco. ¿Cuál es el problema metodológico central?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "El análisis global es inválido siempre que exista un subgrupo con p menor que 0.05.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La significación en un subgrupo prueba por sí misma una modificación causal del efecto.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Los subgrupos no se pueden estudiar mediante ensayos aleatorizados.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Un hallazgo aislado entre muchas comparaciones exploratorias puede ser falso positivo y exige evaluar interacción, plausibilidad y confirmación independiente.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "Al aumentar los contrastes crece la posibilidad de encontrar alguna asociación aparentemente significativa por azar. Se necesita distinguir análisis preespecificados y exploratorios, examinar una prueba de interacción y consistencia, además de la calidad de los ensayos originales; p=0.03 aislado no prueba beneficio diferencial."
+    },
+    {
+      "id": 4,
+      "materia": "Epidemiología",
+      "tema": "Búsqueda completa y sesgo de publicación",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            208,
+            209,
+            211,
+            218,
+            221
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un metanálisis solo incluye seis ensayos publicados. El registro público contiene otros cuatro ensayos concluidos con el mismo comparador, pero sus resultados no fueron publicados. Los seis ensayos disponibles favorecen significativamente al tratamiento. ¿Cuál es el paso más útil antes de aceptar la magnitud del efecto?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Descartar de antemano todos los registros sin artículo, pues la ausencia de revista significa mala calidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Duplicar el peso de los seis estudios publicados para compensar los cuatro faltantes.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Buscar informes y resultados de los ensayos no publicados y evaluar el sesgo de publicación y la robustez de la estimación.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Concluir que los cuatro estudios no publicados tuvieron exactamente el mismo efecto favorable.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Si la disponibilidad de resultados depende de su dirección o significación, la síntesis publicada puede sobreestimar beneficios. Las estrategias de búsqueda de revisiones sistemáticas incluyen literatura no publicada y registros; si no se consiguen los datos, debe discutirse la incertidumbre sin inventar los efectos faltantes."
+    },
+    {
+      "id": 5,
+      "materia": "Epidemiología",
+      "tema": "PICO y preguntas cualitativas",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            29,
+            34,
+            35,
+            76,
+            90
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            111,
+            112
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un equipo desea comprender por qué mujeres indígenas rechazan una estrategia de tamizaje pese a su disponibilidad. Formula preguntas sobre experiencias, relaciones con el personal, miedo y barreras culturales; no pretende estimar un efecto causal de dos tratamientos. ¿Qué adaptación de la búsqueda es más congruente?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Exigir siempre un grupo placebo y un desenlace dicotómico para que la pregunta sea válida.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Organizar una pregunta de experiencias y seleccionar evidencia cualitativa, con herramientas como SPIDER además de PICO cuando sean pertinentes.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Considerar únicamente revisiones con metanálisis de ensayos farmacológicos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Limitar las palabras clave a sensibilidad, especificidad y riesgo relativo.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "PICO es muy útil para preguntas de intervención, pero no resuelve con la misma naturalidad preguntas de significados y experiencias. Los materiales comparan PICO/PICOS y SPIDER; una investigación cualitativa con selección y valoración apropiadas puede abordar barreras percibidas sin forzar un diseño experimental."
+    },
+    {
+      "id": 6,
+      "materia": "Epidemiología",
+      "tema": "Importancia clínica frente a significación",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            121,
+            122
+          ]
+        },
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            15,
+            16,
+            36
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En 60 000 participantes por brazo, un programa reduce la hospitalización de 10.0% a 9.6% (p≈0.02). El seguimiento es de un año y el costo del programa es elevado. ¿Qué interpretación y cálculo orientan mejor la decisión de implementarlo?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La reducción absoluta es 0.4 puntos porcentuales y el NNT aproximado es 250; la significación estadística no establece por sí sola que valga su costo.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La reducción absoluta es 4 puntos porcentuales y el NNT es 25.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "El riesgo disminuyó 40% y el NNT es 2.5.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Como p es menor que 0.05, no es necesario calcular efectos absolutos ni valorar recursos.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Riesgo absoluto: 0.100 − 0.096 = 0.004, equivalente a 0.4 puntos porcentuales. NNT = 1/0.004 = 250 pacientes durante un año para evitar aproximadamente un ingreso, bajo los supuestos del estudio. Aunque p=0.02, la decisión clínica exige considerar daños, costos y prioridades del paciente."
+    },
+    {
+      "id": 7,
+      "materia": "Epidemiología",
+      "tema": "Interpretación del OR en eventos frecuentes",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            214
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            122
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un estudio, el desenlace ocurre en 40 de 100 expuestos y 20 de 100 no expuestos. Se decide publicar tanto el riesgo relativo (RR) como la razón de momios (OR). ¿Cuál pareja de estimaciones es correcta, y qué precaución exige su lectura?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "RR=2.67 y OR=2.00; ambas medidas se intercambian sin restricciones.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "RR=0.50 y OR=0.38; la exposición es inequívocamente protectora.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "RR=2.00 y OR=2.00; el valor de ambos siempre coincide cuando n es igual entre grupos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "RR=2.00 y OR≈2.67; si el evento es frecuente, OR no debe interpretarse automáticamente como RR.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "RR=(40/100)/(20/100)=2. El odds del expuesto es 40/60; en no expuestos, 20/80; OR=(40×80)/(60×20)=2.67. Cuando los eventos no son infrecuentes la OR puede quedar más alejada de 1 que el RR y comunicarla como si fuese riesgo relativo exagera la diferencia."
+    },
+    {
+      "id": 8,
+      "materia": "Epidemiología",
+      "tema": "Reporte selectivo del desenlace predefinido",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "analisis_critico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            36,
+            190,
+            211,
+            218
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            121
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "El protocolo registrado de un ensayo definía hospitalización a 12 meses como desenlace principal. El artículo final omite ese resultado y da protagonismo a un marcador de laboratorio a seis semanas con p=0.01. ¿Qué evaluación es más apropiada?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Aceptar el marcador porque su p es menor y siempre tiene mayor validez clínica.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Considerar al marcador como desenlace principal retroactivamente sin informar el cambio.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Comprobar el registro y solicitar el desenlace predefinido; cambiar desenlaces al conocer los resultados puede sesgar las conclusiones.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Suponer que el resultado de hospitalización fue favorable porque ya no aparece en el artículo.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "La evaluación crítica contrasta objetivos, métodos y resultados comunicados. Dar más relevancia a un desenlace sustituto no preespecificado puede ocultar un resultado clínico desfavorable o nulo. El registro y la valoración de sesgos permiten identificar reporte selectivo, sin asumir el sentido de datos omitidos."
+    },
+    {
+      "id": 9,
+      "materia": "Epidemiología",
+      "tema": "PRISMA, calidad y certeza",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            205,
+            211,
+            221
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            121
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una revisión presenta una búsqueda exhaustiva, diagrama de selección completo y todos los apartados de PRISMA, pero cinco de seis ensayos presentan pérdidas diferenciales importantes y falta de cegamiento en un desenlace subjetivo. ¿Cuál afirmación distingue correctamente reporte y validez?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Toda revisión que cumpla PRISMA tiene certeza alta independientemente de los estudios incluidos.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Cumplir PRISMA mejora transparencia del informe, pero no elimina sesgos de los ensayos ni convierte automáticamente en alta la certeza del resultado.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Una revisión bien reportada puede reemplazar los datos faltantes de los ensayos por valores verdaderos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El metanálisis elimina el sesgo de medición incluso si está presente en cada estudio primario.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "PRISMA orienta cómo reportar una revisión; la validez de los estudios primarios y la certeza de la evidencia se evalúan por separado. Combinar estimaciones de investigaciones sesgadas no garantiza un resultado libre de sesgos; hace falta valorar las pérdidas, la medición y la relevancia de los desenlaces."
+    },
+    {
+      "id": 10,
+      "materia": "Epidemiología",
+      "tema": "Heterogeneidad y síntesis responsable",
+      "bloque": "Medicina basada en evidencias",
+      "tipo_reactivo": "analisis_critico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            205,
+            206,
+            207,
+            212,
+            213
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Tres ensayos sobre la misma intervención difieren mucho: uno evalúa pacientes críticos, otro pacientes ambulatorios y el tercero mide solo un biomarcador. Aunque sus estimaciones puedan promediarse matemáticamente, ¿qué decisión metodológica debe preceder la síntesis cuantitativa?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Evaluar comparabilidad clínica de población, intervención y desenlace; podría ser más apropiada una síntesis diferenciada sin un único efecto combinado.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Combinar siempre todos los resultados porque el algoritmo produce una media numérica.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Eliminar automáticamente el ensayo más pequeño, aun sin valorar sus métodos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Considerar la heterogeneidad irrelevante si una prueba global llega a p<0.05.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "La revisión sistemática examina consistencia y heterogeneidad antes de interpretar un estimador global. Un efecto sobre un biomarcador no es intercambiable sin más con un desenlace clínico, ni un paciente crítico necesariamente representa a uno ambulatorio. La decisión de agrupar debe justificarse por comparabilidad y pregunta clínica."
+    },
+    {
+      "id": 11,
+      "materia": "Epidemiología",
+      "tema": "Coherencia entre objetivo y diseño",
+      "bloque": "Metodología y protocolo",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            180,
+            181,
+            182,
+            184,
+            186
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            27,
+            78,
+            88
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Se busca determinar si iniciar actividad física supervisada reduce la aparición de hipertensión durante tres años en adultos inicialmente normotensos. El protocolo plantea entrevistar a quienes ya son hipertensos en una sola visita y comparar retrospectivamente su actividad actual. ¿Cuál es la falla más importante respecto de la pregunta causal?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Los estudios transversales son superiores para medir incidencia acumulada a tres años.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Un corte transversal garantiza control de confusión al preguntar por actividad física.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La pregunta es inválida porque no admite ninguna variable dependiente.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El estudio transversal propuesto no demuestra que la actividad antecediera al inicio de hipertensión; un seguimiento temporal o intervención sería más apropiado.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "La exposición debe anteceder al desenlace para sostener la temporalidad, y el diseño depende del objetivo. Una entrevista única de personas ya enfermas puede describir asociaciones pero no estimar prospectivamente la incidencia de hipertensión ni asegurar la secuencia exposición-evento."
+    },
+    {
+      "id": 12,
+      "materia": "Epidemiología",
+      "tema": "Hipótesis operacionalizable y falsable",
+      "bloque": "Metodología y protocolo",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            19,
+            20,
+            21,
+            22,
+            23,
+            28
+          ]
+        },
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            145
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un grupo titula su protocolo «El acompañamiento mejora integralmente a todos los pacientes». Propone 80 personas y una escala de adherencia, pero no define qué significa «mejora», ni momento de medición ni comparador. ¿Cuál reformulación es metodológicamente más verificable?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "«El seguimiento es bueno y siempre produce mejores pacientes».",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "«La ciencia demostrará que el acompañamiento mejora la salud».",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "«En adultos con hipertensión, la adherencia medida con escala validada a tres meses será mayor con seguimiento telefónico semanal que con atención habitual».",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "«La intervención funciona cuando el equipo considera que funciona».",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Una hipótesis contrastable delimita población, exposición/intervención, comparación, variable de respuesta y temporalidad. El protocolo debe vincular pregunta, objetivos, mediciones y análisis. Las expresiones indefinidas impiden reproducir el método y decidir qué evidencia refutaría la hipótesis."
+    },
+    {
+      "id": 13,
+      "materia": "Epidemiología",
+      "tema": "Operacionalización compleja de la exposición",
+      "bloque": "Metodología y protocolo",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            23,
+            28,
+            29
+          ]
+        },
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            45,
+            56,
+            64
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un estudio de adherencia se clasifica como «paciente adherente» a quien «parece comprometido» según la impresión libre de su médico. Tres sedes aplican criterios diferentes. El desenlace es hospitalización. ¿Qué cambio mejora más la calidad de la información?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Permitir a cada médico ajustar la definición después de conocer las hospitalizaciones.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Definir de antemano un indicador observable con instrumento, periodo, puntos de corte y procedimientos idénticos en las tres sedes.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Sustituir la variable por el número de médicos disponibles sin medir adherencia.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Aumentar los participantes, sin modificar la variable ni su medición.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Operacionalizar transforma un concepto en reglas observables: instrumento, escala, definición, momento y responsables de la medición. La variación por sede provoca error diferencial y baja reproducibilidad; aumentar n mejora precisión aleatoria, pero no corrige sesgo por criterios inconsistentes."
+    },
+    {
+      "id": 14,
+      "materia": "Epidemiología",
+      "tema": "Periodicidad y sesgo en muestreo sistemático",
+      "bloque": "Metodología y protocolo",
+      "tipo_reactivo": "analisis_critico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            25,
+            26,
+            158
+          ]
+        },
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            280
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Se seleccionará cada décimo registro de un padrón hospitalario ordenado con el mismo patrón repetitivo: nueve consultas generales y una de alta complejidad, que siempre ocupa la décima posición. Se inicia el muestreo desde la primera fila. ¿Qué riesgo aparece?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La selección queda sincronizada con el patrón del listado y la muestra puede no representar la distribución real de complejidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "El muestreo sistemático es siempre equivalente a una selección aleatoria simple, sin importar el orden.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Es imposible que exista sesgo porque el intervalo de selección es una constante.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El principal riesgo es que todos los pacientes sean asignados a un tratamiento al azar.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "En muestreo sistemático, la selección periódica requiere que el orden de la lista no esconda una periodicidad relacionada con el fenómeno. Una secuencia fija puede sobrerrepresentar o subrepresentar sistemáticamente una categoría; conviene revisar el marco muestral y usar un inicio aleatorio y/o otro procedimiento apropiado."
+    },
+    {
+      "id": 15,
+      "materia": "Epidemiología",
+      "tema": "Unidad de aleatorización y unidad de análisis",
+      "bloque": "Metodología y protocolo",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            13,
+            23,
+            25,
+            27,
+            28
+          ]
+        },
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            184,
+            190
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Doce clínicas se asignan al azar a dos estrategias educativas y se miden 100 pacientes por clínica. El análisis trata a los 1 200 pacientes como si cada uno hubiera sido aleatorizado individualmente. ¿Qué consecuencia metodológica es más probable?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Garantizar independencia de observaciones porque todos los pacientes son distintos.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Convertir automáticamente el ensayo en un estudio de casos y controles.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Eliminar todo sesgo de selección solo por aumentar el número de pacientes por clínica.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Subestimar la incertidumbre al ignorar la correlación de pacientes dentro de cada clínica; la asignación y el análisis deben reconocer los conglomerados.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "La unidad asignada al azar es la clínica; pacientes de una misma clínica comparten profesionales, recursos y otros factores. Tratarlos como independientes puede inflar la precisión y las pruebas de significación. El protocolo debe describir diseño, población, unidad de análisis y método compatible con la asignación."
+    },
+    {
+      "id": 16,
+      "materia": "Epidemiología",
+      "tema": "Cálculo de n para estimación de prevalencia",
+      "bloque": "Metodología y protocolo",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            25,
+            158,
+            162,
+            163
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un protocolo quiere estimar la prevalencia de un síntoma con 95% de confianza y margen de error absoluto máximo de ±5 puntos porcentuales. Sin estimación previa, usa p=0.50 y la aproximación n=Z²p(1−p)/d², con Z=1.96. Sin corrección por población finita ni pérdidas, ¿cuál es el mínimo n redondeado hacia arriba?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "196 participantes.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "400 participantes exactamente, por ser obligatorio elevarlo al siguiente centenar.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "385 participantes.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "97 participantes.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Sustituyendo: n=(1.96²×0.5×0.5)/(0.05²)=3.8416×0.25/0.0025=384.16. Como no pueden reclutarse fracciones de individuo se redondea hacia arriba: 385. El cálculo aún debería ajustarse por no respuesta, efecto de diseño o finitud si corresponden."
+    },
+    {
+      "id": 17,
+      "materia": "Epidemiología",
+      "tema": "Elegibilidad y pérdidas dependientes del desenlace",
+      "bloque": "Metodología y protocolo",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            25,
+            26,
+            27,
+            28,
+            29,
+            31
+          ]
+        },
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            65,
+            67
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una cohorte de 600 pacientes especifica al inicio sus criterios de inclusión y exclusión. Durante el seguimiento se decide eliminar del análisis a los que desarrollan complicaciones graves porque dificultan las visitas. ¿Cuál es la amenaza principal a la validez?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "No existe problema porque los criterios de eliminación pueden cambiarse según el resultado.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La eliminación posterior vinculada al pronóstico puede introducir sesgo de selección y subestimar complicaciones; debe analizarse y justificarse el manejo de esos datos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "El problema es únicamente una menor potencia; la estimación permanecerá necesariamente insesgada.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Excluir pacientes complicados convierte el estudio en doble ciego.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Los criterios deben predefinirse. Perder o excluir de forma selectiva a pacientes con desenlaces graves altera la comparación y el riesgo estimado, además de disminuir n. Es preciso documentar pérdidas, razones y estrategias de análisis acordes con el protocolo."
+    },
+    {
+      "id": 18,
+      "materia": "Epidemiología",
+      "tema": "Modificación de instrumentos a mitad del estudio",
+      "bloque": "Metodología y protocolo",
+      "tipo_reactivo": "analisis_critico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            9,
+            10,
+            28,
+            29
+          ]
+        },
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            45,
+            49,
+            54,
+            56,
+            64
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un cuestionario sobre calidad del sueño se administra a 150 sujetos. Al observar las respuestas, se simplifican siete ítems, se cambia el periodo de recuerdo de un mes a una semana y se aplica la nueva versión a otros 150 sujetos sin documentarlo. ¿Qué riesgo resulta más específico?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La variable puede no ser comparable entre cohortes de participantes; debe documentarse y evaluarse la equivalencia entre versiones antes de combinarlas.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "El cambio mejora automáticamente la validez de criterio porque los ítems son más cortos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Ambas versiones producen mediciones idénticas debido a que conservan el mismo título.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El único efecto es que el tamaño de muestra se vuelve exactamente la mitad.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Un protocolo estandariza procedimientos y fuentes de medición. Variar contenido o ventana temporal modifica qué fenómeno se cuantifica; combinar puntuaciones sin calibración puede crear diferencias artificiales. Una prueba piloto y análisis de equivalencia son preferibles a cambios ocultos."
+    },
+    {
+      "id": 19,
+      "materia": "Epidemiología",
+      "tema": "Ética y consentimiento en situaciones de dependencia",
+      "bloque": "Metodología y protocolo",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            10,
+            11,
+            14,
+            31,
+            32
+          ]
+        },
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            189
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un estudio con pacientes hospitalizados, la persona que decide su alta también solicita el consentimiento y declara que negarse podría reducir la atención recibida. El protocolo tiene aval metodológico y financiamiento. ¿Cuál es el problema prioritario?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "No hay conflicto ético porque el proyecto ya recibió financiación.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La validez del consentimiento depende únicamente de tener una firma al final del documento.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Basta con omitir la información sobre riesgos para prevenir rechazos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "La participación puede no ser voluntaria por coacción; se requiere separar decisiones asistenciales y reclutamiento y garantizar rechazo sin perjuicios.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "La investigación con seres humanos exige información comprensible, libertad para participar o retirarse y protección de seguridad y confidencialidad. Un investigador con poder asistencial sobre el participante puede comprometer voluntariedad; la aprobación del proyecto no justifica amenazas ni reemplaza el consentimiento válido."
+    },
+    {
+      "id": 20,
+      "materia": "Epidemiología",
+      "tema": "Fuentes secundarias y variables no comparables",
+      "bloque": "Metodología y protocolo",
+      "tipo_reactivo": "analisis_critico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            28,
+            29,
+            30
+          ]
+        },
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            45,
+            64
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Se pretende estimar si un programa reduce el ausentismo escolar usando registros administrativos de 2019 y 2025. En 2019 se contabilizaban ausencias por clase y en 2025 por día; el protocolo no menciona el cambio. ¿Qué acción debe anteceder la comparación?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Comparar directamente los números brutos, porque ambos se denominan «ausencias».",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Aumentar el tamaño del archivo sin revisar los sistemas de registro.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Revisar definiciones y establecer una medida operacional equivalente o reconocer explícitamente que las cifras no son comparables sin transformación válida.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Tratar el año como variable de resultado y eliminar la medición de ausencias.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Las fuentes secundarias ya fueron recogidas con criterios ajenos al investigador. La validez exige definir variables, unidades, métodos y cambios de registro antes de analizarlas. Sin estandarización, una aparente variación puede deberse a redefinición de la medición y no al programa evaluado."
+    },
+    {
+      "id": 21,
+      "materia": "Epidemiología",
+      "tema": "Integración de métodos cuantitativos y cualitativos",
+      "bloque": "Metodología y protocolo",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            76,
+            84,
+            90,
+            133,
+            145,
+            150
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una investigación mixta, primero se detecta una baja adherencia con una escala validada; después se entrevista a una submuestra para comprender causas culturales y problemas de acceso. Los autores presentan por separado porcentajes y citas sin relacionarlos. ¿Qué modificación permitiría realmente integrar los métodos?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Reemplazar todos los testimonios por un promedio aritmético.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Explicar cómo los hallazgos de entrevistas interpretan los patrones cuantitativos, contrastando convergencias y discrepancias en una conclusión integrada.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Eliminar la fase cualitativa porque los diseños mixtos nunca pueden ser secuenciales.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Usar citas sin procedencia para ilustrar únicamente las conclusiones ya decididas.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La investigación mixta no consiste en yuxtaponer datos de diferente naturaleza: su valor está en integrar resultados para comprender mecanismos, contextos y divergencias. El protocolo debe justificar secuencia, muestreo, análisis e integración entre preguntas de magnitud y experiencia."
+    },
+    {
+      "id": 22,
+      "materia": "Epidemiología",
+      "tema": "Kappa corregida por acuerdo esperado",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            49,
+            50,
+            51,
+            52,
+            53
+          ]
+        },
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            70
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Dos radiólogos clasifican de manera independiente 100 estudios como positivos o negativos. Coinciden en 18 positivos y 68 negativos; el primero es positivo y el segundo negativo en 2, y ocurre lo contrario en 12. ¿Cuál es el valor aproximado de kappa de Cohen, corrigiendo el acuerdo por azar?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "0.63.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "0.86.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "0.38.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "0.24.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Acuerdo observado Po=(18+68)/100=0.86. Proporción positiva del primero=(18+2)/100=0.20 y del segundo=(18+12)/100=0.30. Acuerdo esperado Pe=0.20×0.30 + 0.80×0.70=0.62. Entonces κ=(0.86−0.62)/(1−0.62)=0.24/0.38≈0.632. El acuerdo bruto de 86% no equivale a kappa."
+    },
+    {
+      "id": 23,
+      "materia": "Epidemiología",
+      "tema": "Alta concordancia bruta en eventos raros",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            50,
+            51,
+            52,
+            53
+          ]
+        },
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            70
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una prueba de clasificación tiene concordancia observada del 90% entre dos observadores, pero por sus distribuciones marginales la concordancia esperada por azar es 88%. El equipo proclama «concordancia excelente» basándose solo en el 90%. ¿Qué valor de kappa y advertencia corrigen la conclusión?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "κ≈0.90, porque kappa y porcentaje de acuerdo son equivalentes.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "κ≈0.02, porque siempre se resta el acuerdo esperado sin dividirlo.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "κ≈7.50, porque la corrección debe superar 1 cuando el acuerdo es alto.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "κ≈0.17, lo que muestra que la coincidencia adicional al azar es pequeña pese a la concordancia bruta alta.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "κ=(Po−Pe)/(1−Pe)=(0.90−0.88)/(0.12)=0.1667. Cuando una categoría predomina, puede observarse acuerdo bruto elevado aun con baja concordancia corregida por azar. Por eso se recomienda revisar también prevalencia de categorías, distribuciones marginales y el contexto clínico."
+    },
+    {
+      "id": 24,
+      "materia": "Epidemiología",
+      "tema": "Concordancia ordinal y gravedad del desacuerdo",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            49,
+            50,
+            52,
+            53,
+            54
+          ]
+        },
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            70
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Dos observadores clasifican lesiones en cuatro grados ordenados: ausente, leve, moderado y grave. Uno clasifica «ausente» y otro «grave» en algunos casos; en otros, «moderado» frente a «grave». El porcentaje de acuerdo total es igual para dos instrumentos. ¿Qué análisis distingue mejor la gravedad clínica de las discrepancias?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Usar solamente kappa no ponderada, pues todos los desacuerdos son idénticos clínicamente.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Transformar cada grado en una media y descartar todas las clasificaciones discordantes.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Utilizar una medida de concordancia ponderada que asigne diferente penalización a discordancias cercanas y extremas, junto con su matriz de clasificación.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Medir solo el porcentaje de pacientes con grado grave, sin comparar los observadores.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Para categorías ordinales, los desacuerdos entre niveles consecutivos pueden ser menos graves que entre los extremos; una kappa ponderada permite incorporar esa estructura, siempre explicitando la ponderación. El acuerdo porcentual, sin matriz de discordancias, puede ocultar errores con distinta importancia clínica."
+    },
+    {
+      "id": 25,
+      "materia": "Epidemiología",
+      "tema": "Consistencia interna versus validez",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "analisis_critico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            54,
+            56,
+            58,
+            60,
+            61,
+            62
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            72
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una escala de bienestar de 24 preguntas tiene alfa de Cronbach de 0.96. Sin embargo, todos los ítems preguntan por dolor y ninguno por movilidad, sueño o participación social, aunque el equipo afirma medir «calidad de vida integral». ¿Qué afirmación es la más defendible?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "El alfa alto prueba que cualquier dominio omitido ya fue capturado indirectamente.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Alta consistencia entre ítems no demuestra validez de contenido ni que la escala mida todas las dimensiones anunciadas.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "El alfa elimina la necesidad de evaluar constructos y definición de variables.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "La escala tiene validez de criterio demostrada aunque nunca fue comparada con otra medida.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "El alfa resume interrelación y homogeneidad, no la cobertura del constructo ni su pertinencia. Un instrumento puede ser internamente consistente y a la vez medir solo dolor. La validez de contenido exige revisar dominios e ítems representativos; la validación de constructo o criterio requiere pruebas independientes."
+    },
+    {
+      "id": 26,
+      "materia": "Epidemiología",
+      "tema": "Alfa elevado y estructura multidimensional",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "analisis_critico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            58,
+            60,
+            61
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            72
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una escala suma 30 reactivos de ansiedad, fatiga y apoyo familiar. Obtiene alfa global de 0.94, pero un análisis exploratorio sugiere tres dimensiones muy diferentes. ¿Cuál es la evaluación más prudente antes de reportar un único puntaje global?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Examinar dimensionalidad, justificación teórica y confiabilidad por dominios; un alfa global elevado no prueba que exista un único constructo.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Eliminar automáticamente las tres dimensiones porque alfa supera 0.90.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Concluir que el índice tiene sensibilidad diagnóstica del 94%.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Interpretar alfa de 0.94 como acuerdo perfecto entre todos los observadores.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "La consistencia interna describe covariación entre ítems, pero no certifica unidimensionalidad. Si existen dominios independientes, un puntaje total podría mezclar fenómenos distintos; el análisis factorial y evaluación de constructo ayudan a decidir la estructura apropiada. Alfa tampoco es sensibilidad clínica ni kappa interobservador."
+    },
+    {
+      "id": 27,
+      "materia": "Epidemiología",
+      "tema": "Precisión reproductiva frente a calibración sistemática",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            56,
+            57,
+            60,
+            64
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            67,
+            69,
+            70
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Dos básculas clínicas miden repetidamente un patrón certificado de 70 kg. La báscula A arroja siempre entre 72.0 y 72.1 kg, mientras B entrega lecturas entre 69.7 y 70.3 kg. Si se compara precisión de repetición con exactitud respecto del patrón, ¿qué conclusión es correcta?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "A es más exacta porque sus lecturas son menos dispersas.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "B tiene necesariamente un error sistemático mayor porque varía más.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Ambas son igualmente exactas porque la diferencia observada es inferior a tres kilogramos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "A es más repetible pero tiene sesgo positivo; B es menos precisa en repeticiones pero está mejor centrada en el valor verdadero.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "Consistencia/repetibilidad refleja dispersión de mediciones; validez o exactitud exige proximidad al valor verdadero. A tiene un desplazamiento sistemático de ~2 kg pese a ser estable, mientras B fluctúa alrededor de 70. La calibración es pertinente para corregir sesgo; repetir mediciones ayuda a caracterizar error aleatorio."
+    },
+    {
+      "id": 28,
+      "materia": "Epidemiología",
+      "tema": "Reproducibilidad y sensibilidad al cambio",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            55,
+            56,
+            57,
+            59,
+            63
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una escala de discapacidad se mantiene estable cuando se aplica dos veces a pacientes clínicamente estables; después de una intervención efectiva casi no cambia su puntuación, aunque otras medidas relevantes mejoran. ¿Qué propiedad necesita estudiarse específicamente?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Validez aparente únicamente, porque es imposible que el tratamiento modifique una escala reproducible.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Concordancia entre investigadores y nada más, ya que el cambio verdadero no es medible.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Sensibilidad al cambio o capacidad de respuesta a variaciones clínicas, diferente de la reproducibilidad en pacientes estables.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El porcentaje de pacientes incluidos, que define automáticamente la capacidad de respuesta.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "El test-retest comprueba estabilidad en condiciones que no cambian. Un índice evaluativo debe detectar cambios clínicamente pertinentes. Es posible lograr alta reproducibilidad y escasa respuesta a intervenciones; conviene contrastar puntajes, efecto estandarizado y un criterio externo de mejoría."
+    },
+    {
+      "id": 29,
+      "materia": "Epidemiología",
+      "tema": "Índice predictivo y validación externa",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            55,
+            60,
+            61,
+            62
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            25,
+            72
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una puntuación para predecir complicaciones se desarrolló en pacientes jóvenes de un centro de referencia. Al utilizarla en una clínica rural con adultos mayores, clasifica a casi todos como de riesgo muy alto; el equipo piensa usarla directamente para decidir hospitalización. ¿Qué requisito es prioritario?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Asumir que el índice funciona igual porque fue construido con un tamaño de muestra grande.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Evaluar desempeño y calibración en la nueva población antes de utilizar sus umbrales como regla decisoria.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Convertir el índice predictivo en evaluativo sin estudiar su capacidad de predicción.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Utilizar el mismo punto de corte porque la prevalencia no puede influir en la clasificación.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Un índice predictivo pretende anticipar desenlaces y su aplicación exige adecuación a pacientes concretos. Diferencias de edad, gravedad, espectro de enfermedad o recursos pueden deteriorar calibración y utilidad clínica. La validez externa no se garantiza por el resultado en la muestra de desarrollo."
+    },
+    {
+      "id": 30,
+      "materia": "Epidemiología",
+      "tema": "Cobertura de dominios y validación interna",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "analisis_critico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            49,
+            53,
+            54,
+            58,
+            60,
+            61
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un comité elimina del cuestionario todos los reactivos que producen desacuerdo entre expertos, incluidos los únicos relacionados con función cognitiva. Como aumenta la consistencia interna, declara que ahora mide mejor la discapacidad global. ¿Cuál es el error conceptual?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Puede elevar homogeneidad a costa de omitir una dimensión esencial; se debe valorar contenido y pertinencia del constructo, no maximizar alfa aisladamente.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La consistencia interna reemplaza a la evaluación de contenido cuando hay suficientes ítems.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Eliminar dominios siempre aumenta simultáneamente sensibilidad, especificidad y validez de criterio.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "La discapacidad global se mide mejor exclusivamente con reactivos más similares entre sí.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "La selección de ítems debe representar el fenómeno que se quiere cuantificar. La homogeneidad excesiva puede reflejar redundancia y perder cobertura multidimensional. Una evaluación de contenido sustentada en teoría y expertos debe analizar qué dimensiones quedan fuera antes de aceptar cambios en el instrumento."
+    },
+    {
+      "id": 31,
+      "materia": "Epidemiología",
+      "tema": "Misclasificación diferencial por conocimiento del desenlace",
+      "bloque": "Observaciones y clinimetría",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            64,
+            65,
+            66,
+            68
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            69,
+            70,
+            91
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un estudio de casos y controles, el entrevistador conoce quién tiene cáncer y pregunta con insistencia por exposiciones pasadas solo a los casos; para los controles se limita a leer una lista breve. El mismo recuerdo basal podría haber sido similar en ambos grupos. ¿Cuál inferencia sobre el sesgo es más sólida?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La medición es no diferencial porque todos pertenecen al mismo hospital.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "El error afecta exclusivamente al tamaño de muestra, sin cambiar la medida de asociación.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "El diseño de casos y controles impide por definición todo sesgo de información.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Existe riesgo de información diferencial inducida por el entrevistador; puede inflar o reducir la asociación y conviene cegamiento y preguntas estandarizadas.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "El modo de obtener la exposición depende del conocimiento del desenlace, por lo que el error puede ser diferencial. Ello puede distorsionar la fuerza o dirección de la asociación. Estandarizar instrumentos y cegar entrevistadores al estado de caso/control cuando sea factible reduce este problema."
+    },
+    {
+      "id": 32,
+      "materia": "Epidemiología",
+      "tema": "Sesgo de Berkson en selección hospitalaria",
+      "bloque": "Diseños de investigación y sesgos",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            65,
+            67
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            91,
+            93,
+            94
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un equipo investiga si una exposición laboral se relaciona con una enfermedad respiratoria. Recluta casos y controles de la misma área hospitalaria, pero la exposición por sí misma aumenta la probabilidad de hospitalización por otros problemas. ¿Por qué el uso de controles hospitalarios puede distorsionar la asociación?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Toda persona hospitalizada representa automáticamente a todos los no enfermos del territorio.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "El sesgo desaparece si se reclutan más controles del mismo departamento sin modificar la selección.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La inclusión condicionada por hospitalización puede crear o modificar una relación entre exposición y enfermedad que no representa a la población fuente.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Es imposible seleccionar controles en un estudio observacional.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "El sesgo de selección de Berkson aparece al condicionar la participación a un proceso de hospitalización influido por la exposición y el desenlace u otras causas. Los controles deberían representar la distribución de exposición en la población de la que provienen los casos, no solo a quienes llegan al hospital."
+    },
+    {
+      "id": 33,
+      "materia": "Epidemiología",
+      "tema": "Casos prevalentes, duración de enfermedad y asociación",
+      "bloque": "Diseños de investigación y sesgos",
+      "tipo_reactivo": "analisis_critico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            65,
+            67
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            91,
+            93,
+            94
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un estudio de casos y controles incluye únicamente sobrevivientes cinco años después del diagnóstico. Se sospecha que una exposición aumenta tanto la incidencia como la letalidad temprana. La exposición aparece sorprendentemente poco frecuente entre los casos reclutados. ¿Qué explica mejor ese resultado?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La exposición necesariamente protege contra desarrollar la enfermedad.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La selección de casos prevalentes sobrevivientes puede excluir a expuestos con desenlace fatal temprano y distorsionar la asociación exposición-enfermedad.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La supervivencia siempre es independiente de la exposición en un estudio de casos y controles.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El sesgo desaparece al comparar solo el valor p con 0.05.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "El sesgo de incidencia-prevalencia o Neyman ocurre cuando la probabilidad de ser incluido como caso depende de sobrevivir o permanecer con la enfermedad. Si la exposición empeora la supervivencia, los expuestos pueden estar subrepresentados entre casos prevalentes; preferir casos incidentes ayuda a reducir esta distorsión."
+    },
+    {
+      "id": 34,
+      "materia": "Epidemiología",
+      "tema": "Confusión por gravedad y estimación de tratamiento",
+      "bloque": "Diseños de investigación y sesgos",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            65,
+            69,
+            180,
+            184,
+            190
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            78,
+            80,
+            99
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un estudio observacional concluye que un antibiótico nuevo aumenta 30% la mortalidad frente al habitual. El fármaco nuevo se reservaba casi exclusivamente para pacientes con sepsis más grave. Tras estratificar por gravedad basal, los riesgos son similares en ambos tratamientos. ¿Qué interpretación es mejor?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La asociación bruta probablemente estaba confundida por indicación; la gravedad se relacionaba con asignación del tratamiento y mortalidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "El antibiótico causa mayor mortalidad porque la asociación cruda era estadísticamente significativa.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La gravedad es necesariamente un efecto causado después por el antibiótico y nunca puede ser confusora.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Todo ajuste elimina de manera automática sesgos no medidos y convierte el estudio en ensayo aleatorizado.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "En estudios sin asignación aleatoria los pacientes más graves suelen recibir tratamientos diferentes. La gravedad previa puede asociarse tanto a exposición como al desenlace y confundir la comparación. El ajuste mejora la interpretación solo si las variables están medidas adecuadamente; no hace equivalente un estudio observacional a uno aleatorizado."
+    },
+    {
+      "id": 35,
+      "materia": "Epidemiología",
+      "tema": "Falacia ecológica y unidad de inferencia",
+      "bloque": "Diseños de investigación y sesgos",
+      "tipo_reactivo": "analisis_critico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            180,
+            181,
+            184
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            27,
+            78,
+            86,
+            88
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En 20 municipios, los de mayor gasto municipal en deporte presentan menor mortalidad cardiovascular. Los autores concluyen: «Cada ciudadano que realiza más actividad física tiene menor riesgo porque su municipio gasta más». ¿Por qué la conclusión excede el diseño?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La correlación municipal prueba causalidad individual si incluye más de diez municipios.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La variable municipal debe convertirse necesariamente en riesgo relativo individual sin otras mediciones.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Al tratarse de un estudio ecológico, no puede observarse ninguna relación estadística.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El dato agregado no demuestra la relación individual; factores municipales y composición poblacional pueden explicar la correlación observada.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "Los datos agregados describen unidades colectivas; inferir de ellos el comportamiento o riesgo de individuos específicos incurre en falacia ecológica. Los municipios pueden diferir en edad, acceso sanitario o tabaquismo, entre otros factores. El diseño y la unidad de análisis delimitan el alcance de las conclusiones."
+    },
+    {
+      "id": 36,
+      "materia": "Epidemiología",
+      "tema": "Pérdidas diferenciales ligadas a pronóstico",
+      "bloque": "Diseños de investigación y sesgos",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            25,
+            26,
+            27,
+            28
+          ]
+        },
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            65,
+            67
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una cohorte de 100 tratados y 100 controles, se observa enfermedad en 10 tratados y 20 controles. Sin embargo, se perdieron 30 tratados de mayor gravedad y ningún control, y no se conoce el desenlace de esos 30. ¿Qué conclusión sobre la reducción del riesgo es metodológicamente correcta?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La diferencia definitiva es siempre de 10 puntos porcentuales porque los perdidos no pueden tener el evento.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "El riesgo de los tratados está demostrado entre 10% y 11% con independencia de los perdidos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "El riesgo observado entre quienes permanecen no identifica necesariamente el riesgo real: en los tratados el número final de casos podría estar entre 10 y 40 de 100.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El estudio es válido sin considerar pérdidas porque ambos grupos iniciaron con 100 personas.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Entre tratados hay al menos 10 casos observados y hasta 40 si los 30 perdidos tuvieron enfermedad: el rango de riesgo posible es 10%–40%, suponiendo denominador de 100 y que el resto fue evaluado. La incertidumbre puede cambiar incluso el sentido de la comparación con 20% en controles. La pérdida relacionada con gravedad amenaza la validez."
+    },
+    {
+      "id": 37,
+      "materia": "Epidemiología",
+      "tema": "Secuencia temporal y diseño retrospectivo",
+      "bloque": "Diseños de investigación y sesgos",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            181,
+            182,
+            184,
+            186,
+            187
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            78,
+            86,
+            99
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un registro hospitalario reúne datos de exposición a un medicamento obtenidos en 2017 y desenlaces de insuficiencia renal documentados hasta 2022. El investigador inicia en 2026 y reconstruye ambos conjuntos de datos. ¿Cuál clasificación es más adecuada?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Estudio transversal porque el investigador abre la computadora una sola vez.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Cohorte retrospectiva con secuencia exposición-después-desenlace registrada, aunque la recolección se haga sobre datos históricos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Ensayo clínico porque el medicamento fue administrado a pacientes.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Estudio prospectivo por definición porque la exposición ocurrió antes del desenlace.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La cronología exposición→desenlace sustenta seguimiento longitudinal; sin embargo, al diseñarse después de ocurridos ambos hechos y consultar registros previos es una cohorte retrospectiva. Prospectivo/retrospectivo describe relación entre inicio del estudio y generación de datos, no simplemente el orden de los eventos clínicos."
+    },
+    {
+      "id": 38,
+      "materia": "Epidemiología",
+      "tema": "Estrategia para prevenir contaminación",
+      "bloque": "Diseños de investigación y sesgos",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            184,
+            189,
+            190
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            27,
+            28
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Se propone comparar una estrategia de capacitación de médicos frente a práctica habitual. Los profesionales comparten cada mañana las mismas sesiones y podrían aplicar de inmediato a todos sus pacientes lo aprendido. ¿Qué elección de diseño reduce mejor la contaminación entre grupos?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Considerar aleatorizar por equipos o unidades clínicas separadas y analizar adecuadamente la correlación dentro de cada unidad.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Aleatorizar pacientes individualmente dentro del mismo médico y prohibir registrar quién recibió el programa.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Eliminar el grupo control y decidir por comparación histórica sin discutir sesgos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Tratar la exposición compartida como si fuera independiente sin evaluar contaminación.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Cuando una intervención modifica conductas del personal, asignar pacientes del mismo profesional a diferentes grupos puede contaminar el comparador. La asignación por unidades reduce intercambio de la intervención, pero exige atención al número de conglomerados, correlación intraclínica y características basales."
+    },
+    {
+      "id": 39,
+      "materia": "Epidemiología",
+      "tema": "Diferenciar confusión de modificación del efecto",
+      "bloque": "Diseños de investigación y sesgos",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            65,
+            69,
+            180,
+            182
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            27,
+            78
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un estudio reporta RR de una exposición sobre enfermedad de 1.1 en menores de 50 años y de 3.0 en personas de 50 o más, ambos estimados con comparadores apropiados dentro de cada estrato. El equipo quiere «ajustar por edad» y presentar un único RR sin más detalles. ¿Qué evaluación adicional es imprescindible?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Calcular siempre un único RR global porque la magnitud debe ser idéntica en todos los estratos.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Declarar que toda diferencia entre estratos prueba sesgo de recuerdo.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Multiplicar los dos RR para obtener automáticamente el efecto causal individual.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Investigar posible modificación del efecto por edad y considerar comunicar resultados estratificados, en vez de ocultar diferencias sustanciales con una sola media.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "Las diferencias importantes en magnitud de asociación según edad pueden indicar heterogeneidad o interacción. Ajustar confusión y evaluar modificación del efecto son preguntas distintas: un promedio ajustado puede ocultar a qué población se aplica el riesgo. Se necesita examinar precisión, plausibilidad y comparación formal de efectos."
+    },
+    {
+      "id": 40,
+      "materia": "Epidemiología",
+      "tema": "Control de selección en casos y controles",
+      "bloque": "Diseños de investigación y sesgos",
+      "tipo_reactivo": "analisis_critico",
+      "fuentes": [
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            91,
+            93,
+            94
+          ]
+        },
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            65,
+            67
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un estudio de casos y controles de cáncer de pulmón, los casos provienen de toda una ciudad, mientras los controles son pacientes de una clínica de deshabituación tabáquica. El equipo presume que la clínica es una fuente «económica» de controles. ¿Qué defecto principal tiene?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "La medida de asociación calculada será siempre igual a cero, sin importar los datos.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Se convierte en una cohorte prospectiva por seleccionar controles en una clínica.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Los controles tendrán una exposición al tabaco inusualmente alta y no reflejarán necesariamente la población fuente que originó los casos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Seleccionar controles de alto riesgo corrige automáticamente el sesgo de recuerdo.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "La selección de controles no debe depender del antecedente de exposición de manera que rompa su representatividad frente a la población fuente de los casos. Una clínica de abandono de tabaco sobrerrepresentaría fumadores, pudiendo atenuar o incluso invertir asociaciones y perjudicar la validez."
+    },
+    {
+      "id": 41,
+      "materia": "Epidemiología",
+      "tema": "Diseño factorial e interacción clínica",
+      "bloque": "Diseños de investigación y sesgos",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            189,
+            190
+          ]
+        },
+        {
+          "documento": "2 Revisiones metanalisis y ensayos clínicos.pdf",
+          "paginas_pdf": [
+            7,
+            10
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En un ensayo factorial 2×2 se evalúan una intervención A y otra B. Los riesgos de evento son: ni A ni B 20%, solo A 15%, solo B 14% y ambas 5%. Si no hubiera interacción en escala de diferencia de riesgos, ¿qué riesgo se esperaría aproximadamente para la combinación A+B, y qué sugiere observar 5%?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "34%, y el 5% demuestra ausencia perfecta de interacción.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "9%, y el 5% observado sugiere beneficio adicional respecto a la suma de reducciones absolutas separadas en esa escala.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "5%, porque toda combinación factorial equivale por definición a sumar riesgos.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "20%, porque las intervenciones nunca pueden combinar efectos.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Respecto a 20% basal, A reduce 5 puntos y B reduce 6 puntos. Sin interacción aditiva se esperaría 20−5−6=9%. El 5% observado implica reducción conjunta 15 puntos, cuatro adicionales a lo esperado en escala aditiva. La interpretación requiere precisión y evaluación formal de interacción, no solo esa comparación puntual."
+    },
+    {
+      "id": 42,
+      "materia": "Epidemiología",
+      "tema": "Umbral de referencia frente a umbral de tratamiento",
+      "bloque": "Estadística e interpretación clínica",
+      "tipo_reactivo": "caso_clinico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            153,
+            154,
+            155,
+            171,
+            172,
+            174
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            127,
+            129,
+            130
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un valor de laboratorio de un paciente se ubica en el percentil 98 de una población considerada sana. El paciente está asintomático, el método analítico tiene variabilidad y tratarlo conlleva riesgo de efectos adversos. ¿Qué razonamiento evita confundir anormalidad estadística con necesidad terapéutica?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "El resultado es poco frecuente en la población de referencia, pero decidir tratamiento exige riesgo clínico, verificación contextual y balance de beneficio y daño.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Todo valor fuera del intervalo central del 95% necesita medicación inmediata.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Un percentil alto prueba por sí solo una enfermedad concreta y excluye error de medición.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Si el paciente carece de síntomas, cualquier valor de laboratorio es necesariamente normal.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Los límites estadísticos describen distribuciones, mientras los límites de decisión clínica dependen de consecuencias para el paciente y de intervenciones disponibles. Un extremo cuantitativo puede justificar valoración adicional, pero no demostrar automáticamente enfermedad ni beneficio del tratamiento."
+    },
+    {
+      "id": 43,
+      "materia": "Epidemiología",
+      "tema": "Colas normales y clasificación de riesgo",
+      "bloque": "Estadística e interpretación clínica",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            159,
+            160,
+            162,
+            273
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            127,
+            130
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En una población aproximadamente normal, un biomarcador tiene media de 80 unidades y desviación estándar de 10. Un punto de corte se fija en 100 unidades para marcar valores altos; en 20 000 personas sanas, ¿cuántas superarían aproximadamente el corte solo por variación de la distribución normal? Usa P(Z>2)≈0.0228.",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "910 personas.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "2 280 personas.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "10 000 personas.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "456 personas.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "Z=(100−80)/10=2. La probabilidad de superar dos desviaciones estándar en la cola superior de la normal es ≈0.0228. Se esperan 20 000×0.0228=456 personas sanas clasificadas como altas. Un corte de referencia así tiene falsos positivos esperables incluso con medición correcta."
+    },
+    {
+      "id": 44,
+      "materia": "Epidemiología",
+      "tema": "Interpretación conjunta de IC y efecto absoluto",
+      "bloque": "Estadística e interpretación clínica",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            279,
+            299,
+            300
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            121,
+            122
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un ensayo estima RR=0.82 (IC95%: 0.68–0.99) para un evento clínico. El riesgo del grupo control fue 2.0% durante un año. Suponiendo que el RR aplica a esa población, ¿qué interpretación combina significación y tamaño del beneficio?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "El efecto es una reducción absoluta de 18 puntos porcentuales y el riesgo tratado es −16%.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "La reducción absoluta es 0.82% porque RR y porcentaje son equivalentes.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "El IC excluye 1 de forma marginal; el riesgo esperado tratado es 1.64%, con reducción absoluta aproximada de 0.36 puntos porcentuales.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "No existe evidencia estadística de asociación porque todo IC95% de RR debe cruzar 0 en vez de 1.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Para medidas de razón el valor nulo es 1, excluido por el IC95% [0.68,0.99], aunque el límite es próximo a 1. Riesgo tratado=0.02×0.82=0.0164=1.64%; reducción absoluta=0.0200−0.0164=0.0036=0.36 puntos porcentuales (NNT≈278 por año). Una diferencia relativa puede coexistir con beneficio absoluto pequeño."
+    },
+    {
+      "id": 45,
+      "materia": "Epidemiología",
+      "tema": "Elección de contraste con datos pareados asimétricos",
+      "bloque": "Estadística e interpretación clínica",
+      "tipo_reactivo": "aplicacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            304
+          ]
+        },
+        {
+          "documento": "7 Regresion t y anova.pdf",
+          "paginas_pdf": [
+            2,
+            3,
+            10,
+            13
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Se mide un puntaje continuo de dolor antes y después de tratamiento en 35 personas. Las diferencias individuales presentan colas pesadas, una distribución aproximadamente simétrica pero no normal y el interés principal es si el cambio típico difiere de cero. ¿Qué prueba sería más pertinente sin asumir normalidad de las diferencias?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "t de Student independiente, porque las mediciones se hicieron en fechas diferentes.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Prueba de rangos con signo de Wilcoxon para datos pareados, con revisión de los supuestos correspondientes.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "Chi cuadrada de independencia usando el promedio continuo sin categorizar.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "ANOVA de grupos independientes, porque existen dos tiempos de medición.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Las observaciones son relacionadas, no dos grupos independientes. La normalidad relevante para una t pareada se evalúa sobre diferencias; si no son normales, pero conservan simetría aproximada, una alternativa no paramétrica para datos apareados, como Wilcoxon de rangos con signo, suele ser pertinente, verificando sus supuestos y el objetivo inferencial."
+    },
+    {
+      "id": 46,
+      "materia": "Epidemiología",
+      "tema": "ANOVA y contrastes posteriores",
+      "bloque": "Estadística e interpretación clínica",
+      "tipo_reactivo": "interpretacion",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            304
+          ]
+        },
+        {
+          "documento": "7 Regresion t y anova.pdf",
+          "paginas_pdf": [
+            9,
+            38,
+            39,
+            40,
+            41
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "En tres grupos independientes, el ANOVA arroja F significativo (p=0.004) para la media de recuperación, pero el protocolo no preespecificó comparaciones entre pares. ¿Cuál conclusión es válida solo con el ANOVA global?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Existe evidencia contra la igualdad simultánea de las tres medias, sin identificar por sí solo qué pares difieren; se requieren comparaciones posteriores apropiadas.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Los tres grupos difieren entre sí en todas las comparaciones posibles.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "El tercer grupo tiene necesariamente la mayor media.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "La significación prueba por sí misma que la diferencia es clínicamente importante.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "ANOVA contrasta una hipótesis global de medias iguales. Rechazarla indica que al menos una media difiere, pero no identifica cuáles, ni su relevancia clínica. Las comparaciones entre pares deben ser justificadas y controlar multiplicidad según estrategia analítica."
+    },
+    {
+      "id": 47,
+      "materia": "Epidemiología",
+      "tema": "Normalidad y prueba de Shapiro–Wilk",
+      "bloque": "Estadística e interpretación clínica",
+      "tipo_reactivo": "analisis_critico",
+      "fuentes": [
+        {
+          "documento": "7 Regresion t y anova.pdf",
+          "paginas_pdf": [
+            2,
+            3
+          ]
+        },
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            286,
+            287,
+            288
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Una muestra de 14 mediciones obtiene p=0.31 en Shapiro–Wilk. El investigador escribe: «Se demuestra que la población es normal con probabilidad de 69%». ¿Qué interpretación corrige ambos errores?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Existe 31% de probabilidad de normalidad, y por ello debe rechazarse siempre.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Con p>0.05 se demuestra que cualquier prueba paramétrica será válida sin revisar otros supuestos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "El p-valor representa la probabilidad de que el tamaño de muestra sea exactamente 14.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "No se rechazó la hipótesis de normalidad con esos datos; p=0.31 no prueba normalidad ni expresa la probabilidad de que sea verdadera.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "D",
+      "explicacion": "El p-valor se calcula bajo el modelo o hipótesis nula y no proporciona la probabilidad posterior de que esa hipótesis sea cierta. Un resultado no significativo, sobre todo en una muestra pequeña, puede reflejar escasa potencia para detectar desviaciones; debe revisarse la forma de los datos y los demás supuestos del análisis."
+    },
+    {
+      "id": 48,
+      "materia": "Epidemiología",
+      "tema": "Tamaño muestral y error estándar",
+      "bloque": "Estadística e interpretación clínica",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            279,
+            280,
+            281,
+            299
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            158,
+            162
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Dos estimaciones de una media tienen la misma desviación estándar poblacional aproximada. En el segundo estudio se cuadruplica el tamaño de muestra, de n=100 a n=400. Si los demás supuestos se mantienen, ¿cómo cambia aproximadamente el error estándar y, por tanto, el ancho del IC95%?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "El error estándar se divide entre cuatro y el IC queda a la cuarta parte.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "El error estándar se duplica porque hubo más observaciones.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "El error estándar se reduce a la mitad y el intervalo de confianza queda aproximadamente a la mitad de ancho.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "El error estándar permanece igual; solo cambia la media calculada.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "Para medias independientes, EE≈σ/√n. Al pasar de 100 a 400 sujetos, √n se duplica (10→20), por lo que el error estándar se reduce a la mitad. Si se mantiene la distribución y el multiplicador crítico, el margen de error y ancho del IC95% se reducen aproximadamente a la mitad."
+    },
+    {
+      "id": 49,
+      "materia": "Epidemiología",
+      "tema": "Múltiples pruebas y riesgo acumulado de falso positivo",
+      "bloque": "Estadística e interpretación clínica",
+      "tipo_reactivo": "calculo",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            286,
+            287,
+            288
+          ]
+        },
+        {
+          "documento": "7 Regresion t y anova.pdf",
+          "paginas_pdf": [
+            5,
+            8
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un equipo realiza 20 pruebas estadísticas independientes cuando todas las hipótesis nulas son verdaderas, usando α=0.05 en cada una. ¿Cuál es aproximadamente la probabilidad de obtener al menos un falso positivo por azar? Usa la expresión 1−(1−α)^20.",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "5%.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "64%.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "20%.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "95%.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La probabilidad de no cometer error tipo I en ninguna de las 20 pruebas independientes es (0.95)^20≈0.3585. Por complemento, P(al menos uno)=1−0.3585≈0.6415, alrededor de 64%. Este riesgo familiar ilustra por qué los múltiples contrastes exploratorios exigen interpretación cautelosa y, según el diseño, ajuste."
+    },
+    {
+      "id": 50,
+      "materia": "Epidemiología",
+      "tema": "Potencia, precisión y resultado no significativo",
+      "bloque": "Estadística e interpretación clínica",
+      "tipo_reactivo": "analisis_critico",
+      "fuentes": [
+        {
+          "documento": "Unidad 1 2.pdf",
+          "paginas_pdf": [
+            279,
+            286,
+            299,
+            300
+          ]
+        },
+        {
+          "documento": "Examen 1 .pdf",
+          "paginas_pdf": [
+            158,
+            162
+          ]
+        },
+        {
+          "documento": "2 Revisiones metanalisis y ensayos clínicos.pdf",
+          "paginas_pdf": [
+            9
+          ]
+        }
+      ],
+      "pregunta": {
+        "tipo": "texto",
+        "contenido": "Un ensayo pequeño estima una reducción relativa del riesgo de 22%, con IC95% que abarca desde un beneficio clínicamente importante hasta un incremento moderado del daño. El valor p es 0.12. Los autores concluyen que los tratamientos son equivalentes. ¿Cuál es la objeción principal?",
+        "imagen": null
+      },
+      "opciones": [
+        {
+          "inciso": "A",
+          "texto": "Un resultado no significativo con IC amplio indica incertidumbre; no demuestra equivalencia y puede reflejar potencia insuficiente.",
+          "imagen": null
+        },
+        {
+          "inciso": "B",
+          "texto": "Todo p superior a 0.05 prueba igualdad exacta de los efectos.",
+          "imagen": null
+        },
+        {
+          "inciso": "C",
+          "texto": "La amplitud del IC demuestra que la intervención es dañina con certeza.",
+          "imagen": null
+        },
+        {
+          "inciso": "D",
+          "texto": "Para demostrar equivalencia basta con que los grupos tengan el mismo número de pacientes.",
+          "imagen": null
+        }
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "No rechazar una hipótesis de diferencia no equivale a probar igualdad ni no inferioridad. La equivalencia requiere márgenes clínicos predefinidos y precisión suficiente para excluir diferencias relevantes. Un IC amplio admite múltiples efectos y limita la conclusión, aunque el estimador puntual parezca beneficioso."
+    }
+  ]
+}
